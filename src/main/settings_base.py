@@ -134,6 +134,7 @@ STORAGES = {
     },
 }
 
+AWS_S3_ENDPOINT_URL = "https://s3.ap-south-2.amazonaws.com"
 AWS_S3_REGION_NAME = "ap-south-2"
 AWS_STORAGE_BUCKET_NAME = "auslympic-2024-ap-south"
 AWS_S3_OBJECT_PARAMETERS = {
