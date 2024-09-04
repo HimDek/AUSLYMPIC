@@ -1,25 +1,40 @@
 from django.contrib import admin
 from .models import Department, Sport, Team, Notice
-from .forms import TeamForm
+from .forms import TeamForm, SportForm
 
 
 # Admin configuration for the Team model
+class UserInline(admin.StackedInline):
+    model = Sport.coordinators.through
+    extra = 1
+
+
 class DepartmentAdmin(admin.ModelAdmin):
     list_display = ("name",)
     search_fields = ("name",)
 
 
 class SportAdmin(admin.ModelAdmin):
+    form = SportForm
     list_display = ("name",)
     search_fields = ("name",)
+    inlines = [UserInline]
 
 
 class TeamAdmin(admin.ModelAdmin):
     form = TeamForm
-    list_display = ["name", "sport", "department", "display_members", 'gold_winner', 'silver_winner', 'bronze_winner']
+    list_display = [
+        "name",
+        "sport",
+        "department",
+        "display_members",
+        "gold_winner",
+        "silver_winner",
+        "bronze_winner",
+    ]
     list_filter = ("sport", "department")
     search_fields = ("name", "members")
-    ordering = ('-gold_winner', '-silver_winner', '-bronze_winner')
+    ordering = ("-gold_winner", "-silver_winner", "-bronze_winner")
 
     def display_members(self, obj):
         # Nicely format members list in the admin display

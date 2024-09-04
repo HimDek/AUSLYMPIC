@@ -4,6 +4,16 @@ from .models import Team, Sport, Department
 import json
 
 
+class SportForm(forms.ModelForm):
+    class Meta:
+        model = Sport
+        fields = ["name", "image", "team_size_min", "team_size_max"]
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.label_suffix = ""
+
+
 class TeamForm(forms.ModelForm):
     sport = forms.ModelChoiceField(
         queryset=Sport.objects.all(),
