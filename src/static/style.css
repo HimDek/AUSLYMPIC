@@ -34,29 +34,3 @@
 .y.proximity-scroll-snapping {
     scroll-snap-type: y proximity;
 }
-
-.masked-background {
-    -webkit-mask-image: url('mask.svg');
-    /* For WebKit-based browsers */
-    mask-image: url('mask.svg');
-    /* Standard */
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: right center;
-    mask-position: right center;
-}
-
-.masked-bg {
-    -webkit-mask-image: url('mask-2.svg');
-    /* For WebKit-based browsers */
-    mask-image: url('mask-2.svg');
-    /* Standard */
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: right center;
-    mask-position: right center;
-}
