@@ -3,3 +3,4 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 mkdir staticfiles_build
+touch staticfiles_build/none.txt
