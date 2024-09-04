@@ -32,25 +32,43 @@
 
     {% for group in groups %}
     <div class="position-relative overflow-hidden hide-down-container cut-corner" style="width: 225px; height: 400px;">
-        <div class="p-4 d-flex flex-column"
+        <div class="p-4 d-flex flex-column bg-body-secondary"
             style="height: 400px; background: url('{{ group.sports.all.0.image.url }}') no-repeat top/cover;">
         </div>
         <div class="position-absolute bottom-0 w-100">
             <div class="p-4 d-flex flex-column align-items-center justify-content-evenly gap-4 hide-down">
-                {% for sport in group.sports.all %}
-                <a href="{% url 'sport' sport.id %}" class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
-                    {% if forloop.counter == 1 %}
-                    {% if group.sports.all|length > 1 %}
-                    Men's {{ group.sub }}
-                    {% else %}
+                {% if group.sports.all|length == 1 %}
+                <a href="{% url 'sport' group.sports.all.0.id %}"
+                    class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
                     Go to Page
-                    {% endif %}
-                    {% elif forloop.counter == 2 %}
-                    Women's {{ group.sub }}
-                    {% else %}
-                    Mixed {{ group.sub }}
-                    {% endif %}
                 </a>
+                {% endif %}
+
+                {% for sport in group.sports.all %}
+                {% if "Men's" in sport.name %}
+                <a href="{% url 'sport' sport.id %}"
+                    class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
+                    Men's {{ group.sub }}
+                </a>
+                {% endif %}
+                {% endfor %}
+
+                {% for sport in group.sports.all %}
+                {% if "Women's" in sport.name %}
+                <a href="{% url 'sport' sport.id %}"
+                    class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
+                    Women's {{ group.sub }}
+                </a>
+                {% endif %}
+                {% endfor %}
+
+                {% for sport in group.sports.all %}
+                {% if "Mixed" in sport.name %}
+                <a href="{% url 'sport' sport.id %}"
+                    class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
+                    Mixed {{ group.sub }}
+                </a>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
