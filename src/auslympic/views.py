@@ -1,7 +1,7 @@
 from django.views.generic.base import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count, Q
-from .models import Sport, Department
+from .models import Sport, Department, SportGroup
 from .forms import TeamForm
 
 
@@ -13,6 +13,7 @@ class Home(TemplateView):
 
         context = super().get_context_data(**kwargs)
         context["sports"] = Sport.objects.all()
+        context["groups"] = SportGroup.objects.all()
 
         return context
 

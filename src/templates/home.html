@@ -30,25 +30,31 @@
 
 <div class="d-flex align-items-center justify-content-evenly flex-wrap gap-4 bg-body px-4 py-5">
 
-    {% for sport in sports %}
-    <a class="text-decoration-none" href="{% url 'sport' sport.id %}">
-        <div class="position-relative overflow-hidden hide-down-container cut-corner"
-            style="width: 225px; height: 400px;">
-            <div class="p-4 d-flex flex-column"
-                style="height: 400px; background: url('{{ sport.image.url }}') no-repeat top/cover;">
-            </div>
-            <div class="position-absolute bottom-0 w-100">
-                <div class="p-4 d-flex flex-column align-items-center justify-content-evenly gap-4 hide-down">
-                    <button class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
-                        Men's
-                    </button>
-                    <button class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
-                        Women's
-                    </button>
-                </div>
+    {% for group in groups %}
+    <div class="position-relative overflow-hidden hide-down-container cut-corner" style="width: 225px; height: 400px;">
+        <div class="p-4 d-flex flex-column"
+            style="height: 400px; background: url('{{ group.sports.all.0.image.url }}') no-repeat top/cover;">
+        </div>
+        <div class="position-absolute bottom-0 w-100">
+            <div class="p-4 d-flex flex-column align-items-center justify-content-evenly gap-4 hide-down">
+                {% for sport in group.sports.all %}
+                <a href="{% url 'sport' sport.id %}" class="btn bg-accent bg-hover-accent btn-lg masked-btn rounded-0 w-100 fs-5">
+                    {% if forloop.counter == 1 %}
+                    {% if group.sports.all|length > 1 %}
+                    Men's {{ group.sub }}
+                    {% else %}
+                    Go to Page
+                    {% endif %}
+                    {% elif forloop.counter == 2 %}
+                    Women's {{ group.sub }}
+                    {% else %}
+                    Mixed {{ group.sub }}
+                    {% endif %}
+                </a>
+                {% endfor %}
             </div>
         </div>
-    </a>
+    </div>
     {% endfor %}
 
 </div>
