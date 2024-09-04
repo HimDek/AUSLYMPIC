@@ -208,5 +208,5 @@ class Notice(models.Model):
 
 class SportGroup(models.Model):
     name = models.CharField(max_length=100)
-    sub = models.CharField(max_length=100)
+    sub = models.CharField(max_length=100, blank=True)
     sports = models.ManyToManyField(Sport, related_name="group")
