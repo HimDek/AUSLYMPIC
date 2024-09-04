@@ -204,3 +204,9 @@ class Team(models.Model):
 class Notice(models.Model):
     title = models.CharField(max_length=100)
     text = models.TextField()
+
+
+class SportGroup(models.Model):
+    name = models.CharField(max_length=100)
+    sub = models.CharField(max_length=100)
+    sports = models.ManyToManyField(Sport, related_name="group")
