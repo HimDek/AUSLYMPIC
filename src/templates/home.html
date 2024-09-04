@@ -32,11 +32,11 @@
 
     {% for sport in sports %}
     <a class="text-decoration-none" href="{% url 'sport' sport.id %}">
-        <div class="border shadow-sm h-md-150" style="width: 320px; height: 150px;">
+        <div class="border shadow-sm h-md-150" style="width: 320px; height: 300px;">
             <div class="p-4 d-flex flex-column masked-bg"
-                style="height: 150px; background: url('{{ sport.image.url }}') no-repeat center/cover;">
+                style="height: 300px; background: url('/static/sport_3_Cricket.jpeg') no-repeat top/cover;">
             </div>
-            <div class="p-4 d-flex flex-column position-relative" style="height: 150px; top: -150px">
+            <div class="p-4 d-flex flex-column position-relative" style="height: 300px; top: -300px">
                 <h3 class="fs-4 mb-0 fg-accent mb-auto">{{ sport.name }}</h3>
                 <div class="mb-1 text-body-secondary">{{ sport.name }}</div>
             </div>

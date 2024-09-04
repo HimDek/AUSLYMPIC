@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}LEADERBOARD |{% endblock %}
+
 {% block body %}
 <img src="{% static 'banner.jpg' %}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" alt="sport">
 
 <div class="vw-100 overflow-hidden">
     <div class="text-body-emphasis bg-body-accent masked-background" style="min-width: 1280px;">
         <div class="vw-100 p-4 p-md-5">
-            <div class="row gap-4 justify-content-center justify-content-sm-start">
+            <div class="row gap-4 justify-content-center justify-content-sm-start align-items-center">
                 <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
                     <img src="{% static 'logo.png' %}" class="w-100" />
                 </div>
                 <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
-                    <h1 class="display-3 fst-italic">LEADERBOARDS</h1>
+                    <h1 class="display-2 fst-italic">LEADERBOARD</h1>
                 </div>
             </div>
         </div>
@@ -35,13 +37,13 @@
                         <span>
                             {% if department.gold_winner_count %}
                             {{ department.gold_winner_count }} Gold
-                            {% endif }
+                            {% endif %}
                             {% if department.silver_winner_count %}
                             {{ department.silver_winner_count }} Silver
-                            {% endif }
+                            {% endif %}
                             {% if department.bronze_winner_count %}
                             {{ department.bronze_winner_count }} Bronze
-                            {% endif }
+                            {% endif %}
                         </span>
                     </div>
                 </button>
@@ -62,13 +64,11 @@
                                         <span>
                                             {% if team.gold_winner %}
                                             Gold
-                                            {% endif }
                                             {% elif team.silver_winner %}
                                             Silver
-                                            {% endif }
                                             {% elif team.bronze_winner %}
                                             Bronze
-                                            {% endif }
+                                            {% endif %}
                                             at team.sport
                                         </span>
                                     </div>
@@ -100,13 +100,11 @@
                                         <span>
                                             {% if team.gold_winner %}
                                             Gold
-                                            {% endif }
                                             {% elif team.silver_winner %}
                                             Silver
-                                            {% endif }
                                             {% elif team.bronze_winner %}
                                             Bronze
-                                            {% endif }
+                                            {% endif %}
                                             at team.sport
                                         </span>
                                     </div>
@@ -138,13 +136,11 @@
                                         <span>
                                             {% if team.gold_winner %}
                                             Gold
-                                            {% endif }
                                             {% elif team.silver_winner %}
                                             Silver
-                                            {% endif }
                                             {% elif team.bronze_winner %}
                                             Bronze
-                                            {% endif }
+                                            {% endif %}
                                             at team.sport
                                         </span>
                                     </div>
@@ -175,13 +171,11 @@
                                 <span>
                                     {% if team.gold_winner %}
                                     Gold
-                                    {% endif }
                                     {% elif team.silver_winner %}
                                     Silver
-                                    {% endif }
                                     {% elif team.bronze_winner %}
                                     Bronze
-                                    {% endif }
+                                    {% endif %}
                                     at team.sport
                                 </span>
                             </div>
@@ -195,13 +189,11 @@
                                 <span>
                                     {% if team.gold_winner %}
                                     Gold
-                                    {% endif }
                                     {% elif team.silver_winner %}
                                     Silver
-                                    {% endif }
                                     {% elif team.bronze_winner %}
                                     Bronze
-                                    {% endif }
+                                    {% endif %}
                                     at team.sport
                                 </span>
                             </div>
@@ -215,13 +207,11 @@
                                 <span>
                                     {% if team.gold_winner %}
                                     Gold
-                                    {% endif }
                                     {% elif team.silver_winner %}
                                     Silver
-                                    {% endif }
                                     {% elif team.bronze_winner %}
                                     Bronze
-                                    {% endif }
+                                    {% endif %}
                                     at team.sport
                                 </span>
                             </div>

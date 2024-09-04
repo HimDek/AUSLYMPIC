@@ -53,7 +53,7 @@ class SportView(TemplateView):
 
 
 class LeaderBoard(TemplateView):
-    template_name = "leaderboards.html"
+    template_name = "leaderboard.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

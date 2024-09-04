@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Department, Sport, Team
+from .models import Department, Sport, Team, Notice
 from .forms import TeamForm
 
 
@@ -62,3 +62,4 @@ class TeamAdmin(admin.ModelAdmin):
 admin.site.register(Department, DepartmentAdmin)
 admin.site.register(Sport, SportAdmin)
 admin.site.register(Team, TeamAdmin)
+admin.site.register(Notice)

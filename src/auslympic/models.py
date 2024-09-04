@@ -192,3 +192,8 @@ class Team(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.department}"
+
+
+class Notice(models.Model):
+    title = models.CharField(max_length=100)
+    text = models.TextField()

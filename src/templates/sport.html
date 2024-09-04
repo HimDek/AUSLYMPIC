@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}{{ sport.name }} | {% endblock %}
+
 {% block body %}
 <img src="{{ sport.image.url }}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" alt="sport">
 
