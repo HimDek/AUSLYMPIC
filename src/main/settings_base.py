@@ -124,18 +124,18 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-# STORAGES = {
-#     "default": {
-#         "BACKEND": "storages.backends.s3.S3Storage",
-#         "OPTIONS": {},
-#     },
-#     "staticfiles": {
-#         "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
-#     },
-# }
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3.S3Storage",
+        "OPTIONS": {},
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
 
-# AWS_S3_REGION_NAME = "us-east-1"
-# AWS_STORAGE_BUCKET_NAME = "music-dist"
-# AWS_S3_OBJECT_PARAMETERS = {
-#     "StorageClass": "INTELLIGENT_TIERING",
-# }
+AWS_S3_REGION_NAME = "us-east-1"
+AWS_STORAGE_BUCKET_NAME = "auslympic-2024"
+AWS_S3_OBJECT_PARAMETERS = {
+    "StorageClass": "INTELLIGENT_TIERING",
+}
