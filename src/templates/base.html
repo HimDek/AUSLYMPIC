@@ -23,6 +23,19 @@
             -webkit-mask-position: right center;
             mask-position: right center;
         }
+
+        .masked-btn {
+            -webkit-mask-image: url('{% static "mask-button.svg" %}');
+            /* For WebKit-based browsers */
+            mask-image: url('{% static "mask-button.svg" %}');
+            /* Standard */
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
+        }
     </style>
     {% block head %}
     {% endblock %}

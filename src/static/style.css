@@ -34,3 +34,30 @@
 .y.proximity-scroll-snapping {
     scroll-snap-type: y proximity;
 }
+
+.cut-corner:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    border-top: 40px solid rgb(0, 0, 0);
+    border-right: 40px solid rgba(0, 0, 0, 0);
+    width: 0;
+}
+
+.cut-corner:after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    border-top: 40px solid rgba(0, 0, 0, 0);
+    border-right: 40px solid rgb(0, 0, 0);
+    width: 0;
+}
+
+.hide-down-container .hide-down {
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.hide-down-container:hover .hide-down {
+    transform: translateY(0%);
+}
