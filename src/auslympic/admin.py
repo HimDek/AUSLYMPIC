@@ -16,9 +16,12 @@ class DepartmentAdmin(admin.ModelAdmin):
 
 class SportAdmin(admin.ModelAdmin):
     form = SportForm
-    list_display = ("name",)
+    list_display = ("name", "custom_coordinators")
     search_fields = ("name",)
     inlines = [UserInline]
+
+    def custom_coordinators(self, obj):
+        return ", ".join([f"{coordinator.first_name} {coordinator.last_name}" for coordinator in obj.coordinators.all()])
 
 
 class TeamAdmin(admin.ModelAdmin):
