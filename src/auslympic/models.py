@@ -9,6 +9,13 @@ def sport_image_path(instance, filename):
     return f"sport_{instance.id}_{instance.name}{ext}"
 
 
+def get_first_name(self):
+    return f'{self.first_name} {self.last_name}'
+
+
+User.add_to_class("__str__", get_first_name)
+
+
 class Department(models.Model):
     DEPARTMENT_OPTIONS = {
         "Rabindranath Tagore School of Indian Languages & Cultural Studies": [
