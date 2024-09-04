@@ -134,8 +134,8 @@ STORAGES = {
     },
 }
 
-AWS_S3_REGION_NAME = "us-east-1"
-AWS_STORAGE_BUCKET_NAME = "auslympic-2024"
+AWS_S3_REGION_NAME = "ap-south-2"
+AWS_STORAGE_BUCKET_NAME = "auslympic-2024-ap-south"
 AWS_S3_OBJECT_PARAMETERS = {
     "StorageClass": "INTELLIGENT_TIERING",
 }
