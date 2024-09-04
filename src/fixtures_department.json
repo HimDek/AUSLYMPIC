@@ -1,0 +1,359 @@
+[
+    {
+        "model": "auslympic.department",
+        "pk": 1,
+        "fields": {
+            "name": "linguistics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 2,
+        "fields": {
+            "name": "bengali"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 3,
+        "fields": {
+            "name": "folkloristics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 4,
+        "fields": {
+            "name": "comparative_literature"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 5,
+        "fields": {
+            "name": "hindi"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 6,
+        "fields": {
+            "name": "manipuri"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 7,
+        "fields": {
+            "name": "sanskrit"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 8,
+        "fields": {
+            "name": "urdu"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 9,
+        "fields": {
+            "name": "assamese"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 10,
+        "fields": {
+            "name": "english"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 11,
+        "fields": {
+            "name": "arabic"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 12,
+        "fields": {
+            "name": "french"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 13,
+        "fields": {
+            "name": "economics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 14,
+        "fields": {
+            "name": "commerce"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 15,
+        "fields": {
+            "name": "political_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 16,
+        "fields": {
+            "name": "history"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 17,
+        "fields": {
+            "name": "sociology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 18,
+        "fields": {
+            "name": "social_work"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 19,
+        "fields": {
+            "name": "anthropology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 20,
+        "fields": {
+            "name": "mass_communication"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 21,
+        "fields": {
+            "name": "visual_arts"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 22,
+        "fields": {
+            "name": "performing_arts"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 23,
+        "fields": {
+            "name": "philosophy"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 24,
+        "fields": {
+            "name": "education"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 25,
+        "fields": {
+            "name": "educational_planning"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 26,
+        "fields": {
+            "name": "physics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 27,
+        "fields": {
+            "name": "chemistry"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 28,
+        "fields": {
+            "name": "soft_matter"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 29,
+        "fields": {
+            "name": "mathematics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 30,
+        "fields": {
+            "name": "statistics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 31,
+        "fields": {
+            "name": "computer_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 32,
+        "fields": {
+            "name": "instrumentation"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 33,
+        "fields": {
+            "name": "life_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 34,
+        "fields": {
+            "name": "bioinformatics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 35,
+        "fields": {
+            "name": "microbiology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 36,
+        "fields": {
+            "name": "biotechnology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 37,
+        "fields": {
+            "name": "business_administration"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 38,
+        "fields": {
+            "name": "ecology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 39,
+        "fields": {
+            "name": "biodiversity"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 40,
+        "fields": {
+            "name": "agricultural_engineering"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 41,
+        "fields": {
+            "name": "computer_engineering"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 42,
+        "fields": {
+            "name": "electronics_communications"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 43,
+        "fields": {
+            "name": "applied_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 44,
+        "fields": {
+            "name": "pharmaceutical_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 45,
+        "fields": {
+            "name": "earth_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 46,
+        "fields": {
+            "name": "geography"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 47,
+        "fields": {
+            "name": "library_information"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 48,
+        "fields": {
+            "name": "law"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 49,
+        "fields": {
+            "name": "computer_centre"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 50,
+        "fields": {
+            "name": "additional_courses"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 51,
+        "fields": {
+            "name": "central_library"
+        }
+    }
+]

@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<img src="{% static 'banner.jpg' %}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" alt="sport">
+
+<div class="vw-100 overflow-hidden">
+    <div class="text-body-emphasis bg-body-accent masked-background" style="min-width: 1280px;">
+        <div class="vw-100 p-4 p-md-5">
+            <div class="row gap-4 justify-content-center justify-content-sm-start">
+                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                    <img src="{% static 'logo.png' %}" class="w-100" />
+                </div>
+                <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
+                    <h1 class="display-3 fst-italic">LEADERBOARDS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-evenly flex-wrap gap-4 bg-body py-5">
+
+    <div class="accordion accordion-flush" id="accordion-dept">
+        {% for department in departments %}
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse-{{ department.name }}" aria-expanded="false"
+                    aria-controls="flush-collapse-{{ department.name }}">
+                    <div>
+                        <h4>
+                            {{ department }}
+                        </h4>
+                        <span>
+                            {% if department.gold_winner_count %}
+                            {{ department.gold_winner_count }} Gold
+                            {% endif }
+                            {% if department.silver_winner_count %}
+                            {{ department.silver_winner_count }} Silver
+                            {% endif }
+                            {% if department.bronze_winner_count %}
+                            {{ department.bronze_winner_count }} Bronze
+                            {% endif }
+                        </span>
+                    </div>
+                </button>
+            </h2>
+            <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse" data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-4">
+                    {% if sport.team_size_min > 1 %}
+                    <div class="accordion accordion-flush py-4" id="entries-accordion">
+                        {% for team in department.gold_winners.all %}
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false"
+                                    aria-controls="flush-collapse-{{ team.id }}">
+                                    <div>
+                                        <h3 class="fw-bold">{{ team.name }}</h3>
+                                        <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
+                                        <span>
+                                            {% if team.gold_winner %}
+                                            Gold
+                                            {% endif }
+                                            {% elif team.silver_winner %}
+                                            Silver
+                                            {% endif }
+                                            {% elif team.bronze_winner %}
+                                            Bronze
+                                            {% endif }
+                                            at team.sport
+                                        </span>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse"
+                                data-bs-parent="#entries-accordion">
+                                <div class="accordion-body">
+                                    <ol>
+                                        {% for member in team.members %}
+                                        <li class="py-2 h5">
+                                            {{ member }}
+                                        </li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% for team in department.silver_winners.all %}
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false"
+                                    aria-controls="flush-collapse-{{ team.id }}">
+                                    <div>
+                                        <h3 class="fw-bold">{{ team.name }}</h3>
+                                        <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
+                                        <span>
+                                            {% if team.gold_winner %}
+                                            Gold
+                                            {% endif }
+                                            {% elif team.silver_winner %}
+                                            Silver
+                                            {% endif }
+                                            {% elif team.bronze_winner %}
+                                            Bronze
+                                            {% endif }
+                                            at team.sport
+                                        </span>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse"
+                                data-bs-parent="#entries-accordion">
+                                <div class="accordion-body">
+                                    <ol>
+                                        {% for member in team.members %}
+                                        <li class="py-2 h5">
+                                            {{ member }}
+                                        </li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% for team in department.bronze_winners.all %}
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false"
+                                    aria-controls="flush-collapse-{{ team.id }}">
+                                    <div>
+                                        <h3 class="fw-bold">{{ team.name }}</h3>
+                                        <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
+                                        <span>
+                                            {% if team.gold_winner %}
+                                            Gold
+                                            {% endif }
+                                            {% elif team.silver_winner %}
+                                            Silver
+                                            {% endif }
+                                            {% elif team.bronze_winner %}
+                                            Bronze
+                                            {% endif }
+                                            at team.sport
+                                        </span>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse"
+                                data-bs-parent="#entries-accordion">
+                                <div class="accordion-body">
+                                    <ol>
+                                        {% for member in team.members %}
+                                        <li class="py-2 h5">
+                                            {{ member }}
+                                        </li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <ol class="list-group list-group-numbered">
+                        {% for team in department.gold_winners.all %}
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">{{ team.name }}</div>
+                                {{ team.department }}
+                                <span>
+                                    {% if team.gold_winner %}
+                                    Gold
+                                    {% endif }
+                                    {% elif team.silver_winner %}
+                                    Silver
+                                    {% endif }
+                                    {% elif team.bronze_winner %}
+                                    Bronze
+                                    {% endif }
+                                    at team.sport
+                                </span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        {% for team in department.silver_winners.all %}
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">{{ team.name }}</div>
+                                {{ team.department }}
+                                <span>
+                                    {% if team.gold_winner %}
+                                    Gold
+                                    {% endif }
+                                    {% elif team.silver_winner %}
+                                    Silver
+                                    {% endif }
+                                    {% elif team.bronze_winner %}
+                                    Bronze
+                                    {% endif }
+                                    at team.sport
+                                </span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        {% for team in department.bronze_winners.all %}
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">{{ team.name }}</div>
+                                {{ team.department }}
+                                <span>
+                                    {% if team.gold_winner %}
+                                    Gold
+                                    {% endif }
+                                    {% elif team.silver_winner %}
+                                    Silver
+                                    {% endif }
+                                    {% elif team.bronze_winner %}
+                                    Bronze
+                                    {% endif }
+                                    at team.sport
+                                </span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}

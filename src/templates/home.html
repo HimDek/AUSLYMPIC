@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<img src="{% static 'banner.jpg' %}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" alt="sport">
+
+<div class="vw-100 overflow-hidden">
+    <div class="text-body-emphasis bg-body-accent masked-background" style="min-width: 1280px;">
+        <div class="vw-100 p-4 p-md-5">
+            <div class="row gap-4 justify-content-center justify-content-sm-start">
+                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                    <img src="{% static 'logo.png' %}" class="w-100" />
+                </div>
+                <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
+                    <h1 class="display-5 fst-italic">Like You, We love Sports</h1>
+                    <div class="col-12 col-lg-8 px-0">
+                        <p class="lead my-3">
+                            Indulge in an exhilerating experience of the most thrilling sports you have ever
+                            witnessed.
+                            Compete
+                            or
+                            join us to spectate this spectacular event this year in AUSLYMPIC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-evenly flex-wrap gap-4 bg-body py-5">
+
+    {% for sport in sports %}
+    <a class="text-decoration-none" href="{% url 'sport' sport.id %}">
+        <div class="border shadow-sm h-md-150" style="width: 320px; height: 150px;">
+            <div class="p-4 d-flex flex-column masked-bg"
+                style="height: 150px; background: url('{{ sport.image.url }}') no-repeat center/cover;">
+            </div>
+            <div class="p-4 d-flex flex-column position-relative" style="height: 150px; top: -150px">
+                <h3 class="fs-4 mb-0 fg-accent mb-auto">{{ sport.name }}</h3>
+                <div class="mb-1 text-body-secondary">{{ sport.name }}</div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+
+</div>
+{% endblock %}

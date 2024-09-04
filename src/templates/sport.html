@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+<img src="{{ sport.image.url }}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" alt="sport">
+
+<div class="vw-100 overflow-hidden">
+    <div class="text-body-emphasis bg-body-accent masked-background" style="min-width: 1280px;">
+        <div class="vw-100 p-4 p-md-5">
+            <div class="row gap-4 justify-content-center justify-content-sm-start">
+                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                    <img src="{% static 'logo.png' %}" class="w-100" />
+                </div>
+                <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
+                    <h1 class="display-5 fst-italic">{{ sport.name }}</h1>
+                    <div class="col-12 col-lg-8 px-0">
+                        <p class="lead my-3">
+                            Contact Coordinators for any queries
+                        </p>
+                    </div>
+                    {% for coordinator in sport.coordinators.all %}
+                    <div class="my-3">
+                        <div class="fw-bold">{{ coordinator.first_name }} {{ coordinator.last_name }}</div>
+                        <a href="tel::+91-{{ coordinator.phone }}" class="text-decoration-none">
+                            +91-{{ coordinator.username }}
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-body py-5 d-flex align-items-center justify-content-center">
+
+    <div class="col-10 col-md-8">
+        <h3 class="display-5 fw-bold my-4">Register</h3>
+        <form action="#register-form" id="register-form" method="POST" class="py-4">
+            {% csrf_token %}
+            <div class="form-floating mb-3 d-none">
+                {{ team_form.sport }}
+                {{ team_form.sport.label_tag }}
+                {% if team_form.sport.help_text %}
+                <div class="form-text">
+                    {{ team_form.sport.help_text }}
+                </div>
+                {% endif %}
+            </div>
+            {% if team_form.sport.errors %}
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle"></i>
+                {% for error in team_form.sport.errors %}
+                <span>{{ error|escape }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="form-floating mb-3">
+                {{ team_form.name }}
+                {{ team_form.name.label_tag }}
+                {% if team_form.name.help_text %}
+                <div class="form-text">
+                    {{ team_form.name.help_text }}
+                </div>
+                {% endif %}
+            </div>
+            {% if team_form.name.errors %}
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle"></i>
+                {% for error in team_form.name.errors %}
+                <span>{{ error|escape }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="form-floating mb-3">
+                {{ team_form.department }}
+                {{ team_form.department.label_tag }}
+                {% if team_form.department.help_text %}
+                <div class="form-text">
+                    {{ team_form.department.help_text }}
+                </div>
+                {% endif %}
+            </div>
+            {% if team_form.department.errors %}
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle"></i>
+                {% for error in team_form.department.errors %}
+                <span>{{ error|escape }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="form-floating mb-3">
+                {{ team_form.members }}
+                {{ team_form.members.label_tag }}
+                {% if team_form.members.help_text %}
+                <div class="form-text">
+                    {{ team_form.members.help_text }}
+                </div>
+                {% endif %}
+            </div>
+            {% if team_form.members.errors %}
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle"></i>
+                {% for error in team_form.members.errors %}
+                <span>{{ error|escape }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <input type="submit" class="btn bg-hover-accent bg-accent btn-lg mb-3 w-100 rounded-0" value="Submit">
+            {% if success %}
+            <div class="alert alert-success" role="alert">
+                <i class="bi bi-check-circle"></i>
+                <span>{{ success }}</span>
+            </div>
+            {% endif %}
+            {% if error %}
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle"></i>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+            {% if warning %}
+            <div class="alert alert-warning" role="alert">
+                <i class="bi bi-exclamation-circle"></i>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+        </form>
+
+        {% if created %}
+        <h3 class="fw-bold my-4">The following entry has been registered</h3>
+        <div class="col-10 col-md-8 col-lg-6">
+            <h3 class="display-5 fw-bold">{{ created.name }}</h3>
+            <h5 class="text-secondary-emphasis">{{ created.department }}</h5>
+            <p class="text-secondary">Entry ID: {{ created.id }}</p>
+            {% if created.sport.team_size_min > 1 %}
+            <ol>
+                {% for member in created.members %}
+                <li class="py-2 h5">
+                    {{ member }}
+                </li>
+                {% endfor %}
+            </ol>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if teams.all|length > 0 %}
+        <h3 class="display-5 fw-bold my-4">Registered entries</h3>
+        {% if sport.team_size_min > 1 %}
+        <div class="accordion accordion-flush py-4" id="entries-accordion">
+            {% for team in teams.all %}
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false" aria-controls="flush-collapse-{{ team.id }}">
+                        <div>
+                            <h3 class="fw-bold">{{ team.name }}</h3>
+                            <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
+                            <p class="text-secondary">Entry ID: {{ team.id }}</p>
+                        </div>
+                    </button>
+                </h2>
+                <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse" data-bs-parent="#entries-accordion">
+                    <div class="accordion-body">
+                        <ol>
+                            {% for member in team.members %}
+                            <li class="py-2 h5">
+                                {{ member }}
+                            </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <ol class="list-group list-group-numbered">
+            {% for team in teams.all %}
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{ team.name }}</div>
+                    {{ team.department }}
+                    <p class="text-secondary">Entry ID: {{ team.id }}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+        {% endif %}
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}

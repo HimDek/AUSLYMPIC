@@ -1,0 +1,62 @@
+.bg-accent {
+    background-color: rgb(137, 102, 233);
+    font-weight: bold;
+}
+
+.bg-hover-accent:hover {
+    background-color: #302752;
+}
+
+.bg-body-accent {
+    background-color: #302752;
+}
+
+.fg-accent {
+    color: rgb(163, 137, 255);
+}
+
+.bg-body {
+    background-color: black !important;
+}
+
+.x.mandatory-scroll-snapping {
+    scroll-snap-type: x mandatory;
+}
+
+.x.proximity-scroll-snapping {
+    scroll-snap-type: x proximity;
+}
+
+.y.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+}
+
+.y.proximity-scroll-snapping {
+    scroll-snap-type: y proximity;
+}
+
+.masked-background {
+    -webkit-mask-image: url('mask.svg');
+    /* For WebKit-based browsers */
+    mask-image: url('mask.svg');
+    /* Standard */
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: right center;
+    mask-position: right center;
+}
+
+.masked-bg {
+    -webkit-mask-image: url('mask-2.svg');
+    /* For WebKit-based browsers */
+    mask-image: url('mask-2.svg');
+    /* Standard */
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: right center;
+    mask-position: right center;
+}
