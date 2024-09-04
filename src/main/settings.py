@@ -1,3 +1,4 @@
+import os
 from .settings_base import *
 
 if os.getenv('POSTGRES_DATABASE'):
