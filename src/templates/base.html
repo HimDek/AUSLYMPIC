@@ -44,14 +44,14 @@
     <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title fw-bold fs-4" id="offcanvasRightLabel">SPORTS</h5>
+            <h5 class="offcanvas-title fw-bold fs-4 text-uppercase" id="offcanvasRightLabel">SPORTS</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
                 {% for sport in sports %}
                 <li class="nav-item">
-                    <a class="nav-link active fs-5" href="{% url 'sport' sport.id %}">{{ sport.name }}</a>
+                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'sport' sport.id %}">{{ sport.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -71,16 +71,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-3 w-100">
                         <li class="nav-item">
-                            <a class="nav-link active fs-5" aria-current="page" href="{% url 'home' %}">HOME</a>
+                            <a class="nav-link active fs-5 text-uppercase" aria-current="page" href="{% url 'home' %}">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-5" href="{% url 'leaderboard' %}">LEADERBOARD</a>
+                            <a class="nav-link active fs-5 text-uppercase" href="{% url 'leaderboard' %}">LEADERBOARD</a>
                         </li>
                         <li class="nav-item me-auto">
-                            <a class="nav-link active fs-5" href="{% url 'notices' %}">NOTICES</a>
+                            <a class="nav-link active fs-5 text-uppercase" href="{% url 'notices' %}">NOTICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-5" data-bs-toggle="offcanvas" href="#offcanvasRight"
+                            <a class="nav-link active fs-5 text-uppercase" data-bs-toggle="offcanvas" href="#offcanvasRight"
                                 role="button" aria-controls="offcanvasRight">
                                 SPORTS
                             </a>
