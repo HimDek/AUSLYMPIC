@@ -1,7 +1,7 @@
 from django.views.generic.base import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count, Q
-from .models import Sport, Department, SportGroup
+from .models import Sport, Department, SportGroup, Notice
 from .forms import TeamForm
 
 
@@ -59,12 +59,31 @@ class LeaderBoard(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["sports"] = Sport.objects.all()
-        context["departments"] = Department.objects.all().annotate(
-            gold_winner_count=Count("teams", filter=Q(teams__gold_winner=True)),
-            silver_winner_count=Count("teams", filter=Q(teams__silver_winner=True)),
-            bronze_winner_count=Count("teams", filter=Q(teams__bronze_winner=True)),
-        ).order_by(
-            "-gold_winner_count", "-silver_winner_count", "-bronze_winner_count"
+        context["departments"] = (
+            Department.objects.annotate(
+                gold_winner_count=Count("teams", filter=Q(teams__gold_winner=True)),
+                silver_winner_count=Count("teams", filter=Q(teams__silver_winner=True)),
+                bronze_winner_count=Count("teams", filter=Q(teams__bronze_winner=True)),
+            )
+            .filter(
+                Q(gold_winner_count__gt=0)
+                | Q(silver_winner_count__gt=0)
+                | Q(bronze_winner_count__gt=0)
+            )
+            .order_by(
+                "-gold_winner_count", "-silver_winner_count", "-bronze_winner_count"
+            )
         )
+
+        return context
+
+
+class NoticeView(TemplateView):
+    template_name = "notices.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["sports"] = Sport.objects.all()
+        context["notices"] = Notice.objects.all().order_by("-modified", "-added")
 
         return context

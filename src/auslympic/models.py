@@ -6,11 +6,26 @@ from django.contrib.auth.models import User
 
 def sport_image_path(instance, filename):
     base, ext = os.path.splitext(filename)
-    return f"sport_{instance.id}_{instance.name}{ext}"
+    return f"sport_{instance.id}_{instance.name}_image{ext}"
+
+
+def sport_fixture_path(instance, filename):
+    base, ext = os.path.splitext(filename)
+    return f"sport_{instance.id}_{instance.name}_fixture{ext}"
+
+
+def sport_rulebook_path(instance, filename):
+    base, ext = os.path.splitext(filename)
+    return f"sport_{instance.id}_{instance.name}_rulebook{ext}"
+
+
+def notice_file_path(instance, filename):
+    base, ext = os.path.splitext(filename)
+    return f"sport_{instance.id}_{instance.name}_notice{ext}"
 
 
 def get_first_name(self):
-    return f'{self.first_name} {self.last_name}'
+    return f"{self.first_name} {self.last_name}"
 
 
 User.add_to_class("__str__", get_first_name)
@@ -138,8 +153,12 @@ class Sport(models.Model):
         upload_to=sport_image_path, blank=True, null=False, default="/static/banner.jpg"
     )
     coordinators = models.ManyToManyField(User, blank=True, related_name="sport")
+
     team_size_min = models.PositiveIntegerField(default=1)
     team_size_max = models.PositiveIntegerField(default=1)
+
+    fixtures = models.FileField(upload_to=sport_fixture_path, blank=True, null=True)
+    rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
 
     @property
     def gold_winners(self):
@@ -204,6 +223,9 @@ class Team(models.Model):
 class Notice(models.Model):
     title = models.CharField(max_length=100)
     text = models.TextField()
+    file = models.FileField(upload_to=notice_file_path, blank=True, null=True)
+    added = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
 
 class SportGroup(models.Model):
@@ -212,7 +234,7 @@ class SportGroup(models.Model):
     sports = models.ManyToManyField(Sport, related_name="group")
 
     class Meta:
-        unique_together = [['name', 'sub']]
+        unique_together = [["name", "sub"]]
 
     def __str__(self):
         return self.name
