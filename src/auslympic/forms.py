@@ -80,9 +80,9 @@ class TeamForm(forms.ModelForm):
         department = cleaned_data.get('department')
 
         if sport and department and sport.department_limit:
-            current_count = Team.objects.filter(sport=self.sport, department=self.department).count()
-            if self.instance.pk is None and current_count >= self.sport.department_limit:
-                raise ValidationError(f'Cannot have more than {self.sport.department_limit} teams for {self.sport} from {self.department}.')
+            current_count = Team.objects.filter(sport=sport, department=department).count()
+            if self.instance.pk is None and current_count >= sport.department_limit:
+                raise ValidationError(f'Cannot have more than {sport.department_limit} teams for {sport} from {department}.')
 
         return cleaned_data
 
