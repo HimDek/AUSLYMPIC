@@ -224,10 +224,10 @@ class Team(models.Model):
     #     ]
 
     def save(self, *args, **kwargs):
-        if self.sport.limit:
+        if self.sport.department_limit:
             current_count = Team.objects.filter(sport=self.sport, department=self.department).count()
-            if self.pk is None and current_count >= self.sport.limit:
-                raise ValidationError(f'Cannot have more than {self.sport.limit} teams for {self.sport} from {self.department}.')
+            if self.pk is None and current_count >= self.sport.department_limit:
+                raise ValidationError(f'Cannot have more than {self.sport.department_limit} teams for {self.sport} from {self.department}.')
         super().save(*args, **kwargs)
 
     def __str__(self):
