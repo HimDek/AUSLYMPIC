@@ -99,6 +99,34 @@
 
         {% block body %}{% endblock %}
 
+        <footer class="px-5 py-5 bg-primary-subtle">
+
+
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="{% url 'leaderboard' %}"
+                        class="nav-link px-2 text-body-secondary">Leaderboard</a></li>
+                <li class="nav-item"><a href="{% url 'notices' %}" class="nav-link px-2 text-body-secondary">Notices</a>
+                </li>
+                <li class="nav-item"><a href="{% url 'merch' %}" class="nav-link px-2 text-body-secondary">Merch</a>
+                </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+                <p>© 2024 AUSLYMPIC Organizing Comitte, Assam University, Silchar. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
     <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
