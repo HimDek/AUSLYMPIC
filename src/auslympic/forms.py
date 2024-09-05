@@ -15,6 +15,7 @@ class SportForm(forms.ModelForm):
             "fixtures",
             "team_size_min",
             "team_size_max",
+            "department_limit",
         ]
 
     def __init__(self, *args, **kwargs):
