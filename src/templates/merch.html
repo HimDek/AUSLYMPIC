@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% load humanize %}
+
+{% block title %}NOTICES |{% endblock %}
+
+{% block body %}
+<div class="vw-100 overflow-hidden bg-primary">
+    <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
+        <div class="vw-100 p-4 p-md-5">
+            <div class="row gap-4 justify-content-center justify-content-sm-start align-items-center">
+                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                    <img src="{% static 'logo.png' %}" class="w-100" />
+                </div>
+                <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
+                    <h1 class="display-6 fst-italic">The official AUSLYMPIC 2024 Jersey has arrived.</h1>
+                    <div class="col-12 col-lg-8 px-0">
+                        <p class="lead my-3">
+                            Complete the Survey to secure one for yourself. Hurry, only limited pieces available!
+                        </p>
+                    </div>
+                    <a class="icon-link icon-link-hover" target="_blank"
+                        href="https://surveyheart.com/form/66d1dca03d8bc046aab06e57">
+                        Open Survey
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <img src="{% static 'black-jersey.png' %}" class="w-100" alt="Jersey Black">
+    <img src="{% static 'white-jersey.png' %}" class="w-100" alt="Jersey White">
+</div>
+{% endblock %}

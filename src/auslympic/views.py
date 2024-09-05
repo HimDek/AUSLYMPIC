@@ -103,3 +103,13 @@ class NoticeView(TemplateView):
         context["notices"] = Notice.objects.all().order_by("-modified", "-added")
 
         return context
+
+
+class MerchView(TemplateView):
+    template_name = "merch.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["groups"] = SportGroup.objects.all()
+
+        return context
