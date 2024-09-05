@@ -64,7 +64,7 @@
             <div id="collapse-{{ department.name }}" class="accordion-collapse collapse"
                 data-bs-parent="#accordion-dept">
                 <div class="accordion-body p-3">
-                    <ol class="list-group list-group-numbered">
+                    <ol class="list-group-flush list-group-numbered">
                         {% for team in department.gold_winners.all %}
                         <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none">
                             <li class="list-group-item d-flex justify-content-between align-items-start p-3">
@@ -98,7 +98,7 @@
                         {% endfor %}
                         {% for team in department.silver_winners.all %}
                         <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none">
-                            <li class="list-group-item d-flex justify-content-between align-items-start p-3">
+                            <li class="list-group-item-flush d-flex justify-content-between align-items-start p-3">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
                                     {{ team.department }}
