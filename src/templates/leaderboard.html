@@ -63,7 +63,7 @@
             </h2>
             <div id="collapse-{{ department.name }}" class="accordion-collapse collapse"
                 data-bs-parent="#accordion-dept">
-                <div class="accordion-body">
+                <div class="accordion-body p-3">
                     <ol class="list-group list-group-numbered">
                         {% for team in department.gold_winners.all %}
                         <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none">
