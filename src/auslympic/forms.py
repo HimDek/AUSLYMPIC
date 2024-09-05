@@ -7,7 +7,14 @@ import json
 class SportForm(forms.ModelForm):
     class Meta:
         model = Sport
-        fields = ["name", "image", "rulebook", "fixtures", "team_size_min", "team_size_max"]
+        fields = [
+            "name",
+            "image",
+            "rulebook",
+            "fixtures",
+            "team_size_min",
+            "team_size_max",
+        ]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -28,7 +35,7 @@ class TeamForm(forms.ModelForm):
         widget=forms.TextInput(
             attrs={"class": "form-control rounded-0", "placeholder": "Name"}
         ),
-        help_text="Team name or Player name",
+        help_text="Participant Name or Team Name",
         label="Name",
     )
     department = forms.ModelChoiceField(
@@ -43,9 +50,9 @@ class TeamForm(forms.ModelForm):
         empty_label="Select",
     )
     members = forms.CharField(
-        widget=forms.Textarea(attrs={"rows": 3, "class": "form-control rounded-0"}),
-        help_text="Enter full name of members comma-separated. (Only for Team Sport)",
-        label="Members",
+        widget=forms.TextInput(attrs={"class": "form-control rounded-0", "Placeholder": "Member"}),
+        help_text="Name the Captain first, then the other Members of the Team.",
+        label="Member",
         required=False,
     )
 
@@ -64,17 +71,9 @@ class TeamForm(forms.ModelForm):
         try:
             # Normalize quotes: replace single quotes with double quotes for valid JSON
             members = members.replace("'", '"')
-            parsed_members = json.loads(members)
-            # Ensure it's a list of strings
-            if isinstance(parsed_members, list) and all(
-                isinstance(name, str) for name in parsed_members
-            ):
-                return parsed_members
+            members = json.loads(members)
         except json.JSONDecodeError:
-            pass  # If JSON parsing fails, fallback to comma-separated parsing
-
-        # Fallback: treat as a comma-separated list if not valid JSON
-        members = [name.strip() for name in members.split(",") if name.strip()]
+            members = [name.strip() for name in members.split(",") if name.strip()]
 
         # Retrieve the selected sport
         sport = self.cleaned_data.get("sport")

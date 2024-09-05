@@ -58,6 +58,12 @@
             {% endif %}
         </span>
         <h3 class="display-5 fw-bold my-4">Register</h3>
+        <div id="register-form-member" class="d-none">
+            <div class="form-floating mb-3">
+                <input type="text" name="members" class="form-control rounded-0" placeholder="Member number">
+                <label>Member number</label>
+            </div>
+        </div>
         <form action="#register-form" id="register-form" method="POST" class="py-4">
             {% csrf_token %}
             <div class="form-floating mb-3 d-none">
@@ -111,15 +117,25 @@
                 {% endfor %}
             </div>
             {% endif %}
-            <div class="form-floating mb-3">
-                {{ team_form.members }}
+
+            {% if sport.team_size_min != 1 or sport.team_size_max != 1 %}
+            <div id="register-form-members">
                 {{ team_form.members.label_tag }}
                 {% if team_form.members.help_text %}
-                <div class="form-text">
+                <div class="form-text mb-2">
                     {{ team_form.members.help_text }}
                 </div>
                 {% endif %}
+                <div id="register-form-member-1">
+                    <div class="form-floating mb-3">
+                        {{ team_form.members }}
+                        <label>Member 1</label>
+                    </div>
+                </div>
             </div>
+            <input type="button" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Add Member"
+                onclick="addMember();">
+            {% endif %}
             {% if team_form.members.errors %}
             <div class="alert alert-danger" role="alert">
                 <i class="bi bi-exclamation-triangle fs-6 m-2"></i>
@@ -158,7 +174,7 @@
             {% if created.sport.team_size_min > 1 %}
             <ol>
                 {% for member in created.members %}
-                <li class="py-2 h5">
+                <li class="py-3 mb-0 h5">
                     {{ member }}
                 </li>
                 {% endfor %}
@@ -172,11 +188,11 @@
         {% if sport.team_size_min == 1 and sport.team_size_max == 1 %}
         <ol class="list-group list-group-numbered">
             {% for team in teams.all %}
-            <li class="list-group-item d-flex justify-content-between align-items-start">
+            <li class="list-group-item d-flex justify-content-between align-items-start py-3">
                 <div class="ms-2 me-auto">
                     <div class="fw-bold">{{ team.name }}</div>
                     {{ team.department }}
-                    <p class="text-secondary">Entry ID: {{ team.id }}</p>
+                    <p class="text-secondary mb-0">Entry ID: {{ team.id }}</p>
                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                         {% if team.gold_winner %}
                         <span
@@ -243,7 +259,7 @@
                     <div class="accordion-body">
                         <ol>
                             {% for member in team.members %}
-                            <li class="py-2 h5">
+                            <li class="py-3 mb-0 h5">
                                 {{ member }}
                             </li>
                             {% endfor %}
@@ -258,4 +274,17 @@
     </div>
 
 </div>
+
+<script>
+    var member_count = 1;
+    function addMember() {
+        member_count++;
+        input = document.getElementById("register-form-member").innerHTML;
+        el = document.createElement("div");
+        el.setAttribute("id", `register-form-member-${member_count}`);
+        el.innerHTML = input.replace(/number/g, `${member_count}`);
+        document.getElementById("register-form-members").appendChild(el);
+    }
+</script>
+
 {% endblock %}
