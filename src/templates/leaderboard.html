@@ -34,15 +34,36 @@
                         <h4>
                             {{ department }}
                         </h4>
-                        <span>
+                        <span class="d-flex gap-2 justify-content-start align-items-center">
                             {% if department.gold_winner_count %}
-                            {{ department.gold_winner_count }} Gold
+                            <span
+                                class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                <i class="bi bi-award"></i>
+                                <div class="d-flex flex-column justify-content-center align-items-start">
+                                    <div>{{ department.gold_winner_count }}</div>
+                                    <div>Gold</div>
+                                </div>
+                            </span>
                             {% endif %}
                             {% if department.silver_winner_count %}
-                            {{ department.silver_winner_count }} Silver
+                            <span
+                                class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                <i class="bi bi-award"></i>
+                                <div class="d-flex flex-column justify-content-center align-items-start">
+                                    <div>{{ department.silver_winner_count }}</div>
+                                    <div>Silver</div>
+                                </div>
+                            </span>
                             {% endif %}
                             {% if department.bronze_winner_count %}
-                            {{ department.bronze_winner_count }} Bronze
+                            <span
+                                class="badge d-flex align-items-center p-1 pe-2 text-error-emphasis bg-error-subtle border border-error-subtle rounded-pill">
+                                <i class="bi bi-award"></i>
+                                <div class="d-flex flex-column justify-content-center align-items-start">
+                                    <div>{{ department.bronze_winner_count }}</div>
+                                    <div>Bronze</div>
+                                </div>
+                            </span>
                             {% endif %}
                         </span>
                     </div>
@@ -61,15 +82,38 @@
                                     <div>
                                         <h3 class="fw-bold">{{ team.name }}</h3>
                                         <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
-                                        <span>
+                                        <span class="d-flex gap-2 justify-content-start align-items-center">
                                             {% if team.gold_winner %}
-                                            Gold
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Gold</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% elif team.silver_winner %}
-                                            Silver
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Silver</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% elif team.bronze_winner %}
-                                            Bronze
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Bronze</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% endif %}
-                                            at team.sport
                                         </span>
                                     </div>
                                 </button>
@@ -97,15 +141,38 @@
                                     <div>
                                         <h3 class="fw-bold">{{ team.name }}</h3>
                                         <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
-                                        <span>
+                                        <span class="d-flex gap-2 justify-content-start align-items-center">
                                             {% if team.gold_winner %}
-                                            Gold
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Gold</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% elif team.silver_winner %}
-                                            Silver
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Silver</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% elif team.bronze_winner %}
-                                            Bronze
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Bronze</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% endif %}
-                                            at team.sport
                                         </span>
                                     </div>
                                 </button>
@@ -133,15 +200,38 @@
                                     <div>
                                         <h3 class="fw-bold">{{ team.name }}</h3>
                                         <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
-                                        <span>
+                                        <span class="d-flex gap-2 justify-content-start align-items-center">
                                             {% if team.gold_winner %}
-                                            Gold
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Gold</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% elif team.silver_winner %}
-                                            Silver
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Silver</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% elif team.bronze_winner %}
-                                            Bronze
+                                            <span
+                                                class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                                <i class="bi bi-award"></i>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-start">
+                                                    <div>Bronze</div>
+                                                    <div>at {{ team.sport }}</div>
+                                                </div>
+                                            </span>
                                             {% endif %}
-                                            at team.sport
                                         </span>
                                     </div>
                                 </button>
@@ -168,15 +258,35 @@
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
                                 {{ team.department }}
-                                <span>
+                                <span class="d-flex gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
-                                    Gold
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Gold</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% elif team.silver_winner %}
-                                    Silver
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Silver</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% elif team.bronze_winner %}
-                                    Bronze
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Bronze</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% endif %}
-                                    at team.sport
                                 </span>
                             </div>
                         </li>
@@ -186,15 +296,35 @@
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
                                 {{ team.department }}
-                                <span>
+                                <span class="d-flex gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
-                                    Gold
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Gold</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% elif team.silver_winner %}
-                                    Silver
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Silver</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% elif team.bronze_winner %}
-                                    Bronze
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Bronze</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% endif %}
-                                    at team.sport
                                 </span>
                             </div>
                         </li>
@@ -204,15 +334,35 @@
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
                                 {{ team.department }}
-                                <span>
+                                <span class="d-flex gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
-                                    Gold
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Gold</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% elif team.silver_winner %}
-                                    Silver
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Silver</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% elif team.bronze_winner %}
-                                    Bronze
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                        <i class="bi bi-award"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-start">
+                                            <div>Bronze</div>
+                                            <div>at {{ team.sport }}</div>
+                                        </div>
+                                    </span>
                                     {% endif %}
-                                    at team.sport
                                 </span>
                             </div>
                         </li>

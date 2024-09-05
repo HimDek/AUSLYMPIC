@@ -4,7 +4,8 @@
 {% block title %}{{ sport.name }} | {% endblock %}
 
 {% block body %}
-<img src="{{ sport.image.url }}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" style="object-position: top;" alt="sport">
+<img src="{{ sport.image.url }}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" style="object-position: top;"
+    alt="sport">
 
 <div class="vw-100 overflow-hidden">
     <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
@@ -149,21 +150,95 @@
 
         {% if teams.all|length > 0 %}
         <h3 class="display-5 fw-bold my-4">Registered entries</h3>
-        {% if sport.team_size_min > 1 %}
+        {% if sport.team_size_min == 1 and sport.team_size_max == 1 %}
+        <ol class="list-group list-group-numbered">
+            {% for team in teams.all %}
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{ team.name }}</div>
+                    {{ team.department }}
+                    <p class="text-secondary">Entry ID: {{ team.id }}</p>
+                    <span class="d-flex gap-2 justify-content-start align-items-center">
+                        {% if team.gold_winner %}
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                            <i class="bi bi-award"></i>
+                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                <div>Gold</div>
+                                <div>at {{ team.sport }}</div>
+                            </div>
+                        </span>
+                        {% elif team.silver_winner %}
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                            <i class="bi bi-award"></i>
+                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                <div>Silver</div>
+                                <div>at {{ team.sport }}</div>
+                            </div>
+                        </span>
+                        {% elif team.bronze_winner %}
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                            <i class="bi bi-award"></i>
+                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                <div>Bronze</div>
+                                <div>at {{ team.sport }}</div>
+                            </div>
+                        </span>
+                        {% endif %}
+                    </span>
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+        {% else %}
         <div class="accordion" id="entries-accordion">
             {% for team in teams.all %}
             <div class="accordion-item rounded-0">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false" aria-controls="flush-collapse-{{ team.id }}">
+                        data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false"
+                        aria-controls="flush-collapse-{{ team.id }}">
                         <div>
                             <h3 class="fw-bold">{{ team.name }}</h3>
                             <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
                             <p class="text-secondary">Entry ID: {{ team.id }}</p>
+                            <span class="d-flex gap-2 justify-content-start align-items-center">
+                                {% if team.gold_winner %}
+                                <span
+                                    class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                    <i class="bi bi-award"></i>
+                                    <div class="d-flex flex-column justify-content-center align-items-start">
+                                        <div>Gold</div>
+                                        <div>at {{ team.sport }}</div>
+                                    </div>
+                                </span>
+                                {% elif team.silver_winner %}
+                                <span
+                                    class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                    <i class="bi bi-award"></i>
+                                    <div class="d-flex flex-column justify-content-center align-items-start">
+                                        <div>Silver</div>
+                                        <div>at {{ team.sport }}</div>
+                                    </div>
+                                </span>
+                                {% elif team.bronze_winner %}
+                                <span
+                                    class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
+                                    <i class="bi bi-award"></i>
+                                    <div class="d-flex flex-column justify-content-center align-items-start">
+                                        <div>Bronze</div>
+                                        <div>at {{ team.sport }}</div>
+                                    </div>
+                                </span>
+                                {% endif %}
+                            </span>
                         </div>
                     </button>
                 </h2>
-                <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse" data-bs-parent="#entries-accordion">
+                <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse"
+                    data-bs-parent="#entries-accordion">
                     <div class="accordion-body">
                         <ol>
                             {% for member in team.members %}
@@ -177,18 +252,6 @@
             </div>
             {% endfor %}
         </div>
-        {% else %}
-        <ol class="list-group list-group-numbered">
-            {% for team in teams.all %}
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                    <div class="fw-bold">{{ team.name }}</div>
-                    {{ team.department }}
-                    <p class="text-secondary">Entry ID: {{ team.id }}</p>
-                </div>
-            </li>
-            {% endfor %}
-        </ol>
         {% endif %}
         {% endif %}
     </div>
