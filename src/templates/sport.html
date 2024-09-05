@@ -42,10 +42,10 @@
             <a class="text-decoration-none" href="{{ sport.rulebook.url }}">
                 <span
                     class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                    <i class="bi bi-calendar-week fs-6 m-2"></i>
+                    <i class="bi bi-calendar-week fs-4 m-2"></i>
                     <div class="d-flex flex-column justify-content-center align-items-start">
-                        <div>{{ sport.rulebook.name }}</div>
-                        <div>Rulebook</div>
+                        <div class="text-primary">{{ sport.rulebook.name }}</div>
+                        <small class="text-primary-emphasis">Rulebook</small>
                     </div>
                 </span>
             </a>
@@ -54,10 +54,10 @@
             <a class="text-decoration-none" href="{{ sport.fixtures.url }}">
                 <span
                     class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                    <i class="bi bi-card-list fs-6 m-2"></i>
+                    <i class="bi bi-card-list fs-4 m-2"></i>
                     <div class="d-flex flex-column justify-content-center align-items-start">
-                        <div>{{ sport.fixtures.name }}</div>
-                        <div>Fixtures</div>
+                        <div class="text-primary">{{ sport.fixtures.name }}</div>
+                        <small class="text-primary-emphasis">Fixtures</small>
                     </div>
                 </span>
             </a>
@@ -188,28 +188,19 @@
                         <span
                             class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                             <i class="bi bi-award fs-6 m-2"></i>
-                            <div class="d-flex flex-column justify-content-center align-items-start">
-                                <div>Gold</div>
-                                <div>at {{ team.sport }}</div>
-                            </div>
+                            Gold
                         </span>
                         {% elif team.silver_winner %}
                         <span
                             class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                             <i class="bi bi-award fs-6 m-2"></i>
-                            <div class="d-flex flex-column justify-content-center align-items-start">
-                                <div>Silver</div>
-                                <div>at {{ team.sport }}</div>
-                            </div>
+                            Silver
                         </span>
                         {% elif team.bronze_winner %}
                         <span
                             class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
                             <i class="bi bi-award fs-6 m-2"></i>
-                            <div class="d-flex flex-column justify-content-center align-items-start">
-                                <div>Bronze</div>
-                                <div>at {{ team.sport }}</div>
-                            </div>
+                            Bronze
                         </span>
                         {% endif %}
                     </span>
@@ -234,28 +225,19 @@
                                 <span
                                     class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                     <i class="bi bi-award fs-6 m-2"></i>
-                                    <div class="d-flex flex-column justify-content-center align-items-start">
-                                        <div>Gold</div>
-                                        <div>at {{ team.sport }}</div>
-                                    </div>
+                                    Gold
                                 </span>
                                 {% elif team.silver_winner %}
                                 <span
                                     class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                     <i class="bi bi-award fs-6 m-2"></i>
-                                    <div class="d-flex flex-column justify-content-center align-items-start">
-                                        <div>Silver</div>
-                                        <div>at {{ team.sport }}</div>
-                                    </div>
+                                    Silver
                                 </span>
                                 {% elif team.bronze_winner %}
                                 <span
                                     class="badge d-flex align-items-center p-1 pe-2 text-bronze-emphasis bg-bronze-subtle border border-bronze-subtle rounded-pill">
                                     <i class="bi bi-award fs-6 m-2"></i>
-                                    <div class="d-flex flex-column justify-content-center align-items-start">
-                                        <div>Bronze</div>
-                                        <div>at {{ team.sport }}</div>
-                                    </div>
+                                    Bronze
                                 </span>
                                 {% endif %}
                             </span>
