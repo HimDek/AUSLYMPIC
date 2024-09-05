@@ -208,8 +208,8 @@
             <div class="accordion-item rounded-0">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false"
-                        aria-controls="flush-collapse-{{ team.id }}">
+                        data-bs-target="#collapse-{{ team.id }}" aria-expanded="false"
+                        aria-controls="collapse-{{ team.id }}">
                         <div>
                             <h3 class="fw-bold">{{ team.name }}</h3>
                             <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
@@ -238,7 +238,7 @@
                         </div>
                     </button>
                 </h2>
-                <div id="flush-collapse-{{ team.id }}" class="accordion-collapse collapse"
+                <div id="collapse-{{ team.id }}" class="accordion-collapse collapse"
                     data-bs-parent="#entries-accordion">
                     <div class="accordion-body">
                         <ol>
