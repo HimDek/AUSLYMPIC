@@ -21,7 +21,7 @@ def sport_rulebook_path(instance, filename):
 
 def notice_file_path(instance, filename):
     base, ext = os.path.splitext(filename)
-    return f"sport_{instance.id}_{instance.name}_notice{ext}"
+    return f"sport_{instance.id}_notice{ext}"
 
 
 def get_first_name(self):
