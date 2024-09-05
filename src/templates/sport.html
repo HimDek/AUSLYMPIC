@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load humanize %}
 
 {% block title %}{{ sport.name }} | {% endblock %}
 
@@ -60,6 +61,7 @@
 
         {% if team_form %}
         <h3 class="display-5 fw-bold my-4">Register</h3>
+        <small>Open till {{ sport.registration_deadline }}</small>
         <div id="register-form-member" class="d-none">
             <div class="form-floating mb-3">
                 <input type="text" name="members" class="form-control rounded-0" placeholder="Member number">
@@ -183,6 +185,8 @@
             </div>
             {% endif %}
         </form>
+        {% else %}
+        <h4 class="fw-bold my-4">Registration has closed on {{ sport.registration_deadline }}</h4>
         {% endif %}
 
         {% if created %}

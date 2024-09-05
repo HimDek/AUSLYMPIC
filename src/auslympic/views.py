@@ -1,5 +1,5 @@
 import json
-import datetime
+from django.utils import timezone
 from django.views.generic.base import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count, Q
@@ -55,7 +55,7 @@ class SportView(TemplateView):
         context["sport"] = sport
         context["teams"] = teams
 
-        if sport.registration_deadline >= datetime.date.today():
+        if sport.registration_deadline >= timezone.datetime.now().date():
             context["team_form"] = TeamForm(initial={"sport": sport.id})
 
         return context

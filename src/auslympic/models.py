@@ -1,6 +1,6 @@
 import os
-import datetime
 from django.db import models
+from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
@@ -162,7 +162,7 @@ class Sport(models.Model):
     fixtures = models.FileField(upload_to=sport_fixture_path, blank=True, null=True)
     rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
 
-    registration_deadline = models.DateField(blank=False, null=False, default=datetime.date(2024, 9, 16))
+    registration_deadline = models.DateField(blank=False, null=False, default=timezone.datetime(2024, 9, 16).date())
 
     @property
     def gold_winners(self):
