@@ -7,7 +7,7 @@ import json
 class SportForm(forms.ModelForm):
     class Meta:
         model = Sport
-        fields = ["name", "image", "team_size_min", "team_size_max"]
+        fields = ["name", "image", "rulebook", "fixtures", "team_size_min", "team_size_max"]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
