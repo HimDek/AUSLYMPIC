@@ -43,10 +43,10 @@
                         {{ notice.text }}
                     </p>
                     {% if notice.file %}
-                    <a href="{{ notice.file.url }}">
+                    <a class="text-decoration-none" href="{{ notice.file.url }}">
                         <span
                             class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                            <i class="bi bi-paperclip"></i>
+                            <i class="bi bi-paperclip fs-6 m-2"></i>
                             {{ notice.file.name }}
                         </span>
                     </a>
