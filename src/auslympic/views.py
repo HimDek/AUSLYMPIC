@@ -1,4 +1,5 @@
 import json
+import datetime
 from django.views.generic.base import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count, Q
@@ -45,6 +46,7 @@ class SportView(TemplateView):
 
     def get_context_data(self, **kwargs):
         sport = Sport.objects.get(pk=self.kwargs["pk"])
+
         teams = sport.teams.all().order_by(
             "-gold_winner", "-silver_winner", "-bronze_winner"
         )
@@ -53,7 +55,9 @@ class SportView(TemplateView):
         context["sports"] = Sport.objects.all()
         context["sport"] = sport
         context["teams"] = teams
-        context["team_form"] = TeamForm(initial={"sport": sport.id})
+        
+        if sport.registration_deadline >= datetime.datetime.today():
+            context["team_form"] = TeamForm(initial={"sport": sport.id})
 
         return context
 

@@ -57,6 +57,8 @@
             </a>
             {% endif %}
         </span>
+
+        {% if team_form %}
         <h3 class="display-5 fw-bold my-4">Register</h3>
         <div id="register-form-member" class="d-none">
             <div class="form-floating mb-3">
@@ -96,6 +98,23 @@
             <div class="alert alert-danger" role="alert">
                 <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 {% for error in team_form.name.errors %}
+                <span>{{ error|escape }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="form-floating mb-3">
+                {{ team_form.phone }}
+                {{ team_form.phone.label_tag }}
+                {% if team_form.phone.help_text %}
+                <div class="form-text">
+                    {{ team_form.phone.help_text }}
+                </div>
+                {% endif %}
+            </div>
+            {% if team_form.phone.errors %}
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
+                {% for error in team_form.phone.errors %}
                 <span>{{ error|escape }}</span>
                 {% endfor %}
             </div>
@@ -164,6 +183,7 @@
             </div>
             {% endif %}
         </form>
+        {% endif %}
 
         {% if created %}
         <h3 class="fw-bold my-4">The following entry has been registered</h3>

@@ -1,5 +1,7 @@
 import os
+import datetime
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
@@ -102,10 +104,10 @@ class Department(models.Model):
         ],
         "Triguna Sen School of Technology": [
             ("agricultural_engineering", "Department of Agricultural Engineering"),
-            ("computer_engineering", "Department of Computer Science & Engineering"),
+            ("computer_engineering", "Department of CSE"),
             (
                 "electronics_communications",
-                "Department of Electronics and Communications Engineering",
+                "Department of ECE",
             ),
             ("applied_science", "Department of Applied Science and Humanities"),
         ],
@@ -160,6 +162,8 @@ class Sport(models.Model):
     fixtures = models.FileField(upload_to=sport_fixture_path, blank=True, null=True)
     rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
 
+    registration_deadline = models.DateField(blank=False, null=False, default=datetime.datetime(2024, 9, 16))
+
     @property
     def gold_winners(self):
         return Team.objects.filter(sport=self, gold_winner=True)
@@ -192,6 +196,7 @@ class Sport(models.Model):
 
 class Team(models.Model):
     name = models.CharField(max_length=100, blank=False, null=False)
+    phone = models.PositiveBigIntegerField(validators=[MinValueValidator(6000000000), MaxValueValidator(999999999)], blank=False, null=False, help_text="Participant/Captain's Phone number")
     department = models.ForeignKey(
         Department,
         on_delete=models.CASCADE,
