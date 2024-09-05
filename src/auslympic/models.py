@@ -198,7 +198,7 @@ class Sport(models.Model):
 
 class Team(models.Model):
     name = models.CharField(max_length=100, blank=False, null=False)
-    phone = models.PositiveBigIntegerField(validators=[MinValueValidator(6000000000), MaxValueValidator(999999999)], blank=False, null=False, help_text="Participant/Captain's Phone number")
+    phone = models.PositiveBigIntegerField(validators=[MinValueValidator(6000000000), MaxValueValidator(9999999999)], blank=False, null=False, help_text="Participant/Captain's Phone number")
     department = models.ForeignKey(
         Department,
         on_delete=models.CASCADE,
