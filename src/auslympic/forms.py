@@ -44,6 +44,8 @@ class TeamForm(forms.ModelForm):
         widget=forms.TextInput(
             attrs={"type": "number", "min": "6000000000", "max": "9999999999", "class": "form-control rounded-0", "placeholder": "Phone"}
         ),
+        help_text="Participant/Captain's Phone number",
+        label="Phone",
     )
     department = forms.ModelChoiceField(
         queryset=Department.objects.all(),
