@@ -1,0 +1,28 @@
+{
+  "name": "auslympic",
+  "version": "1.0.0",
+  "description": "Website for AUSLYMPIC 2024, Assam University, Silchar",
+  "main": "src/main/wsgi.py",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "sass": "^1.77.6"
+  },
+  "scripts": {
+    "scss": "sass --style=compressed scss/style.scss static/build/style.min.css",
+    "start": "python manage.py runserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HimDek/AUSLYMPIC.git"
+  },
+  "author": "Himprakash Deka",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/HimDek/AUSLYMPIC/issues"
+  },
+  "homepage": "https://github.com/HimDek/AUSLYMPIC#readme"
+}

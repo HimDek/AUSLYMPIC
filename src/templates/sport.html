@@ -7,7 +7,7 @@
 <img src="{{ sport.image.url }}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" style="object-position: top;" alt="sport">
 
 <div class="vw-100 overflow-hidden">
-    <div class="text-body-emphasis bg-body-accent masked-background" style="min-width: 1280px;">
+    <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
         <div class="vw-100 p-4 p-md-5">
             <div class="row gap-4 justify-content-center justify-content-sm-start">
                 <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
@@ -108,7 +108,7 @@
                 {% endfor %}
             </div>
             {% endif %}
-            <input type="submit" class="btn bg-hover-accent bg-accent btn-lg masked-btn mb-3 w-100 rounded-0" value="Submit">
+            <input type="submit" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Submit">
             {% if success %}
             <div class="alert alert-success" role="alert">
                 <i class="bi bi-check-circle"></i>
@@ -150,9 +150,9 @@
         {% if teams.all|length > 0 %}
         <h3 class="display-5 fw-bold my-4">Registered entries</h3>
         {% if sport.team_size_min > 1 %}
-        <div class="accordion accordion-flush py-4" id="entries-accordion">
+        <div class="accordion" id="entries-accordion">
             {% for team in teams.all %}
-            <div class="accordion-item">
+            <div class="accordion-item rounded-0">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapse-{{ team.id }}" aria-expanded="false" aria-controls="flush-collapse-{{ team.id }}">
