@@ -24,7 +24,7 @@
                     {% for coordinator in sport.coordinators.all %}
                     <div class="my-3">
                         <div class="fw-bold">{{ coordinator.first_name }} {{ coordinator.last_name }}</div>
-                        <a href="tel::+91-{{ coordinator.phone }}" class="text-decoration-none">
+                        <a href="tel::+91-{{ coordinator.username }}" class="text-decoration-none">
                             +91-{{ coordinator.username }}
                         </a>
                     </div>
