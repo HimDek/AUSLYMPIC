@@ -170,9 +170,9 @@
         <div class="col-10 col-md-8 col-lg-6">
             <h3 class="display-5 fw-bold">{{ created.name }}</h3>
             <h5 class="text-secondary-emphasis">{{ created.department }}</h5>
-            <p class="text-secondary">Entry ID: {{ created.id }}</p>
+            <p class="text-secondary mb-0">Entry ID: {{ created.id }}</p>
             {% if created.sport.team_size_min > 1 %}
-            <ol>
+            <ol class="mb-0">
                 {% for member in created.members %}
                 <li class="py-3 mb-0 h5">
                     {{ member }}
@@ -196,19 +196,19 @@
                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                         {% if team.gold_winner %}
                         <span
-                            class="badge d-flex align-items-center p-0 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                            class="badge mt-3 d-flex align-items-center p-0 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                             <i class="bi bi-award fs-6 m-1"></i>
                             Gold
                         </span>
                         {% elif team.silver_winner %}
                         <span
-                            class="badge d-flex align-items-center p-0 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                            class="badge mt-3 d-flex align-items-center p-0 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                             <i class="bi bi-award fs-6 m-1"></i>
                             Silver
                         </span>
                         {% elif team.bronze_winner %}
                         <span
-                            class="badge d-flex align-items-center p-0 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                            class="badge mt-3 d-flex align-items-center p-0 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                             <i class="bi bi-award fs-6 m-1"></i>
                             Bronze
                         </span>
@@ -229,23 +229,23 @@
                         <div>
                             <h3 class="fw-bold">{{ team.name }}</h3>
                             <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
-                            <p class="text-secondary">Entry ID: {{ team.id }}</p>
+                            <p class="text-secondary mb-0">Entry ID: {{ team.id }}</p>
                             <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                 {% if team.gold_winner %}
                                 <span
-                                    class="badge d-flex align-items-center p-0 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                    class="badge mt-3 d-flex align-items-center p-0 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                     <i class="bi bi-award fs-6 m-1"></i>
                                     Gold
                                 </span>
                                 {% elif team.silver_winner %}
                                 <span
-                                    class="badge d-flex align-items-center p-0 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                    class="badge mt-3 d-flex align-items-center p-0 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                     <i class="bi bi-award fs-6 m-1"></i>
                                     Silver
                                 </span>
                                 {% elif team.bronze_winner %}
                                 <span
-                                    class="badge d-flex align-items-center p-0 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                    class="badge mt-3 d-flex align-items-center p-0 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                     <i class="bi bi-award fs-6 m-1"></i>
                                     Bronze
                                 </span>
@@ -257,7 +257,7 @@
                 <div id="collapse-{{ team.id }}" class="accordion-collapse collapse"
                     data-bs-parent="#entries-accordion">
                     <div class="accordion-body">
-                        <ol>
+                        <ol class="mb-0">
                             {% for member in team.members %}
                             <li class="py-3 mb-0 h5">
                                 {{ member }}

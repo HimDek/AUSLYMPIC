@@ -38,21 +38,21 @@
                         <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                             {% if department.gold_winner_count %}
                             <span
-                                class="badge d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                 <i class="bi bi-award fs-6 m-1"></i>
                                 <small>{{ department.gold_winner_count }} Gold</small>
                             </span>
                             {% endif %}
                             {% if department.silver_winner_count %}
                             <span
-                                class="badge d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                 <i class="bi bi-award fs-6 m-1"></i>
                                 <small>{{ department.silver_winner_count }} Silver</small>
                             </span>
                             {% endif %}
                             {% if department.bronze_winner_count %}
                             <span
-                                class="badge d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                 <i class="bi bi-award fs-6 m-1"></i>
                                 <small>{{ department.bronze_winner_count }} Bronze</small>
                             </span>
@@ -64,8 +64,7 @@
             <div id="collapse-{{ department.name }}" class="accordion-collapse collapse"
                 data-bs-parent="#accordion-dept">
                 <div class="accordion-body">
-                    {% if sport.team_size_max > 1 %}
-                    <div class="accordion accordion-flush" id="entries-accordion">
+                    <!-- <div class="accordion accordion-flush" id="entries-accordion">
                         {% for team in department.gold_winners.all %}
                         <div class="accordion-item rounded-0">
                             <h2 class="accordion-header">
@@ -207,14 +206,14 @@
                             </div>
                         </div>
                         {% endfor %}
-                    </div>
+                    </div> -->
                     {% else %}
                     <ol class="list-group list-group-numbered">
                         {% for team in department.gold_winners.all %}
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
-                                {{ team.department }}
+                                <p>{{ team.department }}</p>
                                 <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
                                     <span
@@ -298,7 +297,6 @@
                         </li>
                         {% endfor %}
                     </ol>
-                    {% endif %}
                 </div>
             </div>
         </div>
