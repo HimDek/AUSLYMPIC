@@ -51,7 +51,9 @@
             <ul class="navbar-nav">
                 {% for group in groups %}
                 <li class="nav-item">
-                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'home' %}#group-{{ group.id }}">{{ group.sub }} {{ group.name }}</a>
+                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'home' %}#group-{{ group.id }}">
+                        {{ group.sub }} {{ group.name }}
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
