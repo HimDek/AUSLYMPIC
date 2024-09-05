@@ -31,7 +31,7 @@
 <div class="d-flex align-items-center justify-content-center flex-wrap gap-4 bg-body px-4 py-5">
 
     {% for group in groups %}
-    <div class="position-relative overflow-hidden hide-down-container cut-corner m-5" style="width: 225px; height: 400px;">
+    <div id="group-{{group.id}}" class="position-relative overflow-hidden hide-down-container cut-corner m-5" style="width: 225px; height: 400px;">
         <div class="p-4 d-flex flex-column bg-body-secondary"
             style="height: 400px; background: url('{{ group.sports.all.0.image.url }}') no-repeat top/cover;">
         </div>

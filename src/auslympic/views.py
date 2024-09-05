@@ -14,7 +14,6 @@ class Home(TemplateView):
     def get_context_data(self, **kwargs):
 
         context = super().get_context_data(**kwargs)
-        context["sports"] = Sport.objects.all()
         context["groups"] = SportGroup.objects.all()
 
         return context
@@ -52,7 +51,7 @@ class SportView(TemplateView):
         )
 
         context = super().get_context_data(**kwargs)
-        context["sports"] = Sport.objects.all()
+        context["groups"] = SportGroup.objects.all()
         context["sport"] = sport
         context["teams"] = teams
 
@@ -67,7 +66,7 @@ class LeaderBoard(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["sports"] = Sport.objects.all()
+        context["groups"] = SportGroup.objects.all()
         context["departments"] = (
             Department.objects.annotate(
                 gold_winner_count=Count("teams", filter=Q(teams__gold_winner=True)),
@@ -100,7 +99,7 @@ class NoticeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["sports"] = Sport.objects.all()
+        context["groups"] = SportGroup.objects.all()
         context["notices"] = Notice.objects.all().order_by("-modified", "-added")
 
         return context

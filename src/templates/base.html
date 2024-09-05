@@ -49,9 +49,9 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
-                {% for sport in sports %}
+                {% for group in groups %}
                 <li class="nav-item">
-                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'sport' sport.id %}">{{ sport.name }}</a>
+                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'home' %}#group-{{ group.id }}">{{ group.sub }} {{ group.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
