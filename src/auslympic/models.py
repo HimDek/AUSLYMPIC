@@ -162,7 +162,7 @@ class Sport(models.Model):
     fixtures = models.FileField(upload_to=sport_fixture_path, blank=True, null=True)
     rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
 
-    registration_deadline = models.DateField(blank=False, null=False, default=datetime.datetime(2024, 9, 16))
+    registration_deadline = models.DateField(blank=False, null=False, default=datetime.date(2024, 9, 16))
 
     @property
     def gold_winners(self):

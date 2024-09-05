@@ -55,8 +55,8 @@ class SportView(TemplateView):
         context["sports"] = Sport.objects.all()
         context["sport"] = sport
         context["teams"] = teams
-        
-        if sport.registration_deadline >= datetime.datetime.today():
+
+        if sport.registration_deadline >= datetime.date.today():
             context["team_form"] = TeamForm(initial={"sport": sport.id})
 
         return context
