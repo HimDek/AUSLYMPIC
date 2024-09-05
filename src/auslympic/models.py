@@ -104,10 +104,10 @@ class Department(models.Model):
         ],
         "Triguna Sen School of Technology": [
             ("agricultural_engineering", "Department of Agricultural Engineering"),
-            ("computer_engineering", "Department of CSE"),
+            ("computer_engineering", "Department of Computer Science & Engineering"),
             (
                 "electronics_communications",
-                "Department of ECE",
+                "Department of Electronics & Communication Engineering",
             ),
             ("applied_science", "Department of Applied Science and Humanities"),
         ],

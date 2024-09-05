@@ -29,9 +29,9 @@ class SportView(TemplateView):
         return super().get(request, pk)
 
     def post(self, request, pk, **kwargs):
-        members = request.POST.getlist('members')
+        members = request.POST.getlist("members")
         post_data = request.POST.copy()
-        post_data['members'] = json.dumps([s for s in members if s and s.strip()])
+        post_data["members"] = json.dumps([s for s in members if s and s.strip()])
 
         form = TeamForm(post_data)
         sport = Sport.objects.get(pk=pk)
@@ -73,6 +73,14 @@ class LeaderBoard(TemplateView):
                 gold_winner_count=Count("teams", filter=Q(teams__gold_winner=True)),
                 silver_winner_count=Count("teams", filter=Q(teams__silver_winner=True)),
                 bronze_winner_count=Count("teams", filter=Q(teams__bronze_winner=True)),
+                winner_count=Count(
+                    "teams",
+                    filter=Q(
+                        Q(teams__gold_winner=True)
+                        | Q(teams__silver_winner=True)
+                        | Q(teams__bronze_winner=True)
+                    ),
+                ),
             )
             .filter(
                 Q(gold_winner_count__gt=0)
