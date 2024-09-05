@@ -156,8 +156,10 @@ class Sport(models.Model):
     )
     coordinators = models.ManyToManyField(User, blank=True, related_name="sport")
 
-    team_size_min = models.PositiveIntegerField(default=1)
-    team_size_max = models.PositiveIntegerField(default=1)
+    team_size_min = models.PositiveIntegerField(default=1, blank=False, null=False)
+    team_size_max = models.PositiveIntegerField(default=1, blank=False, null=False)
+
+    department_limit = models.PositiveIntegerField(blank=True, null=True, help_text="Limit the number of Teams from one Department")
 
     fixtures = models.FileField(upload_to=sport_fixture_path, blank=True, null=True)
     rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
@@ -220,6 +222,13 @@ class Team(models.Model):
     #             condition=models.Q(winner=True)
     #         )
     #     ]
+
+    def save(self, *args, **kwargs):
+        if self.sport.limit:
+            current_count = Team.objects.filter(sport=self.sport, department=self.department).count()
+            if self.pk is None and current_count >= self.sport.limit:
+                raise ValidationError(f'Cannot have more than {self.sport.limit} teams for {self.sport} from {self.department}.')
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.name} {self.department}"
