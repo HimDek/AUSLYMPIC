@@ -42,7 +42,7 @@
             <a class="text-decoration-none" href="{{ sport.rulebook.url }}">
                 <span
                     class="badge d-flex align-items-center p-1 pe-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                    <i class="bi bi-card-list fs-6 m-2"></i>
+                    <i class="bi bi-card-list fs-6 m-1"></i>
                     Rulebook
                 </span>
             </a>
@@ -51,7 +51,7 @@
             <a class="text-decoration-none" href="{{ sport.fixtures.url }}">
                 <span
                     class="badge d-flex align-items-center p-1 pe-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                    <i class="bi bi-calendar-week fs-6 m-2"></i>
+                    <i class="bi bi-calendar-week fs-6 m-1"></i>
                     Fixtures
                 </span>
             </a>
@@ -77,7 +77,7 @@
             </div>
             {% if team_form.sport.errors %}
             <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle fs-6 m-2"></i>
+                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 {% for error in team_form.sport.errors %}
                 <span>{{ error|escape }}</span>
                 {% endfor %}
@@ -94,7 +94,7 @@
             </div>
             {% if team_form.name.errors %}
             <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle fs-6 m-2"></i>
+                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 {% for error in team_form.name.errors %}
                 <span>{{ error|escape }}</span>
                 {% endfor %}
@@ -111,7 +111,7 @@
             </div>
             {% if team_form.department.errors %}
             <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle fs-6 m-2"></i>
+                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 {% for error in team_form.department.errors %}
                 <span>{{ error|escape }}</span>
                 {% endfor %}
@@ -138,7 +138,7 @@
             {% endif %}
             {% if team_form.members.errors %}
             <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle fs-6 m-2"></i>
+                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 {% for error in team_form.members.errors %}
                 <span>{{ error|escape }}</span>
                 {% endfor %}
@@ -147,19 +147,19 @@
             <input type="submit" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Submit">
             {% if success %}
             <div class="alert alert-success" role="alert">
-                <i class="bi bi-check-circle fs-6 m-2"></i>
+                <i class="bi bi-check-circle fs-6 m-1"></i>
                 <span>{{ success }}</span>
             </div>
             {% endif %}
             {% if error %}
             <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle fs-6 m-2"></i>
+                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 <span>{{ error }}</span>
             </div>
             {% endif %}
             {% if warning %}
             <div class="alert alert-warning" role="alert">
-                <i class="bi bi-exclamation-circle fs-6 m-2"></i>
+                <i class="bi bi-exclamation-circle fs-6 m-1"></i>
                 <span>{{ error }}</span>
             </div>
             {% endif %}
@@ -197,19 +197,19 @@
                         {% if team.gold_winner %}
                         <span
                             class="badge d-flex align-items-center p-0 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                            <i class="bi bi-award fs-6 m-2"></i>
+                            <i class="bi bi-award fs-6 m-1"></i>
                             Gold
                         </span>
                         {% elif team.silver_winner %}
                         <span
                             class="badge d-flex align-items-center p-0 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                            <i class="bi bi-award fs-6 m-2"></i>
+                            <i class="bi bi-award fs-6 m-1"></i>
                             Silver
                         </span>
                         {% elif team.bronze_winner %}
                         <span
                             class="badge d-flex align-items-center p-0 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-                            <i class="bi bi-award fs-6 m-2"></i>
+                            <i class="bi bi-award fs-6 m-1"></i>
                             Bronze
                         </span>
                         {% endif %}
@@ -234,19 +234,19 @@
                                 {% if team.gold_winner %}
                                 <span
                                     class="badge d-flex align-items-center p-0 pe-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                                    <i class="bi bi-award fs-6 m-2"></i>
+                                    <i class="bi bi-award fs-6 m-1"></i>
                                     Gold
                                 </span>
                                 {% elif team.silver_winner %}
                                 <span
                                     class="badge d-flex align-items-center p-0 pe-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                                    <i class="bi bi-award fs-6 m-2"></i>
+                                    <i class="bi bi-award fs-6 m-1"></i>
                                     Silver
                                 </span>
                                 {% elif team.bronze_winner %}
                                 <span
                                     class="badge d-flex align-items-center p-0 pe-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-                                    <i class="bi bi-award fs-6 m-2"></i>
+                                    <i class="bi bi-award fs-6 m-1"></i>
                                     Bronze
                                 </span>
                                 {% endif %}
