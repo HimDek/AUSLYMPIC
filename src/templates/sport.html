@@ -167,8 +167,8 @@
             {% endif %}
             <input type="submit" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Submit">
 
-            {% if form.non_field_errors %}
-            {% for error in form.non_field_errors %}
+            {% if team_form.non_field_errors %}
+            {% for error in team_form.non_field_errors %}
             <div class="alert alert-danger" role="alert">
                 <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
                 <span>{{ error }}</span>
