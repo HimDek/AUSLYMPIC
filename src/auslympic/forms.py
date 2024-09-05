@@ -10,6 +10,7 @@ class SportForm(forms.ModelForm):
         fields = [
             "name",
             "image",
+            "registration_deadline",
             "rulebook",
             "fixtures",
             "team_size_min",
@@ -37,6 +38,12 @@ class TeamForm(forms.ModelForm):
         ),
         help_text="Participant Name or Team Name",
         label="Name",
+    )
+    phone = forms.CharField(
+        max_length=100,
+        widget=forms.TextInput(
+            attrs={"type": "number", "min": "6000000000", "max": "9999999999", "class": "form-control rounded-0", "placeholder": "Phone"}
+        ),
     )
     department = forms.ModelChoiceField(
         queryset=Department.objects.all(),
