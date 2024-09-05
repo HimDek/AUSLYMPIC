@@ -38,21 +38,21 @@
                         <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                             {% if department.gold_winner_count %}
                             <span
-                                class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                class="badge mt-1 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                 <i class="bi bi-award fs-6 m-1"></i>
                                 <small>{{ department.gold_winner_count }} Gold</small>
                             </span>
                             {% endif %}
                             {% if department.silver_winner_count %}
                             <span
-                                class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                class="badge mt-1 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                 <i class="bi bi-award fs-6 m-1"></i>
                                 <small>{{ department.silver_winner_count }} Silver</small>
                             </span>
                             {% endif %}
                             {% if department.bronze_winner_count %}
                             <span
-                                class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                class="badge mt-1 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                 <i class="bi bi-award fs-6 m-1"></i>
                                 <small>{{ department.bronze_winner_count }} Bronze</small>
                             </span>
@@ -209,26 +209,26 @@
                     </div> -->
                     <ol class="list-group list-group-numbered">
                         {% for team in department.gold_winners.all %}
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <li class="list-group-item d-flex justify-content-between align-items-start p-3">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
-                                <p>{{ team.department }}</p>
+                                {{ team.department }}
                                 <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Gold at {{ team.sport }}</small>
                                     </span>
                                     {% elif team.silver_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Silver at {{ team.sport }}</small>
                                     </span>
                                     {% elif team.bronze_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Bronze at {{ team.sport }}</small>
                                     </span>
@@ -238,26 +238,26 @@
                         </li>
                         {% endfor %}
                         {% for team in department.silver_winners.all %}
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <li class="list-group-item d-flex justify-content-between align-items-start p-3">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
                                 {{ team.department }}
                                 <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Gold at {{ team.sport }}</small>
                                     </span>
                                     {% elif team.silver_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Silver at {{ team.sport }}</small>
                                     </span>
                                     {% elif team.bronze_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Bronze at {{ team.sport }}</small>
                                     </span>
@@ -267,26 +267,26 @@
                         </li>
                         {% endfor %}
                         {% for team in department.bronze_winners.all %}
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <li class="list-group-item d-flex justify-content-between align-items-start p-3">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">{{ team.name }}</div>
                                 {{ team.department }}
                                 <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                     {% if team.gold_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Gold at {{ team.sport }}</small>
                                     </span>
                                     {% elif team.silver_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Silver at {{ team.sport }}</small>
                                     </span>
                                     {% elif team.bronze_winner %}
                                     <span
-                                        class="badge d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                         <i class="bi bi-award fs-6 m-1"></i>
                                         <small>Bronze at {{ team.sport }}</small>
                                     </span>
