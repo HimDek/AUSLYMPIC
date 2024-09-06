@@ -307,10 +307,12 @@
     function addMember(name="") {
         member_count++;
         input = document.getElementById("register-form-member").innerHTML;
+        input = input.replace(/member_name/g, name);
+        input = input.replace(/number/g, `${member_count}`)
+        input = input.replace(/Member 1/g, "Member 1 (Captain)")
         el = document.createElement("div");
         el.setAttribute("id", `register-form-member-${member_count}`);
-        input = input.replace(/member_name/g, name);
-        el.innerHTML = input.replace(/number/g, `${member_count}`);
+        el.innerHTML = input;
         document.getElementById("register-form-members").appendChild(el);
         setAddButtonVisibility();
     }

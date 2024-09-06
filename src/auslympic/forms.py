@@ -61,8 +61,8 @@ class TeamForm(forms.ModelForm):
     )
     members = forms.CharField(
         widget=forms.TextInput(attrs={"class": "form-control rounded-0", "Placeholder": "Member"}),
-        help_text="Name the Captain first, then the other Members of the Team.",
-        label="Member",
+        help_text="Full name of Team Members.",
+        label="Members",
         required=False,
     )
 
