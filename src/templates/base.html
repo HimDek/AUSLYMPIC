@@ -156,7 +156,9 @@
         function hideBars() {
             setTimeout(() => {
                 document.getElementById('close-sidebar').click();
-                document.getElementById('nav-menu').click();
+                setTimeout(() => {
+                    document.getElementById('nav-menu').click();
+                }, 300);
             }, 1000);
         }
 
