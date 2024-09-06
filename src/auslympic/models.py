@@ -93,7 +93,9 @@ class Department(models.Model):
             ("biotechnology", "Department of Biotechnology"),
         ],
         "Jawaharlal Nehru School of Management Studies": [
-            ("business_administration", "Department of Business Administration"),
+            ("master_business_administration", "Department of MBA"),
+            ("bachelor_business_administration", "Department of BBA"),
+            ("hospitality_tourism", "Department of Hospitality & Tourism"),
         ],
         "E.P. Odum School of Environmental Sciences": [
             ("ecology", "Department of Ecology and Environmental Science"),

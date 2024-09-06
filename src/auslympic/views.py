@@ -96,7 +96,7 @@ class LeaderBoard(TemplateView):
                 ),
             )
             .order_by(
-                "-gold_winner_count", "-silver_winner_count", "-bronze_winner_count"
+                "-gold_winner_count", "-silver_winner_count", "-bronze_winner_count", "name"
             )
         )
 
