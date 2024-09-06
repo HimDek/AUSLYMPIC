@@ -144,8 +144,6 @@
 
         window.addEventListener('scroll', () => {
             const currentScrollY = window.pageYOffset;
-            clearTimeout(timeoutId);
-
             if (currentScrollY > lastScrollY) {
                 navbar.classList.add('translate-up');
             } else {
