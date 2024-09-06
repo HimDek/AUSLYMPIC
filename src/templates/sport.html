@@ -5,17 +5,23 @@
 {% block title %}{{ sport.name }} | {% endblock %}
 
 {% block body %}
-<div class="vh-100">
-    <img src="{{ sport.image.url }}" class="object-fit-cover position-fixed top-0 z-n1 w-100 h-100"
-        alt="{{ sport.name }}">
-</div>
-
 <div class="vw-100 overflow-x-hidden">
     <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
         <div class="vw-100 p-4 p-md-5">
             <div class="row gap-4 justify-content-center justify-content-sm-start align-items-center">
-                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 d-flex flex-column">
                     <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
+                    <div class="d-flex gap-2 align-items-center justify-content-center mt-4">
+                        <a href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                            <i class="bi bi-whatsapp fs-2"></i>
+                        </a>
+                        <a href="http://instagram.com">
+                            <i class="bi bi-instagram fs-2"></i>
+                        </a>
+                        <a href="mailto:help@auslympic.info">
+                            <i class="bi bi-envelope-at fs-2"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
                     <h1 class="display-5 fst-italic text-uppercase">{{ sport.name }}</h1>
@@ -60,6 +66,22 @@
             </a>
             {% endif %}
         </span>
+
+        <div class="d-flex align-items-start">
+            <div
+                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <i class="bi bi-whatsapp"></i>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Whatsapp Community</h3>
+                <p>All Participants must mandatorily join out Whatsapp Community and the Event specific Groups. All
+                    updates will be available there.</p>
+                <a class="icon-link" href="mailto:help@auslympic.info">
+                    <i class="bi bi-whatsapp"></i>
+                    Join
+                </a>
+            </div>
+        </div>
 
         {% if team_form %}
         <h3 class="display-5 fw-bold my-4">Register</h3>

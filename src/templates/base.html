@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
     <style>
         .masked-background {
             -webkit-mask-image: url('{% static "mask.svg" %}');
@@ -43,18 +47,18 @@
     {% endblock %}
 </head>
 
-<body data-bs-theme="dark" class="bg-body">
+<body data-bs-theme="dark" class="bg-body overflow-x-hidden text-uppercase">
     <div class="offcanvas offcanvas-end bg-body" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
+        <div class="offcanvas-header px-5 pt-4 mt-2">
             <h5 class="offcanvas-title fw-bold fs-4 text-uppercase" id="offcanvasRightLabel">SPORTS</h5>
             <button id="close-sidebar" type="button" class="btn-close" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body px-5">
             <ul class="navbar-nav">
                 {% for group in groups %}
-                <li class="nav-item">
+                <li class="nav-item my-2">
                     <a class="nav-link active fs-5 text-uppercase" onclick="hideBars();"
                         href="{% url 'home' %}#group-{{ group.id }}">
                         {{ group.sub }} {{ group.name }}
@@ -65,8 +69,8 @@
         </div>
     </div>
 
-    <nav id="navbar" class="navbar navbar-expand-md bg-body w-100 fixed-top" style="height: 6.5rem;">
-        <div class="container-fluid bg-body">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body w-100 fixed-top" style="height: 6.5rem;">
+        <div class="container-fluid bg-body px-4">
             <a class="navbar-brand mx-3 fs-3" href="#">
                 <img src="{% static 'logo.png' %}" style="height: 80px;" alt="logo" />
             </a>
@@ -77,24 +81,39 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-3 w-100">
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link active fs-5 text-uppercase" aria-current="page"
                             href="{% url 'home' %}">HOME</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link active fs-5 text-uppercase" href="{% url 'leaderboard' %}">LEADERBOARD</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link active fs-5 text-uppercase" href="{% url 'notices' %}">NOTICES</a>
                     </li>
-                    <li class="nav-item me-auto">
+                    <li class="nav-item mx-2 me-auto">
                         <a class="nav-link active fs-5 text-uppercase" href="{% url 'merchandise' %}">MERCHANDISE</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link active fs-5 text-uppercase" data-bs-toggle="offcanvas" href="#offcanvasRight"
                             role="button" aria-controls="offcanvasRight">
                             SPORTS
                         </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <div class="d-flex gap-2 align-items-center justify-content-center">
+                            <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0"
+                                href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0" href="http://instagram.com">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0"
+                                href="mailto:help@auslympic.info">
+                                <i class="bi bi-envelope-at"></i>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -103,17 +122,48 @@
 
     {% block body %}{% endblock %}
 
-    <footer class="px-4 px-sm-5 py-5 bg-body">
-        <!-- <div class="row">
-                        <div class="col-12 col-md-6 mb-3">
-                            <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
-                        </div>
-        
-                        <div class="col-12 col-md-6 mb-3">
-                            <h5>Developed by</h5>
-                            <h4>Himprakash Deka</h4>
-                        </div>
-                    </div> -->
+    <footer class="px-4 px-sm-5 pt-5 bg-body">
+        <div
+            class="py-5 row gap-4 flex-md-row-reverse justify-content-center justify-content-md-between align-items-center">
+            <div class="col-10 col-sm-8 col-md-4 col-lg-4 py-2 d-flex flex-column align-items-center">
+                <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
+            </div>
+            <div class="col-10 col-md-7 col-lg-7 p-4 text-center text-md-start">
+                <h1 id="contact" class="display-5 pt-2 mt-3 fst-italic w-100">Follow Us</h1>
+                <ul class="list-unstyled d-flex mt-2 mb-4 pb-3 justify-content-center justify-content-md-start">
+                    <li class="mx-3 mx-md-0 me-md-4">
+                        <a class="link-body-emphasis" href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                            <i class="bi bi-whatsapp fs-2"></i>
+                        </a>
+                    </li>
+                    <li class="mx-3 mx-md-0 me-md-4">
+                        <a class="link-body-emphasis" href="#">
+                            <i class="bi bi-instagram fs-2"></i>
+                        </a>
+                    </li>
+                    <li class="mx-3 mx-md-0 me-md-4">
+                        <a class="link-body-emphasis" href="mailto:help@auslympic.info">
+                            <i class="bi bi-envelope-at fs-2"></i>
+                        </a>
+                    </li>
+                </ul>
+                <figure class="my-3 py-2">
+                    <blockquote class="blockquote">
+                        <p>Organized by Thakur Hrishiraj Singh</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Sports Secratary, <cite title="Source Title">Assam University Students Union
+                            2024-25</cite>
+                    </figcaption>
+                </figure>
+                <div class="lead my-3 py-2">
+                    Website Developed by
+                    <a class="link-body-emphasis" href="http://himdek.com">
+                        <i>Himprakash Deka</i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <ul class="nav justify-content-center mb-3">
             <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
@@ -125,27 +175,10 @@
             <li class="nav-item"><a href="{% url 'merchandise' %}"
                     class="nav-link px-2 text-body-secondary">Merchandise</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link px-2 text-body-secondary" data-bs-toggle="offcanvas" href="#offcanvasRight"
-                    role="button" aria-controls="offcanvasRight">
-                    Sports
-                </a>
-            </li>
         </ul>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-            <small>© 2024 AUSLYMPIC Organizing Comitte, Assam University, Silchar. All rights reserved.</small>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook"></use>
-                        </svg></a></li>
-            </ul>
+        <div class="d-flex justify-content-center py-4 border-top">
+            <small>© 2024 AUSLYMPIC, Assam University, Silchar. All rights reserved.</small>
         </div>
     </footer>
 
