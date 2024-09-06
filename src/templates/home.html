@@ -23,6 +23,14 @@
                             or
                             join us to spectate this spectacular event this year in AUSLYMPIC.
                         </p>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>Organized by Thakur Hrishiraj Singh</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Sports Secratary<cite title="Source Title">Assam Uuniversity Students Union 2024-25</cite>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -33,35 +41,37 @@
 <div class="d-flex align-items-center justify-content-center flex-wrap bg-body px-3 px-sm-4 py-3 py-sm-5">
 
     {% for group in groups %}
-    <div id="group-{{group.id}}" class="col-12 col-md-6 col-xl-4 col-xxl-3 py-3 px-0 p-sm-3 p-md-4 p-lg-5 d-flex justify-content-center">
-        <div class="cut-corner position-relative overflow-hidden hide-down-container" style="aspect-ratio: 9/16; max-width: 320px;">
+    <div id="group-{{group.id}}"
+        class="col-12 col-md-6 col-xl-4 col-xxl-3 py-3 px-0 p-sm-3 p-md-4 p-lg-5 d-flex justify-content-center">
+        <div class="cut-corner position-relative overflow-hidden hide-down-container"
+            style="aspect-ratio: 9/16; max-width: 320px;">
             <img class="bg-body-secondary object-fit-cover w-100 h-100" src="{{ group.sports.all.0.image.url }}"
                 style="object-position: top;" alt="{{ group.name }}" />
             <div class="position-absolute bottom-0 w-100">
                 <div class="p-4 d-flex flex-column align-items-center justify-content-evenly gap-4 hide-down">
                     {% if group.sports.all|length == 1 %}
                     <a href="{% url 'sport' group.sports.all.0.id %}"
-                        class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                        class="btn bg-body btn-lg masked-btn rounded-0 w-100 fs-5">
                         Go to Page
                     </a>
                     {% endif %}
 
                     {% for sport in group.sports.all %}
                     {% if "Men's" in sport.name %}
-                    <a href="{% url 'sport' sport.id %}" class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                    <a href="{% url 'sport' sport.id %}" class="btn bg-body btn-lg masked-btn rounded-0 w-100 fs-5">
                         Men's {{ group.sub }}
                     </a>
                     {% elif "Women's" in sport.name %}
-                    <a href="{% url 'sport' sport.id %}" class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                    <a href="{% url 'sport' sport.id %}" class="btn bg-body btn-lg masked-btn rounded-0 w-100 fs-5">
                         Women's {{ group.sub }}
                     </a>
                     {% elif "Mixed" in sport.name %}
-                    <a href="{% url 'sport' sport.id %}" class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                    <a href="{% url 'sport' sport.id %}" class="btn bg-body btn-lg masked-btn rounded-0 w-100 fs-5">
                         Mixed {{ group.sub }}
                     </a>
                     {% else %}
                     <a href="{% url 'sport' sport.id %}"
-                        class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5 px-0">
+                        class="btn bg-body btn-lg masked-btn rounded-0 w-100 fs-5 px-0">
                         {{ sport.name }}
                     </a>
                     {% endif %}
