@@ -59,86 +59,102 @@
         </div>
     </div>
 
-    <div>
-        <nav class="navbar navbar-expand-md bg-primary vw-100 fixed-top" style="height: 6.5rem;">
-            <div class="container-fluid bg-primary">
-                <a class="navbar-brand mx-3 fs-3" href="#">
-                    <img src="{% static 'logo.png' %}" style="height: 80px;" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav m-3 w-100">
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 text-uppercase" aria-current="page"
-                                href="{% url 'home' %}">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 text-uppercase"
-                                href="{% url 'leaderboard' %}">LEADERBOARD</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 text-uppercase" href="{% url 'notices' %}">NOTICES</a>
-                        </li>
-                        <li class="nav-item me-auto">
-                            <a class="nav-link active fs-5 text-uppercase" href="{% url 'merchandise' %}">MERCHANDISE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 text-uppercase" data-bs-toggle="offcanvas"
-                                href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
-                                SPORTS
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        {% block body %}{% endblock %}
-
-        <footer class="px-4 px-sm-5 py-5 bg-primary-subtle">
-            <!-- <div class="row">
-                <div class="col-12 col-md-6 mb-3">
-                    <img src="{% static 'logo.png' %}" class="w-100" />
-                </div>
-
-                <div class="col-12 col-md-6 mb-3">
-                    <h5>Developed by</h5>
-                    <h4>Himprakash Deka</h4>
-                </div>
-            </div> -->
-
-            <ul class="nav justify-content-center mb-3">
-                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-1 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="{% url 'leaderboard' %}"
-                        class="nav-link px-1 text-body-secondary">Leaderboard</a></li>
-                <li class="nav-item"><a href="{% url 'notices' %}" class="nav-link px-1 text-body-secondary">Notices</a>
-                </li>
-                <li class="nav-item"><a href="{% url 'merchandise' %}" class="nav-link px-1 text-body-secondary">Merchandise</a>
-                </li>
-            </ul>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-                <p>© 2024 AUSLYMPIC Organizing Comitte, Assam University, Silchar. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
+    <nav id="navbar" class="navbar navbar-expand-md bg-primary w-100 fixed-top" style="height: 6.5rem;">
+        <div class="container-fluid bg-primary">
+            <a class="navbar-brand mx-3 fs-3" href="#">
+                <img src="{% static 'logo.png' %}" style="height: 80px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-3 w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-uppercase" aria-current="page"
+                            href="{% url 'home' %}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-uppercase" href="{% url 'leaderboard' %}">LEADERBOARD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-uppercase" href="{% url 'notices' %}">NOTICES</a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link active fs-5 text-uppercase" href="{% url 'merchandise' %}">MERCHANDISE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-uppercase" data-bs-toggle="offcanvas" href="#offcanvasRight"
+                            role="button" aria-controls="offcanvasRight">
+                            SPORTS
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+    <footer class="px-4 px-sm-5 py-5 bg-primary-subtle">
+        <!-- <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <img src="{% static 'logo.png' %}" class="w-100" />
+                        </div>
+        
+                        <div class="col-12 col-md-6 mb-3">
+                            <h5>Developed by</h5>
+                            <h4>Himprakash Deka</h4>
+                        </div>
+                    </div> -->
+
+        <ul class="nav justify-content-center mb-3">
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-1 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="{% url 'leaderboard' %}"
+                    class="nav-link px-1 text-body-secondary">Leaderboard</a>
+            </li>
+            <li class="nav-item"><a href="{% url 'notices' %}" class="nav-link px-1 text-body-secondary">Notices</a>
+            </li>
+            <li class="nav-item"><a href="{% url 'merchandise' %}"
+                    class="nav-link px-1 text-body-secondary">Merchandise</a>
+            </li>
+        </ul>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+            <p>© 2024 AUSLYMPIC Organizing Comitte, Assam University, Silchar. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'jquery.min.js' %}"></script>
+    <script>
+        let lastScrollY = window.pageYOffset;
+        const navbar = document.querySelector('#navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset;
+            clearTimeout(timeoutId);
+
+            if (currentScrollY > lastScrollY) {
+                navbar.classList.add('translate-up');
+            } else {
+                navbar.classList.remove('translate-up');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+    </script>
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>

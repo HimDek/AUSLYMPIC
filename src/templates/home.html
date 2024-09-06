@@ -2,7 +2,9 @@
 {% load static %}
 
 {% block body %}
-<img src="{% static 'banner.jpg' %}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" alt="sport">
+<div class="vh-100">
+    <img src="{% static 'banner.jpg' %}" class="object-fit-cover position-fixed top-0 z-n1 w-100 h-100" alt="sport">
+</div>
 
 <div class="vw-100 overflow-hidden">
     <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
@@ -28,45 +30,43 @@
     </div>
 </div>
 
-<div class="d-flex align-items-center justify-content-center flex-wrap gap-4 bg-body px-4 py-5">
+<div class="d-flex align-items-center justify-content-center flex-wrap bg-body px-3 px-sm-4 py-3 py-sm-5">
 
     {% for group in groups %}
-    <div id="group-{{group.id}}" class="position-relative overflow-hidden hide-down-container cut-corner m-5" style="width: 225px; height: 400px;">
-        <div class="p-4 d-flex flex-column bg-body-secondary"
-            style="height: 400px; background: url('{{ group.sports.all.0.image.url }}') no-repeat top/cover;">
-        </div>
-        <div class="position-absolute bottom-0 w-100">
-            <div class="p-4 d-flex flex-column align-items-center justify-content-evenly gap-4 hide-down">
-                {% if group.sports.all|length == 1 %}
-                <a href="{% url 'sport' group.sports.all.0.id %}"
-                    class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
-                    Go to Page
-                </a>
-                {% endif %}
+    <div id="group-{{group.id}}" class="col-12 col-md-6 col-xl-4 col-xxl-3 py-3 px-0 p-sm-3 p-md-4 p-lg-5 d-flex justify-content-center">
+        <div class="cut-corner position-relative overflow-hidden hide-down-container" style="aspect-ratio: 9/16; max-width: 320px;">
+            <img class="bg-body-secondary object-fit-cover w-100 h-100" src="{{ group.sports.all.0.image.url }}"
+                style="object-position: top;" />
+            <div class="position-absolute bottom-0 w-100">
+                <div class="p-4 d-flex flex-column align-items-center justify-content-evenly gap-4 hide-down">
+                    {% if group.sports.all|length == 1 %}
+                    <a href="{% url 'sport' group.sports.all.0.id %}"
+                        class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                        Go to Page
+                    </a>
+                    {% endif %}
 
-                {% for sport in group.sports.all %}
-                {% if "Men's" in sport.name %}
-                <a href="{% url 'sport' sport.id %}"
-                    class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
-                    Men's {{ group.sub }}
-                </a>
-                {% elif "Women's" in sport.name %}
-                <a href="{% url 'sport' sport.id %}"
-                    class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
-                    Women's {{ group.sub }}
-                </a>
-                {% elif "Mixed" in sport.name %}
-                <a href="{% url 'sport' sport.id %}"
-                    class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
-                    Mixed {{ group.sub }}
-                </a>
-                {% else %}
-                <a href="{% url 'sport' sport.id %}"
-                    class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5 px-0">
-                    {{ sport.name }}
-                </a>
-                {% endif %}
-                {% endfor %}
+                    {% for sport in group.sports.all %}
+                    {% if "Men's" in sport.name %}
+                    <a href="{% url 'sport' sport.id %}" class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                        Men's {{ group.sub }}
+                    </a>
+                    {% elif "Women's" in sport.name %}
+                    <a href="{% url 'sport' sport.id %}" class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                        Women's {{ group.sub }}
+                    </a>
+                    {% elif "Mixed" in sport.name %}
+                    <a href="{% url 'sport' sport.id %}" class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5">
+                        Mixed {{ group.sub }}
+                    </a>
+                    {% else %}
+                    <a href="{% url 'sport' sport.id %}"
+                        class="btn btn-primary btn-lg masked-btn rounded-0 w-100 fs-5 px-0">
+                        {{ sport.name }}
+                    </a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

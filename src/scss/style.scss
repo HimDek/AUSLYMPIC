@@ -32,3 +32,11 @@ body {
 .hide-down-container:hover .hide-down {
     transform: translateY(0%);
 }
+
+#navbar {
+    transition: transform 0.3s;
+}
+
+.translate-up {
+    transform: translateY(-100%);
+}
