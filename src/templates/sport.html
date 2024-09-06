@@ -73,7 +73,7 @@
             {% endif %}
         </span>
 
-        <div class="d-flex align-items-start">
+        <div class="d-flex align-items-start my-5">
             <div
                 class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <i class="bi bi-whatsapp"></i>
@@ -90,7 +90,7 @@
         </div>
 
         {% if team_form %}
-        <h3 class="display-5 fw-bold my-4">Register</h3>
+        <h3 class="display-5 fw-bold mt-5 py-4">Register</h3>
         <small>Open till {{ sport.registration_deadline }}</small>
         <div id="register-form-member" class="d-none">
             <div class="form-floating mb-3">
@@ -208,7 +208,7 @@
         {% endif %}
 
         {% if created %}
-        <h3 class="fw-bold my-4">The following entry has been registered</h3>
+        <h3 class="fw-bold mt-5 py-4">The following entry has been registered</h3>
         <div class="col-10 col-md-8 col-lg-6">
             <h3 class="display-5 fw-bold">{{ created.name }}</h3>
             <h5 class="text-secondary-emphasis">{{ created.department }}</h5>
@@ -226,7 +226,7 @@
         {% endif %}
 
         {% if teams.all|length > 0 %}
-        <h3 class="display-5 fw-bold my-4">
+        <h3 class="display-5 fw-bold mt-5 py-4">
             {% if teams.all.0.gold_winner and teams.all.1.silver_winner and teams.all.2.bronze_winner %}
             Winners
             {% else %}
