@@ -2,7 +2,7 @@ import json
 from django.utils import timezone
 from django.views.generic.base import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
-from django.db.models import Count, Q
+from django.db.models import Min, Count, Q
 from .models import Sport, Department, SportGroup, Notice
 from .forms import TeamForm
 
@@ -14,7 +14,11 @@ class Home(TemplateView):
     def get_context_data(self, **kwargs):
 
         context = super().get_context_data(**kwargs)
-        context["groups"] = SportGroup.objects.all()
+        context["groups"] = (
+            SportGroup.objects.all()
+            .annotate(first_sport_id=Min("sports__id"))
+            .order_by("first_sport_id")
+        )
 
         return context
 
@@ -51,7 +55,11 @@ class SportView(TemplateView):
         )
 
         context = super().get_context_data(**kwargs)
-        context["groups"] = SportGroup.objects.all()
+        context["groups"] = (
+            SportGroup.objects.all()
+            .annotate(first_sport_id=Min("sports__id"))
+            .order_by("first_sport_id")
+        )
         context["sport"] = sport
         context["teams"] = teams
 
@@ -66,7 +74,11 @@ class LeaderBoard(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = SportGroup.objects.all()
+        context["groups"] = (
+            SportGroup.objects.all()
+            .annotate(first_sport_id=Min("sports__id"))
+            .order_by("first_sport_id")
+        )
         context["departments"] = (
             Department.objects.annotate(
                 gold_winner_count=Count("teams", filter=Q(teams__gold_winner=True)),
@@ -99,7 +111,11 @@ class NoticeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = SportGroup.objects.all()
+        context["groups"] = (
+            SportGroup.objects.all()
+            .annotate(first_sport_id=Min("sports__id"))
+            .order_by("first_sport_id")
+        )
         context["notices"] = Notice.objects.all().order_by("-modified", "-added")
 
         return context
@@ -110,6 +126,10 @@ class MerchandiseView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = SportGroup.objects.all()
+        context["groups"] = (
+            SportGroup.objects.all()
+            .annotate(first_sport_id=Min("sports__id"))
+            .order_by("first_sport_id")
+        )
 
         return context
