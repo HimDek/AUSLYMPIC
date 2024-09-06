@@ -48,13 +48,15 @@
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title fw-bold fs-4 text-uppercase" id="offcanvasRightLabel">SPORTS</h5>
-            <button id="close-sidebar" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button id="close-sidebar" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
                 {% for group in groups %}
                 <li class="nav-item">
-                    <a class="nav-link active fs-5 text-uppercase" onclick="document.getElementById('close-sidebar').click(); document.getElementById('nav-menu').click();" href="{% url 'home' %}#group-{{ group.id }}">
+                    <a class="nav-link active fs-5 text-uppercase" onclick="hideBars();"
+                        href="{% url 'home' %}#group-{{ group.id }}">
                         {{ group.sub }} {{ group.name }}
                     </a>
                 </li>
@@ -68,8 +70,9 @@
             <a class="navbar-brand mx-3 fs-3" href="#">
                 <img src="{% static 'logo.png' %}" style="height: 80px;" alt="logo" />
             </a>
-            <button id="nav-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="nav-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -149,6 +152,14 @@
     <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'jquery.min.js' %}"></script>
     <script>
+
+        function hideBars() {
+            setTimeout(() => {
+                document.getElementById('close-sidebar').click();
+                document.getElementById('nav-menu').click();
+            }, 1000);
+        }
+
         let lastScrollY = window.pageYOffset;
         const navbar = document.querySelector('#navbar');
 
