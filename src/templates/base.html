@@ -8,7 +8,6 @@
     <title>{% block title %}{% endblock %} AUSLYMPIC 2024</title>
     <link rel="stylesheet" type="text/css" href="{% static 'build/style.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-icons.min.css' %}">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
     <style>
         .masked-background {
             -webkit-mask-image: url('{% static "mask.svg" %}');
@@ -84,7 +83,7 @@
                             <a class="nav-link active fs-5 text-uppercase" href="{% url 'notices' %}">NOTICES</a>
                         </li>
                         <li class="nav-item me-auto">
-                            <a class="nav-link active fs-5 text-uppercase" href="{% url 'merch' %}">MERCH</a>
+                            <a class="nav-link active fs-5 text-uppercase" href="{% url 'merchandise' %}">MERCHANDISE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active fs-5 text-uppercase" data-bs-toggle="offcanvas"
@@ -117,7 +116,7 @@
                         class="nav-link px-2 text-body-secondary">Leaderboard</a></li>
                 <li class="nav-item"><a href="{% url 'notices' %}" class="nav-link px-2 text-body-secondary">Notices</a>
                 </li>
-                <li class="nav-item"><a href="{% url 'merch' %}" class="nav-link px-2 text-body-secondary">Merch</a>
+                <li class="nav-item"><a href="{% url 'merchandise' %}" class="nav-link px-2 text-body-secondary">Merchandise</a>
                 </li>
             </ul>
 

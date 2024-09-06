@@ -105,8 +105,8 @@ class NoticeView(TemplateView):
         return context
 
 
-class MerchView(TemplateView):
-    template_name = "merch.html"
+class MerchandiseView(TemplateView):
+    template_name = "merchandise.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

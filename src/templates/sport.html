@@ -64,7 +64,7 @@
         <small>Open till {{ sport.registration_deadline }}</small>
         <div id="register-form-member" class="d-none">
             <div class="form-floating mb-3">
-                <input type="text" name="members" class="form-control rounded-0" placeholder="Member number">
+                <input type="text" name="members" class="form-control rounded-0" placeholder="Member number" value="member_name">
                 <label>Member number</label>
             </div>
         </div>
@@ -138,25 +138,21 @@
                 {% endfor %}
             </div>
             {% endif %}
-
-            {% if sport.team_size_min != 1 or sport.team_size_max != 1 %}
-            <div id="register-form-members">
-                {{ team_form.members.label_tag }}
-                {% if team_form.members.help_text %}
-                <div class="form-text mb-2">
-                    {{ team_form.members.help_text }}
-                </div>
-                {% endif %}
-                <div id="register-form-member-1">
-                    <div class="form-floating mb-3">
-                        {{ team_form.members }}
-                        <label>Member 1</label>
+            <div class="{% if sport.team_size_min == 1 and sport.team_size_max == 1 %} d-none {% endif %}">
+                <div id="register-form-members">
+                    {{ team_form.members.label_tag }}
+                    {% if team_form.members.help_text %}
+                    <div class="form-text mb-2">
+                        {{ team_form.members.help_text }}
                     </div>
+                    <div class="form-text mb-2">
+                        Add {{ sport.team_size_min }} to {{ sport.team_size_max }} members.
+                    </div>
+                    {% endif %}
                 </div>
+                <input id="add-member-button" type="button" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Add Member"
+                    onclick="addMember();">
             </div>
-            <input type="button" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Add Member"
-                onclick="addMember();">
-            {% endif %}
             {% if team_form.members.errors %}
             <div class="alert alert-danger" role="alert">
                 <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
@@ -166,7 +162,6 @@
             </div>
             {% endif %}
             <input type="submit" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Submit">
-
             {% if team_form.non_field_errors %}
             {% for error in team_form.non_field_errors %}
             <div class="alert alert-danger" role="alert">
@@ -174,25 +169,6 @@
                 <span>{{ error }}</span>
             </div>
             {% endfor %}
-            {% endif %}
-
-            {% if success %}
-            <div class="alert alert-success" role="alert">
-                <i class="bi bi-check-circle fs-6 m-1"></i>
-                <span>{{ success }}</span>
-            </div>
-            {% endif %}
-            {% if error %}
-            <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle fs-6 m-1"></i>
-                <span>{{ error }}</span>
-            </div>
-            {% endif %}
-            {% if warning %}
-            <div class="alert alert-warning" role="alert">
-                <i class="bi bi-exclamation-circle fs-6 m-1"></i>
-                <span>{{ error }}</span>
-            </div>
             {% endif %}
         </form>
         {% else %}
@@ -310,14 +286,42 @@
 </div>
 
 <script>
-    var member_count = 1;
-    function addMember() {
+    var members_str = "{{ team_form.members.value }}"
+    var members_lower_limit = parseInt("{{ sport.team_size_min }}");
+    var members_upper_limit = parseInt("{{ sport.team_size_max }}");
+
+    if (members_str == "None")
+        var members = [];
+    else
+        var members = JSON.pase();
+
+    var member_count = 0;
+
+    for (i in members) {
+        addMember(members[i]);
+    }
+    while (member_count < members_lower_limit) {
+        addMember();
+    }
+
+    function addMember(name="") {
         member_count++;
         input = document.getElementById("register-form-member").innerHTML;
         el = document.createElement("div");
         el.setAttribute("id", `register-form-member-${member_count}`);
+        input = input.replace(/member_name/g, name);
         el.innerHTML = input.replace(/number/g, `${member_count}`);
         document.getElementById("register-form-members").appendChild(el);
+        setAddButtonVisibility();
+    }
+    
+    function setAddButtonVisibility() {
+        add_member_button = document.getElementById("add-member-button");
+        if (member_count >= members_upper_limit)
+            add_member_button.classList.add("d-none");
+        else
+            add_member_button.classList.remove("d-none");
+
     }
 </script>
 
