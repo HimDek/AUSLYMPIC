@@ -12,13 +12,13 @@
                 <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 d-flex flex-column">
                     <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
                     <div class="d-flex gap-2 align-items-center justify-content-center mt-4">
-                        <a href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                        <a target="blank" href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
                             <i class="bi bi-whatsapp fs-2"></i>
                         </a>
-                        <a href="http://instagram.com">
+                        <a target="blank" href="http://instagram.com">
                             <i class="bi bi-instagram fs-2"></i>
                         </a>
-                        <a href="mailto:help@auslympic.info">
+                        <a target="blank" href="mailto:help@auslympic.info">
                             <i class="bi bi-envelope-at fs-2"></i>
                         </a>
                     </div>
@@ -33,7 +33,7 @@
                     {% for coordinator in sport.coordinators.all %}
                     <div class="my-3">
                         <div class="fw-bold">{{ coordinator.first_name }} {{ coordinator.last_name }}</div>
-                        <a href="tel::+91-{{ coordinator.username }}" class="text-decoration-none">
+                        <a target="blank" href="tel::+91-{{ coordinator.username }}" class="text-decoration-none">
                             +91-{{ coordinator.username }}
                         </a>
                     </div>
@@ -48,7 +48,7 @@
     <div class="col-11 col-sm-10 col-md-8">
         <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
             {% if sport.rulebook %}
-            <a class="text-decoration-none" href="{{ sport.rulebook.url }}">
+            <a class="text-decoration-none" target="blank" href="{{ sport.rulebook.url }}">
                 <span
                     class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
                     <i class="bi bi-card-list fs-6 m-1"></i>
@@ -57,7 +57,7 @@
             </a>
             {% endif %}
             {% if sport.fixtures %}
-            <a class="text-decoration-none" href="{{ sport.fixtures.url }}">
+            <a class="text-decoration-none" target="blank" href="{{ sport.fixtures.url }}">
                 <span
                     class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
                     <i class="bi bi-calendar-week fs-6 m-1"></i>
@@ -76,7 +76,7 @@
                 <h3 class="fs-2 text-body-emphasis">Whatsapp Community</h3>
                 <p>All Participants must mandatorily join out Whatsapp Community and the Event specific Groups. All
                     updates will be available there.</p>
-                <a class="icon-link" href="mailto:help@auslympic.info">
+                <a class="icon-link" target="blank" href="mailto:help@auslympic.info">
                     <i class="bi bi-whatsapp"></i>
                     Join
                 </a>

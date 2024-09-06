@@ -63,7 +63,7 @@
 
     <nav id="navbar" class="navbar navbar-expand-lg bg-body w-100 fixed-top" style="height: 6.5rem;">
         <div class="container-fluid bg-body px-4">
-            <a class="navbar-brand mx-3 fs-3" href="#">
+            <a class="navbar-brand mx-3 fs-3" href="{% url 'home' %}">
                 <img src="{% static 'logo.png' %}" style="height: 80px;" alt="logo" />
             </a>
             <button id="nav-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -95,14 +95,14 @@
                     <li class="nav-item mx-2">
                         <div class="d-flex gap-2 align-items-center justify-content-center">
                             <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0"
-                                href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                                target="blank" href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
                                 <i class="bi bi-whatsapp"></i>
                             </a>
-                            <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0" href="http://instagram.com">
+                            <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0" target="blank" href="http://instagram.com">
                                 <i class="bi bi-instagram"></i>
                             </a>
                             <a class="nav-link active fs-5 text-uppercase mx-3 mx-lg-0"
-                                href="mailto:help@auslympic.info">
+                                target="blank" href="mailto:help@auslympic.info">
                                 <i class="bi bi-envelope-at"></i>
                             </a>
                         </div>
@@ -124,17 +124,17 @@
                 <h1 id="contact" class="display-6 pt-2 mt-3 w-100">Follow Us</h1>
                 <ul class="list-unstyled d-flex mt-2 mb-4 pb-3 justify-content-center justify-content-md-start">
                     <li class="mx-3 mx-md-0 me-md-4">
-                        <a class="link-body-emphasis" href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                        <a class="link-body-emphasis" target="blank" href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
                             <i class="bi bi-whatsapp fs-2"></i>
                         </a>
                     </li>
                     <li class="mx-3 mx-md-0 me-md-4">
-                        <a class="link-body-emphasis" href="#">
+                        <a class="link-body-emphasis" target="blank" href="#">
                             <i class="bi bi-instagram fs-2"></i>
                         </a>
                     </li>
                     <li class="mx-3 mx-md-0 me-md-4">
-                        <a class="link-body-emphasis" href="mailto:help@auslympic.info">
+                        <a class="link-body-emphasis" target="blank" href="mailto:help@auslympic.info">
                             <i class="bi bi-envelope-at fs-2"></i>
                         </a>
                     </li>
@@ -150,7 +150,7 @@
                 </figure>
                 <div class="lead my-3 py-2">
                     Website Developed by
-                    <a class="link-body-emphasis" href="http://himdek.com">
+                    <a class="link-body-emphasis" target="blank" href="http://himdek.com">
                         <i>Himprakash Deka</i>
                     </a>
                 </div>
