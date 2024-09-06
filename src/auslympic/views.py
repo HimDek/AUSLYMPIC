@@ -95,11 +95,6 @@ class LeaderBoard(TemplateView):
                     ),
                 ),
             )
-            .filter(
-                Q(gold_winner_count__gt=0)
-                | Q(silver_winner_count__gt=0)
-                | Q(bronze_winner_count__gt=0)
-            )
             .order_by(
                 "-gold_winner_count", "-silver_winner_count", "-bronze_winner_count"
             )
