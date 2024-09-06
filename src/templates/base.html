@@ -8,6 +8,10 @@
     <title>{% block title %}{% endblock %} AUSLYMPIC 2024</title>
     <link rel="stylesheet" type="text/css" href="{% static 'build/style.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-icons.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <style>
         .masked-background {
             -webkit-mask-image: url('{% static "mask.svg" %}');
@@ -44,13 +48,13 @@
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title fw-bold fs-4 text-uppercase" id="offcanvasRightLabel">SPORTS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button id="close-sidebar" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
                 {% for group in groups %}
                 <li class="nav-item">
-                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'home' %}#group-{{ group.id }}">
+                    <a class="nav-link active fs-5 text-uppercase" onclick="document.getElementById('close-sidebar').click()" href="{% url 'home' %}#group-{{ group.id }}">
                         {{ group.sub }} {{ group.name }}
                     </a>
                 </li>
@@ -109,19 +113,25 @@
                     </div> -->
 
         <ul class="nav justify-content-center mb-3">
-            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-1 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="{% url 'leaderboard' %}"
-                    class="nav-link px-1 text-body-secondary">Leaderboard</a>
+                    class="nav-link px-2 text-body-secondary">Leaderboard</a>
             </li>
             <li class="nav-item"><a href="{% url 'notices' %}" class="nav-link px-1 text-body-secondary">Notices</a>
             </li>
             <li class="nav-item"><a href="{% url 'merchandise' %}"
-                    class="nav-link px-1 text-body-secondary">Merchandise</a>
+                    class="nav-link px-2 text-body-secondary">Merchandise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" data-bs-toggle="offcanvas" href="#offcanvasRight"
+                    role="button" aria-controls="offcanvasRight">
+                    Sports
+                </a>
             </li>
         </ul>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
-            <p>© 2024 AUSLYMPIC Organizing Comitte, Assam University, Silchar. All rights reserved.</p>
+            <small>© 2024 AUSLYMPIC Organizing Comitte, Assam University, Silchar. All rights reserved.</small>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
                             <use xlink:href="#twitter"></use>
