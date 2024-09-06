@@ -53,6 +53,8 @@ class SportView(TemplateView):
         teams = sport.teams.all().order_by(
             "-gold_winner", "-silver_winner", "-bronze_winner"
         )
+        if teams.all().count() >= 3 and teams.all()[0].gold_winner and teams.all()[1].silver_winner and teams.all()[2].bronze_winner:
+            teams = teams.filter(Q(gold_winner=True) | Q(silver_winner=True) | Q(bronze_winner=True))
 
         context = super().get_context_data(**kwargs)
         context["groups"] = (

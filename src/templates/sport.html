@@ -36,8 +36,8 @@
     </div>
 </div>
 
-<div class="bg-body py-5 d-flex align-items-center justify-content-center">
-    <div class="col-10 col-md-8">
+<div class="bg-body py-4 py-sm-5 d-flex align-items-center justify-content-center">
+    <div class="col-11 col-sm-10 col-md-8">
         <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
             {% if sport.rulebook %}
             <a class="text-decoration-none" href="{{ sport.rulebook.url }}">
@@ -64,7 +64,8 @@
         <small>Open till {{ sport.registration_deadline }}</small>
         <div id="register-form-member" class="d-none">
             <div class="form-floating mb-3">
-                <input type="text" name="members" class="form-control rounded-0" placeholder="Member number" value="member_name">
+                <input type="text" name="members" class="form-control rounded-0" placeholder="Member number"
+                    value="member_name">
                 <label>Member number</label>
             </div>
         </div>
@@ -150,7 +151,8 @@
                     </div>
                     {% endif %}
                 </div>
-                <input id="add-member-button" type="button" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Add Member"
+                <input id="add-member-button" type="button"
+                    class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Add Member"
                     onclick="addMember();">
             </div>
             {% if team_form.members.errors %}
@@ -194,7 +196,13 @@
         {% endif %}
 
         {% if teams.all|length > 0 %}
-        <h3 class="display-5 fw-bold my-4">Registered entries</h3>
+        <h3 class="display-5 fw-bold my-4">
+            {% if teams.all.0.gold_winner and teams.all.1.silver_winner and teams.all.2.bronze_winner %}
+            Winners
+            {% else %}
+            Registered entries
+            {% endif %}
+        </h3>
         {% if sport.team_size_min == 1 and sport.team_size_max == 1 %}
         <ol class="list-group list-group-numbered">
             {% for team in teams.all %}
@@ -233,34 +241,39 @@
             {% for team in teams.all %}
             <div class="accordion-item rounded-0">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed p-3 p-sm-4" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-{{ team.id }}" aria-expanded="false"
                         aria-controls="collapse-{{ team.id }}">
-                        <div>
-                            <h3 class="fw-bold">{{ team.name }}</h3>
-                            <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
-                            <p class="text-secondary mb-0">Entry ID: {{ team.id }}</p>
-                            <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
-                                {% if team.gold_winner %}
-                                <span
-                                    class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                                    <i class="bi bi-award fs-6 m-1"></i>
-                                    Gold
+                        <div class="d-flex">
+                            <div>
+                                <h3 class="fw-bold me-2" style="width: 3ch;">{{ forloop.counter }}</h3>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold">{{ team.name }}</h3>
+                                <h5 class="text-secondary-emphasis">{{ team.department }}</h5>
+                                <p class="text-secondary mb-0">Entry ID: {{ team.id }}</p>
+                                <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
+                                    {% if team.gold_winner %}
+                                    <span
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                        <i class="bi bi-award fs-6 m-1"></i>
+                                        Gold
+                                    </span>
+                                    {% elif team.silver_winner %}
+                                    <span
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                        <i class="bi bi-award fs-6 m-1"></i>
+                                        Silver
+                                    </span>
+                                    {% elif team.bronze_winner %}
+                                    <span
+                                        class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                        <i class="bi bi-award fs-6 m-1"></i>
+                                        Bronze
+                                    </span>
+                                    {% endif %}
                                 </span>
-                                {% elif team.silver_winner %}
-                                <span
-                                    class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                                    <i class="bi bi-award fs-6 m-1"></i>
-                                    Silver
-                                </span>
-                                {% elif team.bronze_winner %}
-                                <span
-                                    class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-                                    <i class="bi bi-award fs-6 m-1"></i>
-                                    Bronze
-                                </span>
-                                {% endif %}
-                            </span>
+                            </div>
                         </div>
                     </button>
                 </h2>
@@ -304,7 +317,7 @@
         addMember();
     }
 
-    function addMember(name="") {
+    function addMember(name = "") {
         member_count++;
         input = document.getElementById("register-form-member").innerHTML;
         input = input.replace(/member_name/g, name);
@@ -316,7 +329,7 @@
         document.getElementById("register-form-members").appendChild(el);
         setAddButtonVisibility();
     }
-    
+
     function setAddButtonVisibility() {
         add_member_button = document.getElementById("add-member-button");
         if (member_count >= members_upper_limit)

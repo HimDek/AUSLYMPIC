@@ -21,9 +21,14 @@
 </div>
 
 <div class="d-flex align-items-center justify-content-evenly flex-wrap bg-body p-0 p-md-5">
-    <div class="d-flex align-items-center p-3 w-100">
-        <div class="col-8 lead">
-            Department
+    <div class="d-flex w-100 p-3">
+        <div class="col-8 d-flex align-items-center justify-content-start">
+            <div style="width: 3ch;">
+                {{ forloop.counter }}
+            </div>
+            <div class="lead">
+                Department
+            </div>
         </div>
         <div class="col-1 text-center">
             <i class="bi bi-1-circle text-warning-emphasis fs-5"></i>
@@ -46,8 +51,13 @@
                     data-bs-target="#collapse-{{ department.name }}" aria-expanded="false"
                     aria-controls="collapse-{{ department.name }}">
                     <div class="d-flex align-items-center w-100">
-                        <div class="col-8">
-                            {{ department }}
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                {{ forloop.counter }}
+                            </div>
+                            <div>
+                                {{ department }}
+                            </div>
                         </div>
                         <div class="col-1 text-warning-emphasis text-center">
                             {{ department.gold_winner_count }}
