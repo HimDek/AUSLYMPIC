@@ -75,6 +75,10 @@
       margin-top: 6.5rem;
   }
 
+  input, button {
+    text-transform: unset;
+  }
+
   .cut-corner:before {
       content: '';
       position: absolute;

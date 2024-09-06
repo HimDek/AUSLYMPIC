@@ -97,7 +97,7 @@
                     <ol class="list-group list-group-flush list-group-numbered">
                         {% for team in department.gold_winners.all %}
                         <li class="list-group-item d-flex justify-content-start align-items-start p-3">
-                            <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none">
+                            <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
                                     {{ team.department }}
@@ -128,7 +128,7 @@
                         {% endfor %}
                         {% for team in department.silver_winners.all %}
                         <li class="list-group-item d-flex justify-content-start align-items-start p-3">
-                            <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none">
+                            <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
                                     {{ team.department }}
@@ -159,7 +159,7 @@
                         {% endfor %}
                         {% for team in department.bronze_winners.all %}
                         <li class="list-group-item d-flex justify-content-start align-items-start p-3">
-                            <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none">
+                            <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
                                     {{ team.department }}
