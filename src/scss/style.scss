@@ -26,6 +26,7 @@ body {
 
 .hide-down-container .hide-down {
     transform: scaleY(100%);
+    transform-origin: bottom;
     transition: transform 0.3s;
 }
 
