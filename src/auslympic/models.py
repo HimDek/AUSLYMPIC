@@ -134,6 +134,10 @@ class Department(models.Model):
     name = models.CharField(max_length=100, choices=DEPARTMENT_OPTIONS, unique=True)
 
     @property
+    def get_name(self):
+        return self.get_name_display().replace("Department of", "")
+
+    @property
     def gold_winners(self):
         return Team.objects.filter(department=self, gold_winner=True)
 
