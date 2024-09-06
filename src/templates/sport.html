@@ -5,15 +5,17 @@
 {% block title %}{{ sport.name }} | {% endblock %}
 
 {% block body %}
-<img src="{{ sport.image.url }}" class="object-fit-cover sticky-top z-n1 w-100 vh-100" style="object-position: top;"
-    alt="sport">
+<div class="vh-100">
+    <img src="{{ sport.image.url }}" class="object-fit-cover position-fixed top-0 z-n1 w-100 h-100"
+        alt="{{ sport.name }}">
+</div>
 
 <div class="vw-100 overflow-hidden">
     <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
         <div class="vw-100 p-4 p-md-5">
             <div class="row gap-4 justify-content-center justify-content-sm-start align-items-center">
                 <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                    <img src="{% static 'logo.png' %}" class="w-100" />
+                    <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
                 </div>
                 <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
                     <h1 class="display-5 fst-italic text-uppercase">{{ sport.name }}</h1>
