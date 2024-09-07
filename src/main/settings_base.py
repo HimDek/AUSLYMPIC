@@ -133,20 +133,3 @@ STATICFILES_DIRS = [
 MEDIA_URL = "media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
-
-STORAGES = {
-    "default": {
-        "BACKEND": "storages.backends.s3.S3Storage",
-        "OPTIONS": {},
-    },
-    "staticfiles": {
-        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
-    },
-}
-
-AWS_S3_ENDPOINT_URL = "https://s3.ap-south-1.amazonaws.com"
-AWS_S3_REGION_NAME = "ap-south-1"
-AWS_STORAGE_BUCKET_NAME = "auslympic-2024-ap-south-1"
-AWS_S3_OBJECT_PARAMETERS = {
-    "StorageClass": "INTELLIGENT_TIERING",
-}
