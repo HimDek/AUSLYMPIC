@@ -140,7 +140,8 @@ STORAGES = {
         "OPTIONS": {},
     },
     "staticfiles": {
-        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+        "BACKEND": "storages.backends.s3.S3Storage",
+        "OPTIONS": {},
     },
 }
 
