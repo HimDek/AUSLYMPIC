@@ -50,7 +50,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = "main.urls"
@@ -131,13 +130,17 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "node_modules", "jquery", "dist"),
 ]
 
+STATIC_URL = "media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
+
 STORAGES = {
     "default": {
         "BACKEND": "storages.backends.s3.S3Storage",
         "OPTIONS": {},
     },
     "staticfiles": {
-        "BACKEND": 'whitenoise.storage.CompressedManifestStaticFilesStorage',
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
 
