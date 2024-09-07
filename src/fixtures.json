@@ -1,5 +1,3905 @@
 [
     {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-09-04T15:05:02.576Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Cricket",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-09-04T15:23:29.628Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-09-04T15:42:45.977Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-09-04T15:43:45.704Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-09-04T17:32:06.201Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-09-04T17:37:47.738Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-09-04T17:50:35.595Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (2)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-09-04T17:54:37.695Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "6001982611",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-09-04T17:56:15.365Z",
+            "user": 1,
+            "content_type": 3,
+            "object_id": "1",
+            "object_repr": "Coordinators",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2024-09-04T17:56:21.086Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "6001982611",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2024-09-04T17:57:20.756Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "4",
+            "object_repr": "9365865072",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2024-09-04T17:57:42.466Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "4",
+            "object_repr": "9365865072",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2024-09-04T17:58:30.455Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "5",
+            "object_repr": "6001259684",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2024-09-04T17:58:59.337Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "5",
+            "object_repr": "6001259684",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2024-09-04T17:59:07.387Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (3)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (4)\"}}, {\"changed\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (2)\", \"fields\": [\"User\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2024-09-04T17:59:33.723Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (5)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (6)\"}}, {\"changed\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (1)\", \"fields\": [\"User\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2024-09-04T18:01:00.763Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2024-09-04T18:01:51.017Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "6",
+            "object_repr": "9957649082",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2024-09-04T18:02:25.371Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "6",
+            "object_repr": "9957649082",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2024-09-04T18:02:42.333Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "7",
+            "object_repr": "8731975282",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2024-09-04T18:03:10.701Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "7",
+            "object_repr": "8731975282",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2024-09-04T18:03:31.404Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "6",
+            "object_repr": "9957649082",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2024-09-04T18:03:52.881Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Men's Football",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (7)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (8)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2024-09-04T18:05:01.721Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Women's Football",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (9)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (10)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2024-09-04T18:06:45.772Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "7002267087",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2024-09-04T18:07:02.685Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "1",
+            "object_repr": "8822884673",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2024-09-04T18:08:01.300Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "8",
+            "object_repr": "d",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2024-09-04T18:08:29.613Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "8",
+            "object_repr": "9101274196",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2024-09-04T18:09:22.893Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "9",
+            "object_repr": "Tailang",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2024-09-04T18:09:56.381Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "9",
+            "object_repr": "9957186971",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2024-09-04T18:10:53.976Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "10",
+            "object_repr": "8099142522",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2024-09-04T18:11:12.609Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "10",
+            "object_repr": "8099142522",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2024-09-04T18:11:41.574Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "11",
+            "object_repr": "9387823900",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2024-09-04T18:11:56.583Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "11",
+            "object_repr": "9387823900",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2024-09-04T18:12:24.430Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "12",
+            "object_repr": "7635872983",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2024-09-04T18:12:39.246Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "12",
+            "object_repr": "7635872983",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2024-09-04T18:13:04.912Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "13",
+            "object_repr": "8822470883",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2024-09-04T18:13:17.244Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "13",
+            "object_repr": "8822470883",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2024-09-04T18:14:05.830Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "14",
+            "object_repr": "6900558753",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2024-09-04T18:14:15.234Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "14",
+            "object_repr": "6900558753",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2024-09-04T18:14:44.716Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "15",
+            "object_repr": "6901970865",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2024-09-04T18:14:57.788Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "15",
+            "object_repr": "6901970865",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2024-09-04T18:15:32.413Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "16",
+            "object_repr": "8638280029",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2024-09-04T18:15:49.191Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "16",
+            "object_repr": "8638280029",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2024-09-04T18:19:23.201Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "17",
+            "object_repr": "6900017160",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2024-09-04T18:19:36.804Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "17",
+            "object_repr": "6900017160",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2024-09-04T18:20:05.859Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "18",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2024-09-04T18:20:23.500Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "18",
+            "object_repr": "Palash Sharma",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2024-09-04T18:20:54.534Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "19",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2024-09-04T18:21:08.499Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "19",
+            "object_repr": "Rahul Thakur",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2024-09-04T18:27:47.692Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "20",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2024-09-04T18:28:00.629Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "20",
+            "object_repr": "Zidan Habib",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2024-09-04T18:28:44.982Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "21",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2024-09-04T18:28:55.447Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "21",
+            "object_repr": "Razin ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2024-09-04T18:29:19.479Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "22",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2024-09-04T18:29:34.938Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "22",
+            "object_repr": "Jeet Girani",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2024-09-04T18:30:11.355Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Men's Volleyball",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (11)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (12)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (13)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2024-09-04T18:30:53.014Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Women's Volleyball",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (14)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (15)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (16)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2024-09-04T18:33:09.762Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Men's Basketball",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (17)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2024-09-04T18:33:25.976Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Women's Basketball",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (18)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2024-09-04T18:34:08.781Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Men's Kho Kho",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (19)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (20)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (21)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 62,
+        "fields": {
+            "action_time": "2024-09-04T18:34:37.051Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Women's Kho Kho",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (22)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (23)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (24)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 63,
+        "fields": {
+            "action_time": "2024-09-04T18:35:34.060Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabaddi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (25)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (26)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 64,
+        "fields": {
+            "action_time": "2024-09-04T18:35:52.324Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Women's Kabaddi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (27)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (28)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 65,
+        "fields": {
+            "action_time": "2024-09-04T18:36:21.805Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "Men's Tug of War",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (29)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 66,
+        "fields": {
+            "action_time": "2024-09-04T18:36:39.821Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "Women's Tug of War",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (30)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 67,
+        "fields": {
+            "action_time": "2024-09-04T18:42:26.617Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "15",
+            "object_repr": "Men's Arm Wrestling",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (31)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (32)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (33)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 68,
+        "fields": {
+            "action_time": "2024-09-04T18:42:49.126Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "16",
+            "object_repr": "Women's Arm Wrestling",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (34)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (35)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (36)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 69,
+        "fields": {
+            "action_time": "2024-09-04T18:43:23.969Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "17",
+            "object_repr": "Men's Powerlifting",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (37)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (38)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (39)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 70,
+        "fields": {
+            "action_time": "2024-09-04T18:43:52.554Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "18",
+            "object_repr": "Women's Powerlifting",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (40)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (41)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (42)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 71,
+        "fields": {
+            "action_time": "2024-09-04T18:46:15.252Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "19",
+            "object_repr": "Men's Long Jump",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (43)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 72,
+        "fields": {
+            "action_time": "2024-09-04T18:46:29.859Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "20",
+            "object_repr": "Women's Long Jump",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (44)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 73,
+        "fields": {
+            "action_time": "2024-09-04T18:48:12.844Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "21",
+            "object_repr": "Men's Solo Carrom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (45)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 74,
+        "fields": {
+            "action_time": "2024-09-04T18:48:25.675Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "22",
+            "object_repr": "Women's Solo Carrom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (46)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 75,
+        "fields": {
+            "action_time": "2024-09-04T18:48:46.300Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "23",
+            "object_repr": "Men's Duo Carrom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (47)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 76,
+        "fields": {
+            "action_time": "2024-09-04T18:49:05.281Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "24",
+            "object_repr": "Women's Duo Carrom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (48)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 77,
+        "fields": {
+            "action_time": "2024-09-04T18:50:22.090Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "25",
+            "object_repr": "Mixed Duo Carrom",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (49)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 78,
+        "fields": {
+            "action_time": "2024-09-04T18:50:49.159Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "26",
+            "object_repr": "Chess",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (50)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (51)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 79,
+        "fields": {
+            "action_time": "2024-09-04T18:51:29.619Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "27",
+            "object_repr": "Men's Solo Tabble Tennis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (52)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 80,
+        "fields": {
+            "action_time": "2024-09-04T18:51:40.850Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "28",
+            "object_repr": "Women's Solo Tabble Tennis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (53)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 81,
+        "fields": {
+            "action_time": "2024-09-04T18:51:54.356Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "29",
+            "object_repr": "Men's Duo Tabble Tennis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (54)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 82,
+        "fields": {
+            "action_time": "2024-09-04T18:52:07.108Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "30",
+            "object_repr": "Women's Duo Tabble Tennis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (55)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 83,
+        "fields": {
+            "action_time": "2024-09-04T18:52:40.824Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "31",
+            "object_repr": "Mixed Duo Tabble Tennis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (56)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 84,
+        "fields": {
+            "action_time": "2024-09-04T18:54:59.799Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "23",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 85,
+        "fields": {
+            "action_time": "2024-09-04T18:55:21.178Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "23",
+            "object_repr": "H. Nissan Singha",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 86,
+        "fields": {
+            "action_time": "2024-09-04T18:55:27.207Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "32",
+            "object_repr": "Men's Solo Badminton",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (57)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 87,
+        "fields": {
+            "action_time": "2024-09-04T18:55:42.134Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "33",
+            "object_repr": "Women's Solo Badminton",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (58)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 88,
+        "fields": {
+            "action_time": "2024-09-04T18:55:54.784Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "34",
+            "object_repr": "Men's Duo Badminton",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (59)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 89,
+        "fields": {
+            "action_time": "2024-09-04T18:56:05.345Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "35",
+            "object_repr": "Women's Duo Badminton",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (60)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 90,
+        "fields": {
+            "action_time": "2024-09-04T18:56:19.810Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "36",
+            "object_repr": "Mixed Duo Badminton",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (61)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 91,
+        "fields": {
+            "action_time": "2024-09-04T19:01:16.184Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "37",
+            "object_repr": "FIFA",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (62)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 92,
+        "fields": {
+            "action_time": "2024-09-04T19:01:55.498Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "38",
+            "object_repr": "Valorant",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (63)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 93,
+        "fields": {
+            "action_time": "2024-09-04T19:02:31.547Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "39",
+            "object_repr": "BGMI",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (64)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (65)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 94,
+        "fields": {
+            "action_time": "2024-09-04T19:03:02.892Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "40",
+            "object_repr": "Moba Lengend",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (66)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (67)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 95,
+        "fields": {
+            "action_time": "2024-09-04T19:03:43.921Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "41",
+            "object_repr": "Discus Throw",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (68)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (69)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 96,
+        "fields": {
+            "action_time": "2024-09-04T19:03:55.876Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "41",
+            "object_repr": "Men's Discus Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 97,
+        "fields": {
+            "action_time": "2024-09-04T19:04:52.464Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "42",
+            "object_repr": "Women's Discus Throw",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (70)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (71)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 98,
+        "fields": {
+            "action_time": "2024-09-04T19:05:28.626Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "43",
+            "object_repr": "Men's Javelin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (72)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (73)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 99,
+        "fields": {
+            "action_time": "2024-09-04T19:05:36.662Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "43",
+            "object_repr": "Men's Javelin Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 100,
+        "fields": {
+            "action_time": "2024-09-04T19:05:55.129Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "44",
+            "object_repr": "Women's Javelin Throw",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (74)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (75)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 101,
+        "fields": {
+            "action_time": "2024-09-04T19:06:30.836Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "45",
+            "object_repr": "Men's Shot Put Throw",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (76)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (77)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 102,
+        "fields": {
+            "action_time": "2024-09-04T19:06:46.819Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "46",
+            "object_repr": "Women's Shot Put Throw",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (78)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (79)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 103,
+        "fields": {
+            "action_time": "2024-09-04T19:08:53.340Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "47",
+            "object_repr": "Men's Relay Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (80)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (81)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 104,
+        "fields": {
+            "action_time": "2024-09-04T19:09:15.240Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "48",
+            "object_repr": "Women's Relay Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (82)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (83)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 105,
+        "fields": {
+            "action_time": "2024-09-04T19:09:58.631Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "49",
+            "object_repr": "Men's 100 meter Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (84)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (85)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 106,
+        "fields": {
+            "action_time": "2024-09-04T19:10:35.409Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "50",
+            "object_repr": "Women's 100 meter Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (86)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (87)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 107,
+        "fields": {
+            "action_time": "2024-09-04T19:10:52.342Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "51",
+            "object_repr": "Men's 200 meter Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (88)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (89)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 108,
+        "fields": {
+            "action_time": "2024-09-04T19:11:05.563Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "52",
+            "object_repr": "Women's 200 meter Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (90)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (91)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 109,
+        "fields": {
+            "action_time": "2024-09-04T19:11:49.543Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "53",
+            "object_repr": "Men's High Jump",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (92)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 110,
+        "fields": {
+            "action_time": "2024-09-04T19:11:58.975Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "53",
+            "object_repr": "Men's High Jump",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (93)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 111,
+        "fields": {
+            "action_time": "2024-09-04T19:12:12.350Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "54",
+            "object_repr": "Women's High Jump",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (94)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (95)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 112,
+        "fields": {
+            "action_time": "2024-09-04T19:12:42.145Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "37",
+            "object_repr": "FIFA 2023",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 113,
+        "fields": {
+            "action_time": "2024-09-04T20:07:58.724Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "SportGroup object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 114,
+        "fields": {
+            "action_time": "2024-09-04T20:08:18.577Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "SportGroup object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 115,
+        "fields": {
+            "action_time": "2024-09-04T20:08:37.685Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "SportGroup object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 116,
+        "fields": {
+            "action_time": "2024-09-04T20:09:04.347Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "SportGroup object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 117,
+        "fields": {
+            "action_time": "2024-09-04T20:09:19.041Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "5",
+            "object_repr": "SportGroup object (5)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 118,
+        "fields": {
+            "action_time": "2024-09-04T20:09:34.167Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "SportGroup object (6)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 119,
+        "fields": {
+            "action_time": "2024-09-04T20:09:55.771Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "7",
+            "object_repr": "SportGroup object (7)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 120,
+        "fields": {
+            "action_time": "2024-09-04T20:10:21.154Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "8",
+            "object_repr": "SportGroup object (8)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 121,
+        "fields": {
+            "action_time": "2024-09-04T20:10:47.531Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "9",
+            "object_repr": "SportGroup object (9)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 122,
+        "fields": {
+            "action_time": "2024-09-04T20:11:03.233Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "10",
+            "object_repr": "SportGroup object (10)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 123,
+        "fields": {
+            "action_time": "2024-09-04T20:11:16.546Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "11",
+            "object_repr": "SportGroup object (11)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 124,
+        "fields": {
+            "action_time": "2024-09-04T20:11:39.891Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "12",
+            "object_repr": "SportGroup object (12)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 125,
+        "fields": {
+            "action_time": "2024-09-04T20:12:03.955Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "13",
+            "object_repr": "SportGroup object (13)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 126,
+        "fields": {
+            "action_time": "2024-09-04T20:12:21.173Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "14",
+            "object_repr": "SportGroup object (14)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 127,
+        "fields": {
+            "action_time": "2024-09-04T20:12:44.252Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "15",
+            "object_repr": "SportGroup object (15)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 128,
+        "fields": {
+            "action_time": "2024-09-04T20:13:04.385Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "16",
+            "object_repr": "SportGroup object (16)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 129,
+        "fields": {
+            "action_time": "2024-09-04T20:13:25.259Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "17",
+            "object_repr": "SportGroup object (17)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 130,
+        "fields": {
+            "action_time": "2024-09-04T20:13:48.030Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "18",
+            "object_repr": "SportGroup object (18)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 131,
+        "fields": {
+            "action_time": "2024-09-04T20:14:08.881Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "19",
+            "object_repr": "SportGroup object (19)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 132,
+        "fields": {
+            "action_time": "2024-09-04T20:14:27.356Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "20",
+            "object_repr": "SportGroup object (20)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 133,
+        "fields": {
+            "action_time": "2024-09-04T20:14:44.925Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "21",
+            "object_repr": "SportGroup object (21)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 134,
+        "fields": {
+            "action_time": "2024-09-04T20:15:01.739Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "22",
+            "object_repr": "SportGroup object (22)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 135,
+        "fields": {
+            "action_time": "2024-09-04T20:15:24.729Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "23",
+            "object_repr": "SportGroup object (23)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 136,
+        "fields": {
+            "action_time": "2024-09-04T20:15:49.026Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "24",
+            "object_repr": "SportGroup object (24)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 137,
+        "fields": {
+            "action_time": "2024-09-04T20:16:12.988Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "25",
+            "object_repr": "SportGroup object (25)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 138,
+        "fields": {
+            "action_time": "2024-09-04T20:16:29.677Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "26",
+            "object_repr": "SportGroup object (26)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 139,
+        "fields": {
+            "action_time": "2024-09-04T20:17:13.915Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "27",
+            "object_repr": "SportGroup object (27)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 140,
+        "fields": {
+            "action_time": "2024-09-04T20:17:29.209Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "28",
+            "object_repr": "SportGroup object (28)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 141,
+        "fields": {
+            "action_time": "2024-09-04T20:32:07.349Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "17",
+            "object_repr": "Men's Powerlifting",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 142,
+        "fields": {
+            "action_time": "2024-09-04T20:32:08.352Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "18",
+            "object_repr": "Women's Powerlifting",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 143,
+        "fields": {
+            "action_time": "2024-09-04T20:32:54.266Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "Women's Tug of War",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 144,
+        "fields": {
+            "action_time": "2024-09-04T20:32:58.942Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "Men's Tug of War",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 145,
+        "fields": {
+            "action_time": "2024-09-04T20:33:26.915Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Women's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 146,
+        "fields": {
+            "action_time": "2024-09-04T20:33:34.485Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 147,
+        "fields": {
+            "action_time": "2024-09-04T20:33:35.705Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 148,
+        "fields": {
+            "action_time": "2024-09-04T20:33:46.709Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Women's Kho Kho",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 149,
+        "fields": {
+            "action_time": "2024-09-04T20:33:55.119Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Men's Kho Kho",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 150,
+        "fields": {
+            "action_time": "2024-09-04T20:34:12.557Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Women's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 151,
+        "fields": {
+            "action_time": "2024-09-04T20:34:18.125Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Men's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 152,
+        "fields": {
+            "action_time": "2024-09-04T20:34:28.497Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Women's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 153,
+        "fields": {
+            "action_time": "2024-09-04T20:34:32.731Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Men's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 154,
+        "fields": {
+            "action_time": "2024-09-04T20:34:51.085Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 155,
+        "fields": {
+            "action_time": "2024-09-04T20:35:02.399Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "19",
+            "object_repr": "Men's Long Jump",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 156,
+        "fields": {
+            "action_time": "2024-09-04T20:35:07.226Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "20",
+            "object_repr": "Women's Long Jump",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 157,
+        "fields": {
+            "action_time": "2024-09-04T20:35:17.547Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "16",
+            "object_repr": "Women's Arm Wrestling",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 158,
+        "fields": {
+            "action_time": "2024-09-04T20:35:28.154Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "15",
+            "object_repr": "Men's Arm Wrestling",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 159,
+        "fields": {
+            "action_time": "2024-09-05T04:31:46.375Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "15",
+            "object_repr": "Men's Arm Wrestling",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Rulebook\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 160,
+        "fields": {
+            "action_time": "2024-09-05T04:31:47.761Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "16",
+            "object_repr": "Women's Arm Wrestling",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Rulebook\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 161,
+        "fields": {
+            "action_time": "2024-09-05T04:31:50.262Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "17",
+            "object_repr": "Men's Powerlifting",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Rulebook\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 162,
+        "fields": {
+            "action_time": "2024-09-05T04:31:51.368Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "18",
+            "object_repr": "Women's Powerlifting",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Rulebook\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 163,
+        "fields": {
+            "action_time": "2024-09-05T05:09:31.599Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "Notice object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 164,
+        "fields": {
+            "action_time": "2024-09-05T05:17:37.715Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "Notice object (1)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"File\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 165,
+        "fields": {
+            "action_time": "2024-09-05T07:23:04.964Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Nayem Ahmed Department of Computer Science & Engineering",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Members\", \"Gold winner\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 166,
+        "fields": {
+            "action_time": "2024-09-05T07:23:07.348Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "New Team Department of Commerce",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Members\", \"Silver winner\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 167,
+        "fields": {
+            "action_time": "2024-09-05T07:23:09.952Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "esdvz Department of Political Science",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Members\", \"Bronze winner\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 168,
+        "fields": {
+            "action_time": "2024-09-05T07:49:17.486Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "7",
+            "object_repr": "kjjbsfews Department of Hindi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Member\", \"Gold winner\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 169,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.120Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "51",
+            "object_repr": "Central Library",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 170,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.120Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "50",
+            "object_repr": "Additional Courses",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 171,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "49",
+            "object_repr": "Computer Centre",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 172,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "39",
+            "object_repr": "Centre for Studies in Bio-Diversity and Natural Resource Conservation",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 173,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "34",
+            "object_repr": "Centre for Bio-informatics",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 174,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "32",
+            "object_repr": "Central Instrumentation Laboratory",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 175,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "28",
+            "object_repr": "Centre for Soft Matter",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 176,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "25",
+            "object_repr": "Centre for Educational Planning and Management",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 177,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "19",
+            "object_repr": "Department of Anthropology",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 178,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "9",
+            "object_repr": "Department of Assamese",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 179,
+        "fields": {
+            "action_time": "2024-09-05T13:00:06.121Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Centre for Endangered Language, Manuscriptology & Folkloristics",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 180,
+        "fields": {
+            "action_time": "2024-09-05T13:04:34.068Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "24",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 181,
+        "fields": {
+            "action_time": "2024-09-05T13:04:57.903Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "24",
+            "object_repr": "Panku Sarkar",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 182,
+        "fields": {
+            "action_time": "2024-09-05T13:05:11.801Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Men's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (96)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 183,
+        "fields": {
+            "action_time": "2024-09-05T13:05:13.342Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Women's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (97)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 184,
+        "fields": {
+            "action_time": "2024-09-05T13:05:47.536Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "25",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 185,
+        "fields": {
+            "action_time": "2024-09-05T13:06:06.513Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "25",
+            "object_repr": "Jiban Prajapati",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 186,
+        "fields": {
+            "action_time": "2024-09-05T13:06:30.137Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "26",
+            "object_repr": "Chess",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (51)\", \"fields\": [\"User\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 187,
+        "fields": {
+            "action_time": "2024-09-05T13:06:35.022Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "26",
+            "object_repr": "Chess",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (98)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 188,
+        "fields": {
+            "action_time": "2024-09-05T13:07:36.555Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "38",
+            "object_repr": "Valorant",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (99)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 189,
+        "fields": {
+            "action_time": "2024-09-05T13:08:08.193Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "26",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 190,
+        "fields": {
+            "action_time": "2024-09-05T13:08:24.561Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "26",
+            "object_repr": "Mayur ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 191,
+        "fields": {
+            "action_time": "2024-09-05T13:08:28.368Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "38",
+            "object_repr": "Valorant",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (100)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 192,
+        "fields": {
+            "action_time": "2024-09-05T13:08:47.281Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "40",
+            "object_repr": "Moba Lengends",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 193,
+        "fields": {
+            "action_time": "2024-09-05T13:12:03.483Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (101)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 194,
+        "fields": {
+            "action_time": "2024-09-05T13:12:14.025Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (102)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 195,
+        "fields": {
+            "action_time": "2024-09-05T13:41:17.581Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Registration deadline\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 196,
+        "fields": {
+            "action_time": "2024-09-05T13:42:23.042Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Registration deadline\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 197,
+        "fields": {
+            "action_time": "2024-09-05T14:47:51.689Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "22",
+            "object_repr": "Moba Legends",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 198,
+        "fields": {
+            "action_time": "2024-09-05T15:54:31.358Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 199,
+        "fields": {
+            "action_time": "2024-09-05T15:55:38.803Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 200,
+        "fields": {
+            "action_time": "2024-09-05T15:57:24.027Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 201,
+        "fields": {
+            "action_time": "2024-09-05T15:57:57.806Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Men's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 202,
+        "fields": {
+            "action_time": "2024-09-05T15:58:02.409Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Women's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 203,
+        "fields": {
+            "action_time": "2024-09-05T15:58:07.810Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Men's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 204,
+        "fields": {
+            "action_time": "2024-09-05T15:58:13.987Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Women's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 205,
+        "fields": {
+            "action_time": "2024-09-05T15:58:19.672Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Men's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 206,
+        "fields": {
+            "action_time": "2024-09-05T15:58:26.512Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Women's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 207,
+        "fields": {
+            "action_time": "2024-09-05T15:58:31.070Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Men's Kho Kho",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 208,
+        "fields": {
+            "action_time": "2024-09-05T15:58:36.881Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Women's Kho Kho",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 209,
+        "fields": {
+            "action_time": "2024-09-05T15:59:01.455Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 210,
+        "fields": {
+            "action_time": "2024-09-05T15:59:06.397Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Women's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 211,
+        "fields": {
+            "action_time": "2024-09-05T15:59:13.954Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "Men's Tug of War",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 212,
+        "fields": {
+            "action_time": "2024-09-05T15:59:19.994Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "Women's Tug of War",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 213,
+        "fields": {
+            "action_time": "2024-09-05T16:39:12.145Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Team size min\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 214,
+        "fields": {
+            "action_time": "2024-09-06T01:58:47.473Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "28",
+            "object_repr": "200 meter Race",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 215,
+        "fields": {
+            "action_time": "2024-09-06T02:00:39.849Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "29",
+            "object_repr": "200 meter Race",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 216,
+        "fields": {
+            "action_time": "2024-09-06T02:04:39.507Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "53",
+            "object_repr": "Men's High Jump",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 217,
+        "fields": {
+            "action_time": "2024-09-06T02:04:40.222Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "54",
+            "object_repr": "Women's High Jump",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 218,
+        "fields": {
+            "action_time": "2024-09-06T02:05:04.984Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "52",
+            "object_repr": "Women's 200 meter Race",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 219,
+        "fields": {
+            "action_time": "2024-09-06T02:05:09.112Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "51",
+            "object_repr": "Men's 200 meter Race",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 220,
+        "fields": {
+            "action_time": "2024-09-06T02:05:41.704Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "50",
+            "object_repr": "Women's 100 meter Race",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 221,
+        "fields": {
+            "action_time": "2024-09-06T02:05:49.281Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "49",
+            "object_repr": "Men's 100 meter Race",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 222,
+        "fields": {
+            "action_time": "2024-09-06T02:07:03.781Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "48",
+            "object_repr": "Women's Relay Race",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 223,
+        "fields": {
+            "action_time": "2024-09-06T02:07:08.142Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "47",
+            "object_repr": "Men's Relay Race",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 224,
+        "fields": {
+            "action_time": "2024-09-06T02:07:15.225Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "46",
+            "object_repr": "Women's Shot Put Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 225,
+        "fields": {
+            "action_time": "2024-09-06T02:07:17.883Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "45",
+            "object_repr": "Men's Shot Put Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 226,
+        "fields": {
+            "action_time": "2024-09-06T02:07:35.323Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "44",
+            "object_repr": "Women's Javelin Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 227,
+        "fields": {
+            "action_time": "2024-09-06T02:07:42.713Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "43",
+            "object_repr": "Men's Javelin Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 228,
+        "fields": {
+            "action_time": "2024-09-06T02:08:01.502Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "42",
+            "object_repr": "Women's Discus Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 229,
+        "fields": {
+            "action_time": "2024-09-06T02:08:09.480Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "41",
+            "object_repr": "Men's Discus Throw",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 230,
+        "fields": {
+            "action_time": "2024-09-06T02:08:34.283Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "36",
+            "object_repr": "Mixed Duo Badminton",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 231,
+        "fields": {
+            "action_time": "2024-09-06T02:08:42.253Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "35",
+            "object_repr": "Women's Duo Badminton",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 232,
+        "fields": {
+            "action_time": "2024-09-06T02:08:47.482Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "34",
+            "object_repr": "Men's Duo Badminton",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 233,
+        "fields": {
+            "action_time": "2024-09-06T02:08:54.449Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "33",
+            "object_repr": "Women's Solo Badminton",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 234,
+        "fields": {
+            "action_time": "2024-09-06T02:09:02.303Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "32",
+            "object_repr": "Men's Solo Badminton",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 235,
+        "fields": {
+            "action_time": "2024-09-06T02:09:37.034Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "31",
+            "object_repr": "Mixed Duo Tabble Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 236,
+        "fields": {
+            "action_time": "2024-09-06T02:09:42.599Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "30",
+            "object_repr": "Women's Duo Tabble Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 237,
+        "fields": {
+            "action_time": "2024-09-06T02:09:49.111Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "29",
+            "object_repr": "Men's Duo Tabble Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 238,
+        "fields": {
+            "action_time": "2024-09-06T02:09:57.218Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "28",
+            "object_repr": "Women's Solo Tabble Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 239,
+        "fields": {
+            "action_time": "2024-09-06T02:10:04.944Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "27",
+            "object_repr": "Men's Solo Tabble Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 240,
+        "fields": {
+            "action_time": "2024-09-06T02:10:09.841Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "31",
+            "object_repr": "Mixed Duo Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 241,
+        "fields": {
+            "action_time": "2024-09-06T02:10:16.539Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "30",
+            "object_repr": "Women's Duo Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 242,
+        "fields": {
+            "action_time": "2024-09-06T02:10:23.986Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "29",
+            "object_repr": "Men's Duo Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 243,
+        "fields": {
+            "action_time": "2024-09-06T02:10:31.450Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "28",
+            "object_repr": "Women's Solo Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 244,
+        "fields": {
+            "action_time": "2024-09-06T02:10:48.654Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "27",
+            "object_repr": "Men's Solo Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 245,
+        "fields": {
+            "action_time": "2024-09-06T02:11:19.133Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "16",
+            "object_repr": "Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 246,
+        "fields": {
+            "action_time": "2024-09-06T02:11:21.870Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "15",
+            "object_repr": "Table Tennis",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 247,
+        "fields": {
+            "action_time": "2024-09-06T02:11:45.279Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "26",
+            "object_repr": "Chess",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 248,
+        "fields": {
+            "action_time": "2024-09-06T02:11:49.411Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "25",
+            "object_repr": "Mixed Duo Carrom",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 249,
+        "fields": {
+            "action_time": "2024-09-06T02:11:55.607Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "24",
+            "object_repr": "Women's Duo Carrom",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 250,
+        "fields": {
+            "action_time": "2024-09-06T02:12:02.367Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "23",
+            "object_repr": "Men's Duo Carrom",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 251,
+        "fields": {
+            "action_time": "2024-09-06T02:12:08.630Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "22",
+            "object_repr": "Women's Solo Carrom",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 252,
+        "fields": {
+            "action_time": "2024-09-06T02:12:13.386Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "21",
+            "object_repr": "Men's Solo Carrom",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 253,
+        "fields": {
+            "action_time": "2024-09-06T02:13:06.717Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Women's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 254,
+        "fields": {
+            "action_time": "2024-09-06T02:13:11.893Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 255,
+        "fields": {
+            "action_time": "2024-09-06T02:13:35.254Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabadi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 256,
+        "fields": {
+            "action_time": "2024-09-06T02:13:37.521Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Women's Kabadi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 257,
+        "fields": {
+            "action_time": "2024-09-06T02:13:52.647Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "Kabadi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 258,
+        "fields": {
+            "action_time": "2024-09-06T02:14:26.648Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Women's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 259,
+        "fields": {
+            "action_time": "2024-09-06T02:14:33.578Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Men's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 260,
+        "fields": {
+            "action_time": "2024-09-06T06:37:49.399Z",
+            "user": 22,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "New Team Department of Electronics & Communication Engineering",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Phone\", \"Department\", \"Members\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 261,
+        "fields": {
+            "action_time": "2024-09-06T11:15:41.443Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "22",
+            "object_repr": "Moba Legends",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 262,
+        "fields": {
+            "action_time": "2024-09-06T11:15:41.443Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "21",
+            "object_repr": "BGMI",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 263,
+        "fields": {
+            "action_time": "2024-09-06T11:15:41.443Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "20",
+            "object_repr": "Valorant",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 264,
+        "fields": {
+            "action_time": "2024-09-06T11:16:41.743Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "19",
+            "object_repr": "e-Sports",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Sports\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 265,
+        "fields": {
+            "action_time": "2024-09-06T11:17:10.757Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "39",
+            "object_repr": "BGMI",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 266,
+        "fields": {
+            "action_time": "2024-09-06T11:17:14.797Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "38",
+            "object_repr": "Valorant",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 267,
+        "fields": {
+            "action_time": "2024-09-06T11:17:23.981Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "37",
+            "object_repr": "FIFA 2023",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 268,
+        "fields": {
+            "action_time": "2024-09-06T11:17:35.407Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "40",
+            "object_repr": "Moba Lengends",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 269,
+        "fields": {
+            "action_time": "2024-09-06T13:15:50.484Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 270,
+        "fields": {
+            "action_time": "2024-09-06T13:15:54.513Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "Women's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 271,
+        "fields": {
+            "action_time": "2024-09-06T13:15:58.207Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "Men's Kabaddi",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 272,
+        "fields": {
+            "action_time": "2024-09-06T13:17:00.499Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 273,
+        "fields": {
+            "action_time": "2024-09-06T13:17:05.163Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 274,
+        "fields": {
+            "action_time": "2024-09-06T13:17:08.865Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Men's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 275,
+        "fields": {
+            "action_time": "2024-09-06T13:17:12.532Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Women's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 276,
+        "fields": {
+            "action_time": "2024-09-06T13:17:16.713Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Men's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 277,
+        "fields": {
+            "action_time": "2024-09-06T13:17:20.656Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Women's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 278,
+        "fields": {
+            "action_time": "2024-09-06T13:17:24.451Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Men's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 279,
+        "fields": {
+            "action_time": "2024-09-06T13:17:32.856Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Women's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 280,
+        "fields": {
+            "action_time": "2024-09-06T13:18:35.922Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 281,
+        "fields": {
+            "action_time": "2024-09-06T13:18:40.917Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 282,
+        "fields": {
+            "action_time": "2024-09-06T13:18:44.687Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Men's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 283,
+        "fields": {
+            "action_time": "2024-09-06T13:18:48.032Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Women's Football",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 284,
+        "fields": {
+            "action_time": "2024-09-06T13:18:50.936Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Men's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 285,
+        "fields": {
+            "action_time": "2024-09-06T13:18:54.196Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Women's Volleyball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 286,
+        "fields": {
+            "action_time": "2024-09-06T13:18:59.413Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Men's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 287,
+        "fields": {
+            "action_time": "2024-09-06T13:19:03.055Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Women's Basketball",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 288,
+        "fields": {
+            "action_time": "2024-09-06T13:37:55.183Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "46",
+            "object_repr": "Department of Geography",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 289,
+        "fields": {
+            "action_time": "2024-09-06T13:41:58.324Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "52",
+            "object_repr": "Department of Hospitality & Tourism",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 290,
+        "fields": {
+            "action_time": "2024-09-06T13:42:33.203Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "37",
+            "object_repr": "Department of BBA",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 291,
+        "fields": {
+            "action_time": "2024-09-06T13:43:57.510Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "53",
+            "object_repr": "Department of BBA",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 292,
+        "fields": {
+            "action_time": "2024-09-06T19:04:17.356Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "Test",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 293,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "7",
+            "object_repr": "kjjbsfews Department of Hindi",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 294,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Nayem Ahmed Department of Computer Science & Engineering",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 295,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "New Team Department of Electronics & Communication Engineering",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 296,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "esdvz Department of Political Science",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 297,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "8",
+            "object_repr": "szfvdsdz Department of Computer Science & Engineering",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 298,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "6",
+            "object_repr": "wasfczs Department of Social Work",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 299,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Nym Department of Linguistics",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 300,
+        "fields": {
+            "action_time": "2024-09-06T19:04:30.837Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Nym Department of Linguistics",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
         "model": "auth.permission",
         "pk": 1,
         "fields": {
@@ -219,160 +4119,713 @@
         "model": "auth.permission",
         "pk": 25,
         "fields": {
-            "name": "Can add coordinator",
+            "name": "Can add department",
             "content_type": 7,
-            "codename": "add_coordinator"
+            "codename": "add_department"
         }
     },
     {
         "model": "auth.permission",
         "pk": 26,
         "fields": {
-            "name": "Can change coordinator",
+            "name": "Can change department",
             "content_type": 7,
-            "codename": "change_coordinator"
+            "codename": "change_department"
         }
     },
     {
         "model": "auth.permission",
         "pk": 27,
         "fields": {
-            "name": "Can delete coordinator",
+            "name": "Can delete department",
             "content_type": 7,
-            "codename": "delete_coordinator"
+            "codename": "delete_department"
         }
     },
     {
         "model": "auth.permission",
         "pk": 28,
         "fields": {
-            "name": "Can view coordinator",
+            "name": "Can view department",
             "content_type": 7,
-            "codename": "view_coordinator"
+            "codename": "view_department"
         }
     },
     {
         "model": "auth.permission",
         "pk": 29,
         "fields": {
-            "name": "Can add department",
+            "name": "Can add sport",
             "content_type": 8,
-            "codename": "add_department"
+            "codename": "add_sport"
         }
     },
     {
         "model": "auth.permission",
         "pk": 30,
         "fields": {
-            "name": "Can change department",
+            "name": "Can change sport",
             "content_type": 8,
-            "codename": "change_department"
+            "codename": "change_sport"
         }
     },
     {
         "model": "auth.permission",
         "pk": 31,
         "fields": {
-            "name": "Can delete department",
+            "name": "Can delete sport",
             "content_type": 8,
-            "codename": "delete_department"
+            "codename": "delete_sport"
         }
     },
     {
         "model": "auth.permission",
         "pk": 32,
         "fields": {
-            "name": "Can view department",
+            "name": "Can view sport",
             "content_type": 8,
-            "codename": "view_department"
+            "codename": "view_sport"
         }
     },
     {
         "model": "auth.permission",
         "pk": 33,
         "fields": {
-            "name": "Can add sport",
+            "name": "Can add team",
             "content_type": 9,
-            "codename": "add_sport"
+            "codename": "add_team"
         }
     },
     {
         "model": "auth.permission",
         "pk": 34,
         "fields": {
-            "name": "Can change sport",
+            "name": "Can change team",
             "content_type": 9,
-            "codename": "change_sport"
+            "codename": "change_team"
         }
     },
     {
         "model": "auth.permission",
         "pk": 35,
         "fields": {
-            "name": "Can delete sport",
+            "name": "Can delete team",
             "content_type": 9,
-            "codename": "delete_sport"
+            "codename": "delete_team"
         }
     },
     {
         "model": "auth.permission",
         "pk": 36,
         "fields": {
-            "name": "Can view sport",
+            "name": "Can view team",
             "content_type": 9,
-            "codename": "view_sport"
+            "codename": "view_team"
         }
     },
     {
         "model": "auth.permission",
         "pk": 37,
         "fields": {
-            "name": "Can add team",
+            "name": "Can add notice",
             "content_type": 10,
-            "codename": "add_team"
+            "codename": "add_notice"
         }
     },
     {
         "model": "auth.permission",
         "pk": 38,
         "fields": {
-            "name": "Can change team",
+            "name": "Can change notice",
             "content_type": 10,
-            "codename": "change_team"
+            "codename": "change_notice"
         }
     },
     {
         "model": "auth.permission",
         "pk": 39,
         "fields": {
-            "name": "Can delete team",
+            "name": "Can delete notice",
             "content_type": 10,
-            "codename": "delete_team"
+            "codename": "delete_notice"
         }
     },
     {
         "model": "auth.permission",
         "pk": 40,
         "fields": {
-            "name": "Can view team",
+            "name": "Can view notice",
             "content_type": 10,
-            "codename": "view_team"
+            "codename": "view_notice"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add sport group",
+            "content_type": 12,
+            "codename": "add_sportgroup"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change sport group",
+            "content_type": 12,
+            "codename": "change_sportgroup"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete sport group",
+            "content_type": 12,
+            "codename": "delete_sportgroup"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view sport group",
+            "content_type": 12,
+            "codename": "view_sportgroup"
         }
     },
     {
         "model": "auth.group",
         "pk": 1,
         "fields": {
-            "name": "Coordinator",
+            "name": "Coordinators",
             "permissions": [
                 28,
+                40,
                 32,
-                36,
-                37,
-                38,
-                39,
-                40
+                34,
+                35,
+                36
             ]
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$ZVjOTSq2letQWhNejvh82z$ND8R4UlOhUWOhvmBvgD1cXwRjTrKrlh/vB+Uta6hwmQ=",
+            "last_login": "2024-09-06T19:03:59.612Z",
+            "is_superuser": true,
+            "username": "8822884673",
+            "first_name": "Himprakash",
+            "last_name": "Deka",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T15:02:08Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$gCpO8ni0jxWyAiy2VqN6K8$Azllm6o6V5Y4K2gD59dpC2cGrPRMyIJsQiEnYljtb90=",
+            "last_login": "2024-09-05T03:14:29.399Z",
+            "is_superuser": true,
+            "username": "7002267087",
+            "first_name": "Nayem",
+            "last_name": "Ahmed",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T15:02:52Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$vq7Y2Jm5wLwzAMiePODqx1$I3FxKsX/ufAuwv4Lcc8Bs9dRp/j5GwjUv09Q704jAgg=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6001982611",
+            "first_name": "Mujahirul",
+            "last_name": "Islam",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T17:54:36Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$cCpmg8isvxM7GpR7IH2s79$v8xYpTDz9HmU6if42/URQAmg2hsHjhtGuiHKZgl5Ee4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9365865072",
+            "first_name": "Sadik",
+            "last_name": "Ahmed",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T17:57:19Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$OzcECyHiepeZEjA9US6aXv$9DBl47lUKoU8e8Wj0iCUwe8ZChIzU2dpsznNkcH93dU=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6001259684",
+            "first_name": "Akhil",
+            "last_name": "Anand",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T17:58:29Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$5PByUNuIudKAJxDxeV85xL$1ZrU8iIgOfc/AarMuJFLYQ/0oPmsKGZe47IhEobdTAA=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9957649082",
+            "first_name": "Deep",
+            "last_name": "Seal",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:01:49Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$9ZAdq8Bo5N2vSwb6TsXLiN$dQxXkk00Yibeg/vzpMOtRZIyg2kimXuRxpLYI48JvYY=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8731975282",
+            "first_name": "Solomon",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:02:41Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$1SXuWCgLq6IrOgp5YAZO5A$65iEarBd9zzZRlkznaoRUUyI9VYjVZd6ADyQ0c9nCcQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9101274196",
+            "first_name": "Md Suhel",
+            "last_name": "Ahmed",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:08:00Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 9,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$UNC3IHv2irO79W7COwRLSF$IsyYOh1zDtUHNQZNrkFkBfP2Zr6CA+X3AryYGbvqYsQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9957186971",
+            "first_name": "Tailang",
+            "last_name": "Rido",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:09:21Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$HmK8dpx2Kq0UKMjyYaqHsu$tOrrLAJHFUqslL9R6KgKTsorBq9ONos6kNholVabQZY=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8099142522",
+            "first_name": "Aman",
+            "last_name": "Bhar",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:10:52Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 11,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$SBY69vPFNj639nQpxbBVYP$/RmkWg9J5+cA8p6YBpfJ5tNRIcHQgsypfKlSGWSiMFM=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9387823900",
+            "first_name": "Durgesh",
+            "last_name": "Gupta",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:11:40Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 12,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$sEIMvkIUHVdnhf29wqDFW1$5eaCf0sV1oI/krgcqKWcIEvFWYMHNDzWuydn2/EDerE=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "7635872983",
+            "first_name": "Sarad",
+            "last_name": "Neog",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:12:23Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$AoSBxOhn5HfekqWmrjKKvK$NfmviRk0cTd0dGNpcr4xMUaJ5UcUSAB/Whmm1MFe8s0=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8822470883",
+            "first_name": "Sahan",
+            "last_name": "Mazumder",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:13:03Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 14,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$BNlyUMAcPUGdKH22EbqP5Q$DsWDcriJsHKQGrdFDmc1VJyQhLqNTwXS/I4hnkoQaK8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6900558753",
+            "first_name": "Arpan",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:14:04Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 15,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$8zhVzav7EepbJmy5nLhFCI$McaiTAVVcEDhp5azSBixK5toCEgEWYAlyRuXnG+RY+U=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6901970865",
+            "first_name": "Bidya",
+            "last_name": "Sagar",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:14:43Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 16,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$icDIrmoMFQ6HKos1RPKWez$UNGSCStC9K0pvaDKSZImgK8SN7slTTE3naMavXgPQyQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8638280029",
+            "first_name": "Jibitesh",
+            "last_name": "Bora",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:15:31Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 17,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$V5rjK5ft6faywgVqtnHEDe$uQUjEcjaza9WH2SLZn41J1afoeVZ99mgq3y/zXNklVg=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6900017160",
+            "first_name": "Kishan",
+            "last_name": "Medhi",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:19:21Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 18,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$QGFIgB8VxPbMWNKtv8KXkl$xeP9u99eENXD0Q88pwNQxh4oIbam2d27Ck3P99k66XY=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8822860272",
+            "first_name": "Palash",
+            "last_name": "Sharma",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:20:04Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 19,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$JOMQY1IC7GZkFnhlAmQN7V$3AhQsIGGpbnwgfA7NoZeeL5awg2cWs/r2Emeh0F0Cc8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8135800732",
+            "first_name": "Rahul",
+            "last_name": "Thakur",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:20:53Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 20,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$WCrjikv43DBBNZr2DEdGw4$7E33C7xsqBylsn07gQ0dFXXMxXrLaSjGBymFymQgyT0=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6000315623",
+            "first_name": "Zidan",
+            "last_name": "Habib",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:27:46Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 21,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$OcTiKd1l81z7AujdKBN53N$3DsoMEwOip4FWBz1IJiGm7QJ6DVMFIsefx+PQSQTrEs=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6000149063",
+            "first_name": "Razin",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:28:44Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 22,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$24MdXdTyl6ucSzG4elmqsZ$1HDG0g+Tg13t7ai0988qbCbP6WQNv5C8CBguxNjjacU=",
+            "last_login": "2024-09-06T06:08:00.299Z",
+            "is_superuser": false,
+            "username": "6297789553",
+            "first_name": "Jeet",
+            "last_name": "Girani",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:29:18Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 23,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$fc3pawBqg58oAfVNwmVGTV$1oDkS6K9KNupxdy1yp0VFHForzyVkTlSpA45Mv6CHZ4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6001427594",
+            "first_name": "H. Nissan",
+            "last_name": "Singha",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-04T18:54:58Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 24,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$90nXMs7RBhvbS4Wj4jgK2h$dATs4uNd5Xg+9vA14HcMPXrMw4OsRITdSJeVV1O/ReA=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "8638767645",
+            "first_name": "Panku",
+            "last_name": "Sarkar",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-05T13:04:32Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 25,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$ElN8xfl8egukIaAnLv5tk7$aaWGfs0iRDUlCsMwOQCA/O7NQxsqFciMW4CsdynSjFU=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9365930486",
+            "first_name": "Jiban",
+            "last_name": "Prajapati",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-05T13:05:46Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 26,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$2jv70B0uNPD4nMD2anz04t$vc+sgPPWgNsbVgVLwvsRNRvcCmStn1LUpLW4XtKKtIQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6003583351",
+            "first_name": "Mayur",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-05T13:08:07Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
         }
     },
     {
@@ -428,7 +4881,7 @@
         "pk": 7,
         "fields": {
             "app_label": "auslympic",
-            "model": "coordinator"
+            "model": "department"
         }
     },
     {
@@ -436,7 +4889,7 @@
         "pk": 8,
         "fields": {
             "app_label": "auslympic",
-            "model": "department"
+            "model": "sport"
         }
     },
     {
@@ -444,7 +4897,7 @@
         "pk": 9,
         "fields": {
             "app_label": "auslympic",
-            "model": "sport"
+            "model": "team"
         }
     },
     {
@@ -452,7 +4905,1620 @@
         "pk": 10,
         "fields": {
             "app_label": "auslympic",
-            "model": "team"
+            "model": "notice"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "auslympic",
+            "model": "sport_coordinators"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "auslympic",
+            "model": "sportgroup"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "cigcy31u1ihtvjbtr21dkugd9bf3ktdq",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGllax19Kes5grXcdHEC2FCdVxN1JpBTQvpl5m4i4LiWuPc9xYnEVIC6_W0J65XoAfmJ9NEmtLvOU5KHIk3Z5b5zft9P9OyjYy14bn8EBs_IWjLPaExo9BmACRTg6HCzkIYQcOCVPSiljglfktEW7e-LzBdAzN1s:1slrYP:4v-SD7rwRSHceLHyl5yQZtuu17Zx1WT2yNob9n1VR7A",
+            "expire_date": "2024-09-18T15:04:17.054Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "fwssof0m193ztiyig2n9umrczt3ou85h",
+        "fields": {
+            "session_data": ".eJxVjDsOwyAQRO9CHSE-RkDK9DkDWtglOIlAMnZl5e7BkoukmGbmvdlZgG0tYeu0hBnZlUl2-e0ipBfVY8An1EfjqdV1mSM_EH6und8b0vt2sn8HBXoZtpUuknASnCSVJm2NIkRlwAqNFD0mk43XQDb7KWbvRiShdyqJPEz2-QLr6zij:1sltGB:AVKtYqNLYLGQFBFSoOw-Eva14IZJFlGt4x9fUgcvuM0",
+            "expire_date": "2024-09-18T16:53:35.061Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ksks0cdsmc4zgkleipitmw7jz6a3f85s",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGllax19Kes5grXcdHEC2FCdVxN1JpBTQvpl5m4i4LiWuPc9xYnEVIC6_W0J65XoAfmJ9NEmtLvOU5KHIk3Z5b5zft9P9OyjYy14bn8EBs_IWjLPaExo9BmACRTg6HCzkIYQcOCVPSiljglfktEW7e-LzBdAzN1s:1smeFT:MFLKzjZzHEh62G2pIBPLO6lRxJjqnze0H9dsQxmCiBg",
+            "expire_date": "2024-09-20T19:03:59.620Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "okeeuz0e9uopr6fypbjes56oyvq15khe",
+        "fields": {
+            "session_data": ".eJxVjDEOAiEQRe9CbQjsKDCW9p6BzAxEVg0ky25lvLuSbKHtf--_l4q0rSVuPS9xTuqsJnX43ZjkkesA6U711rS0ui4z66HonXZ9bSk_L7v7FyjUy3g7EpQTOjEBIPsAxrKFZImBfU5esoUQvHhiREFkw85--8ZgcNNRvT_pSjfU:1sm2x3:VxZiz_Cz6pG-7c00jeldgxcgzYqlTlEJRE00UBGf_DU",
+            "expire_date": "2024-09-19T03:14:29.406Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "wkzbodhzlxdrmc64bhwfb04dv1ealf75",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQRO_iGln-41DS5wzW2uvFAWRLcVIh7g6WUkAzxbw382IB9q2Evec1LMguTCl2-i0jpEeug-Ad6q3x1Oq2LpEPhR-087lhfl4P9--gQC_ftUWjEQxZhSNInaNLOqK1GSZBpKS0TlESnnyWaZJaZu2M1w4AnSD2_gATJjgv:1smS8W:7wyaWKojocrQ1BDRop4vhv0ztx6nPbfDcyiX93LikBY",
+            "expire_date": "2024-09-20T06:08:00.307Z"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 1,
+        "fields": {
+            "name": "linguistics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 2,
+        "fields": {
+            "name": "bengali"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 4,
+        "fields": {
+            "name": "comparative_literature"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 5,
+        "fields": {
+            "name": "hindi"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 6,
+        "fields": {
+            "name": "manipuri"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 7,
+        "fields": {
+            "name": "sanskrit"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 8,
+        "fields": {
+            "name": "urdu"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 10,
+        "fields": {
+            "name": "english"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 11,
+        "fields": {
+            "name": "arabic"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 12,
+        "fields": {
+            "name": "french"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 13,
+        "fields": {
+            "name": "economics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 14,
+        "fields": {
+            "name": "commerce"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 15,
+        "fields": {
+            "name": "political_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 16,
+        "fields": {
+            "name": "history"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 17,
+        "fields": {
+            "name": "sociology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 18,
+        "fields": {
+            "name": "social_work"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 20,
+        "fields": {
+            "name": "mass_communication"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 21,
+        "fields": {
+            "name": "visual_arts"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 22,
+        "fields": {
+            "name": "performing_arts"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 23,
+        "fields": {
+            "name": "philosophy"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 24,
+        "fields": {
+            "name": "education"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 26,
+        "fields": {
+            "name": "physics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 27,
+        "fields": {
+            "name": "chemistry"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 29,
+        "fields": {
+            "name": "mathematics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 30,
+        "fields": {
+            "name": "statistics"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 31,
+        "fields": {
+            "name": "computer_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 33,
+        "fields": {
+            "name": "life_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 35,
+        "fields": {
+            "name": "microbiology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 36,
+        "fields": {
+            "name": "biotechnology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 37,
+        "fields": {
+            "name": "master_business_administration"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 38,
+        "fields": {
+            "name": "ecology"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 40,
+        "fields": {
+            "name": "agricultural_engineering"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 41,
+        "fields": {
+            "name": "computer_engineering"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 42,
+        "fields": {
+            "name": "electronics_communications"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 43,
+        "fields": {
+            "name": "applied_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 44,
+        "fields": {
+            "name": "pharmaceutical_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 45,
+        "fields": {
+            "name": "earth_science"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 47,
+        "fields": {
+            "name": "library_information"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 48,
+        "fields": {
+            "name": "law"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 52,
+        "fields": {
+            "name": "hospitality_tourism"
+        }
+    },
+    {
+        "model": "auslympic.department",
+        "pk": 53,
+        "fields": {
+            "name": "bachelor_business_administration"
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 1,
+        "fields": {
+            "name": "Men's Cricket",
+            "image": "sport_1_Cricket.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 15,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                3,
+                4,
+                5,
+                22
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 2,
+        "fields": {
+            "name": "Women's Cricket",
+            "image": "sport_2_Womens_Cricket.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 15,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                3,
+                4,
+                5,
+                22
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 3,
+        "fields": {
+            "name": "Men's Football",
+            "image": "sport_3_Mens_Football_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 15,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                7,
+                6
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 4,
+        "fields": {
+            "name": "Women's Football",
+            "image": "sport_4_Womens_Football_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 15,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                7,
+                6
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 5,
+        "fields": {
+            "name": "Men's Volleyball",
+            "image": "sport_5_Mens_Volleyball.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                20,
+                21,
+                22
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 6,
+        "fields": {
+            "name": "Women's Volleyball",
+            "image": "sport_6_Womens_Volleyball.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                20,
+                21,
+                22
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 7,
+        "fields": {
+            "name": "Men's Basketball",
+            "image": "sport_7_Mens_Basketball.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 8,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                9,
+                24
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 8,
+        "fields": {
+            "name": "Women's Basketball",
+            "image": "sport_8_Womens_Basketball.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                9,
+                24
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 9,
+        "fields": {
+            "name": "Men's Kho Kho",
+            "image": "sport_9_Mens_Kho_Kho.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 15,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                6,
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 10,
+        "fields": {
+            "name": "Women's Kho Kho",
+            "image": "sport_10_Womens_Kho_Kho.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 15,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                6,
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 11,
+        "fields": {
+            "name": "Men's Kabaddi",
+            "image": "sport_11_Mens_Kabaddi_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                19
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 12,
+        "fields": {
+            "name": "Women's Kabaddi",
+            "image": "sport_12_Womens_Kabaddi_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                19
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 13,
+        "fields": {
+            "name": "Men's Tug of War",
+            "image": "sport_13_Mens_Tug_of_War.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 14,
+        "fields": {
+            "name": "Women's Tug of War",
+            "image": "sport_14_Womens_Tug_of_War.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 10,
+            "department_limit": 2,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 15,
+        "fields": {
+            "name": "Men's Arm Wrestling",
+            "image": "sport_15_Mens_Arm_Wrestling.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "sport_15_Mens_Arm_Wrestling_rulebook.pdf",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                11,
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 16,
+        "fields": {
+            "name": "Women's Arm Wrestling",
+            "image": "sport_16_Womens_Arm_Wrestling.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "sport_16_Womens_Arm_Wrestling_rulebook.pdf",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                11,
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 17,
+        "fields": {
+            "name": "Men's Powerlifting",
+            "image": "sport_17_Mens_Powerlifting.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "sport_17_Mens_Powerlifting_rulebook.pdf",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                11,
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 18,
+        "fields": {
+            "name": "Women's Powerlifting",
+            "image": "sport_18_Womens_Powerlifting.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "sport_18_Womens_Powerlifting_rulebook.pdf",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                11,
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 19,
+        "fields": {
+            "name": "Men's Long Jump",
+            "image": "sport_19_Mens_Long_Jump.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 20,
+        "fields": {
+            "name": "Women's Long Jump",
+            "image": "sport_20_Womens_Long_Jump.jpeg",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 21,
+        "fields": {
+            "name": "Men's Solo Carrom",
+            "image": "sport_21_Mens_Solo_Carrom_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 22,
+        "fields": {
+            "name": "Women's Solo Carrom",
+            "image": "sport_22_Womens_Solo_Carrom_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 23,
+        "fields": {
+            "name": "Men's Duo Carrom",
+            "image": "sport_23_Mens_Duo_Carrom_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 24,
+        "fields": {
+            "name": "Women's Duo Carrom",
+            "image": "sport_24_Womens_Duo_Carrom_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 25,
+        "fields": {
+            "name": "Mixed Duo Carrom",
+            "image": "sport_25_Mixed_Duo_Carrom_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 26,
+        "fields": {
+            "name": "Chess",
+            "image": "sport_26_Chess_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                6,
+                10,
+                25
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 27,
+        "fields": {
+            "name": "Men's Solo Table Tennis",
+            "image": "sport_27_Mens_Solo_Tabble_Tennis_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 28,
+        "fields": {
+            "name": "Women's Solo Table Tennis",
+            "image": "sport_28_Womens_Solo_Tabble_Tennis_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 29,
+        "fields": {
+            "name": "Men's Duo Table Tennis",
+            "image": "sport_29_Mens_Duo_Tabble_Tennis_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 30,
+        "fields": {
+            "name": "Women's Duo Table Tennis",
+            "image": "sport_30_Womens_Duo_Tabble_Tennis_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 31,
+        "fields": {
+            "name": "Mixed Duo Table Tennis",
+            "image": "sport_31_Mixed_Duo_Tabble_Tennis_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 32,
+        "fields": {
+            "name": "Men's Solo Badminton",
+            "image": "sport_32_Mens_Solo_Badminton_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                23
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 33,
+        "fields": {
+            "name": "Women's Solo Badminton",
+            "image": "sport_33_Womens_Solo_Badminton_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                23
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 34,
+        "fields": {
+            "name": "Men's Duo Badminton",
+            "image": "sport_34_Mens_Duo_Badminton_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                23
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 35,
+        "fields": {
+            "name": "Women's Duo Badminton",
+            "image": "sport_35_Womens_Duo_Badminton_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                23
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 36,
+        "fields": {
+            "name": "Mixed Duo Badminton",
+            "image": "sport_36_Mixed_Duo_Badminton_image.webp",
+            "team_size_min": 2,
+            "team_size_max": 2,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                23
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 37,
+        "fields": {
+            "name": "FIFA 2023",
+            "image": "sport_37_FIFA_2023_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                16
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 38,
+        "fields": {
+            "name": "Valorant",
+            "image": "sport_38_Valorant_image.webp",
+            "team_size_min": 5,
+            "team_size_max": 6,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                16,
+                17,
+                26
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 39,
+        "fields": {
+            "name": "BGMI",
+            "image": "sport_39_BGMI_image.webp",
+            "team_size_min": 4,
+            "team_size_max": 5,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 40,
+        "fields": {
+            "name": "Moba Lengends",
+            "image": "sport_40_Moba_Lengends_image.webp",
+            "team_size_min": 5,
+            "team_size_max": 6,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 41,
+        "fields": {
+            "name": "Men's Discus Throw",
+            "image": "sport_41_Mens_Discus_Throw_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 42,
+        "fields": {
+            "name": "Women's Discus Throw",
+            "image": "sport_42_Womens_Discus_Throw_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 43,
+        "fields": {
+            "name": "Men's Javelin Throw",
+            "image": "sport_43_Mens_Javelin_Throw_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 44,
+        "fields": {
+            "name": "Women's Javelin Throw",
+            "image": "sport_44_Womens_Javelin_Throw_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 45,
+        "fields": {
+            "name": "Men's Shot Put Throw",
+            "image": "sport_45_Mens_Shot_Put_Throw_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 46,
+        "fields": {
+            "name": "Women's Shot Put Throw",
+            "image": "sport_46_Womens_Shot_Put_Throw_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 47,
+        "fields": {
+            "name": "Men's Relay Race",
+            "image": "sport_47_Mens_Relay_Race_image.webp",
+            "team_size_min": 4,
+            "team_size_max": 5,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 48,
+        "fields": {
+            "name": "Women's Relay Race",
+            "image": "sport_48_Womens_Relay_Race_image.webp",
+            "team_size_min": 4,
+            "team_size_max": 5,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 49,
+        "fields": {
+            "name": "Men's 100 meter Race",
+            "image": "sport_49_Mens_100_meter_Race_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 50,
+        "fields": {
+            "name": "Women's 100 meter Race",
+            "image": "sport_50_Womens_100_meter_Race_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 51,
+        "fields": {
+            "name": "Men's 200 meter Race",
+            "image": "sport_51_Mens_200_meter_Race_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 52,
+        "fields": {
+            "name": "Women's 200 meter Race",
+            "image": "sport_52_Womens_200_meter_Race_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 53,
+        "fields": {
+            "name": "Men's High Jump",
+            "image": "sport_53_Mens_High_Jump_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sport",
+        "pk": 54,
+        "fields": {
+            "name": "Women's High Jump",
+            "image": "sport_54_Womens_High_Jump_image.webp",
+            "team_size_min": 1,
+            "team_size_max": 1,
+            "department_limit": null,
+            "fixtures": "",
+            "rulebook": "",
+            "registration_deadline": "2024-09-16",
+            "coordinators": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 1,
+        "fields": {
+            "name": "Cricket",
+            "sub": "",
+            "sports": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 2,
+        "fields": {
+            "name": "Football",
+            "sub": "",
+            "sports": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 3,
+        "fields": {
+            "name": "Volleyball",
+            "sub": "",
+            "sports": [
+                6,
+                5
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 4,
+        "fields": {
+            "name": "Basketball",
+            "sub": "",
+            "sports": [
+                7,
+                8
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 5,
+        "fields": {
+            "name": "Kho Kho",
+            "sub": "",
+            "sports": [
+                10,
+                9
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 6,
+        "fields": {
+            "name": "Kabaddi",
+            "sub": "",
+            "sports": [
+                12,
+                11
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 7,
+        "fields": {
+            "name": "Tug of War",
+            "sub": "",
+            "sports": [
+                13,
+                14
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 8,
+        "fields": {
+            "name": "Arm Wrestling",
+            "sub": "",
+            "sports": [
+                16,
+                15
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 9,
+        "fields": {
+            "name": "Powerlifting",
+            "sub": "",
+            "sports": [
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 10,
+        "fields": {
+            "name": "Long Jump",
+            "sub": "",
+            "sports": [
+                19,
+                20
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 11,
+        "fields": {
+            "name": "High Jump",
+            "sub": "",
+            "sports": [
+                53,
+                54
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 12,
+        "fields": {
+            "name": "Carrom",
+            "sub": "Solo",
+            "sports": [
+                22,
+                21
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 13,
+        "fields": {
+            "name": "Carrom",
+            "sub": "Duo",
+            "sports": [
+                23,
+                25,
+                24
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 14,
+        "fields": {
+            "name": "Chess",
+            "sub": "",
+            "sports": [
+                26
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 15,
+        "fields": {
+            "name": "Table Tennis",
+            "sub": "Solo",
+            "sports": [
+                28,
+                27
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 16,
+        "fields": {
+            "name": "Table Tennis",
+            "sub": "Duo",
+            "sports": [
+                31,
+                30,
+                29
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 17,
+        "fields": {
+            "name": "Badminton",
+            "sub": "Solo",
+            "sports": [
+                33,
+                32
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 18,
+        "fields": {
+            "name": "Badminton",
+            "sub": "Duo",
+            "sports": [
+                36,
+                35,
+                34
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 19,
+        "fields": {
+            "name": "e-Sports",
+            "sub": "",
+            "sports": [
+                37,
+                40,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 23,
+        "fields": {
+            "name": "Discus Throw",
+            "sub": "",
+            "sports": [
+                42,
+                41
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 24,
+        "fields": {
+            "name": "Javelin Throw",
+            "sub": "",
+            "sports": [
+                44,
+                43
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 25,
+        "fields": {
+            "name": "Shot Put Throw",
+            "sub": "",
+            "sports": [
+                46,
+                45
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 26,
+        "fields": {
+            "name": "Relay Race",
+            "sub": "",
+            "sports": [
+                48,
+                47
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 27,
+        "fields": {
+            "name": "100 meter Race",
+            "sub": "",
+            "sports": [
+                50,
+                49
+            ]
+        }
+    },
+    {
+        "model": "auslympic.sportgroup",
+        "pk": 29,
+        "fields": {
+            "name": "200 meter Race",
+            "sub": "",
+            "sports": [
+                51,
+                52
+            ]
         }
     }
 ]
