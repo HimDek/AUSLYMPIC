@@ -130,7 +130,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "node_modules", "jquery", "dist"),
 ]
 
-STATIC_URL = "media/"
+MEDIA_URL = "media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
 
