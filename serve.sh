@@ -1,5 +1,4 @@
 #!/bin/bash
-dotenv -e .env bash
 source env/bin/activate
 cd src
 npm i
