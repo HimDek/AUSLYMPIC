@@ -40,6 +40,9 @@
 <div class="d-flex align-items-center justify-content-evenly flex-wrap gap-4 bg-body p-0 p-md-5">
 
     <div class="accordion w-100" id="accordion-dept">
+        {% if not notices|length %}
+        <h4 class="text-center">No notices posted yet!</h4>
+        {% else %}
         {% for notice in notices %}
         <div class="accordion-item rounded-0">
             <h2 class="accordion-header">
@@ -80,6 +83,7 @@
             </div>
         </div>
         {% endfor %}
+        {% endif %}
     </div>
 
 </div>

@@ -38,7 +38,7 @@
 </div>
 
 <div class="d-flex align-items-center justify-content-evenly flex-wrap bg-body p-0 p-md-5">
-    <div class="d-flex w-100 p-3">
+    <div class="d-flex w-100 py-3 pe-0 ps-2 ps-md-3">
         <div class="col-8 d-flex align-items-center justify-content-start">
             <div style="width: 3ch;">
                 {{ forloop.counter }}
@@ -64,7 +64,7 @@
         {% for department in departments %}
         <div class="accordion-item rounded-0">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed d-block p-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapse-{{ department.name }}" aria-expanded="false"
                     aria-controls="collapse-{{ department.name }}">
                     <div class="d-flex align-items-center w-100">
@@ -73,7 +73,12 @@
                                 {{ forloop.counter }}
                             </div>
                             <div>
-                                {{ department.get_name }}
+                                <div>
+                                    {{ department.get_name }}
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary">Click to expand</small>
+                                </div>
                             </div>
                         </div>
                         <div class="col-1 text-warning-emphasis text-center">
@@ -94,6 +99,11 @@
             <div id="collapse-{{ department.name }}" class="accordion-collapse collapse"
                 data-bs-parent="#accordion-dept">
                 <div class="accordion-body p-3">
+                    {% if not department.gold_winners.all|length and not department.silver_winners.all|length and not department.bronze_winners.all|length %}
+                    <div class="ms-3 ms-md-4">
+                        Winners from {{ department.get_name_display }} will appear here.
+                    </div>
+                    {% else %}
                     <ol class="list-group list-group-flush list-group-numbered">
                         {% for team in department.gold_winners.all %}
                         <li class="list-group-item d-flex justify-content-start align-items-start p-3">
@@ -189,6 +199,7 @@
                         </li>
                         {% endfor %}
                     </ol>
+                    {% endif %}
                 </div>
             </div>
         </div>
