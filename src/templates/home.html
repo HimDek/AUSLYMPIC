@@ -3,7 +3,7 @@
 
 {% block body %}
 <div class="vh-100">
-    <img src="{% static 'banner.jpg' %}" class="object-fit-cover position-fixed top-0 z-n1 w-100 h-100" alt="auslympic">
+    <img src="{% static 'banner.jpg' %}" class="object-fit-cover position-fixed top-0 w-100 h-100" alt="auslympic">
 </div>
 
 <div class="vw-100 overflow-x-hidden">
@@ -56,7 +56,7 @@
     </div>
 </div>
 
-<div class="d-flex align-items-center justify-content-center flex-wrap bg-body px-3 px-sm-4 py-3 py-sm-5">
+<div class="position-relative z-1 d-flex align-items-center justify-content-center flex-wrap bg-body px-3 px-sm-4 py-3 py-sm-5">
 
     {% for group in groups %}
     <div id="group-{{group.id}}"
