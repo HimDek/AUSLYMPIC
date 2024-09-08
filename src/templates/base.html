@@ -21,10 +21,10 @@
             </li>
             {% for group in groups %}
             <li class="nav-item my-2">
-                <a class="nav-link active fs-5 text-uppercase" onclick="hideBars();"
-                    href="{% url 'home' %}#group-{{ group.id }}">
+                <a id="click-group-{{ group.id }}" class="d-none" href="{% url 'home' %}#group-{{ group.id }}"></a>
+                <span class="nav-link active fs-5 text-uppercase" onclick="hideBars('click-group-{{ group.id }}');">
                     {{ group.sub }} {{ group.name }}
-                </a>
+                </span>
             </li>
             {% endfor %}
         </ul>
@@ -144,13 +144,14 @@
 </footer>
 
 <script>
-    function hideBars() {
+    function hideBars(id) {
+        document.getElementById('close-sidebar').click();
         setTimeout(() => {
-            document.getElementById('close-sidebar').click();
+            document.getElementById('nav-menu').click();
             setTimeout(() => {
-                document.getElementById('nav-menu').click();
+                document.getElementById(id).click();
             }, 300);
-        }, 1000);
+        }, 300);
     }
 
     let lastScrollY = window.pageYOffset;
