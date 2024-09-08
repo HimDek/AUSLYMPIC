@@ -63,7 +63,7 @@ class SportView(TemplateView):
         context["sport"] = sport
         context["teams"] = teams
 
-        if sport.registration_deadline >= timezone.datetime.now():
+        if sport.registration_deadline >= timezone.now():
             context["team_form"] = TeamForm(initial={"sport": sport.id})
 
         return base_context(self.request, context)
