@@ -39,6 +39,7 @@ class SportAdmin(admin.ModelAdmin):
 class TeamAdmin(admin.ModelAdmin):
     form = TeamForm
     list_display = [
+        "id",
         "name",
         "sport",
         "department",
