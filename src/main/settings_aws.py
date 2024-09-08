@@ -1,1 +1,1 @@
-ALLOWED_HOSTS = [".auslympic.info"]
+ALLOWED_HOSTS = ["www.auslympic.info"]
