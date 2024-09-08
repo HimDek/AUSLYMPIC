@@ -6,6 +6,7 @@
 {% block head %}
 <style>
     body {
+        background-color: #000 !important;
         min-width: 23cm;
         margin: 0;
     }
@@ -32,6 +33,7 @@
 
         body {
             min-width: unset;
+            background-color: #fff !important;
         }
 
         #print-container {
@@ -164,6 +166,7 @@
             {% endfor %}
         </div>
         <script>
+            document.getElementById("body").classList.remove("bg-body")
             // Function to generate TOC based on headings
             function generateTOC() {
                 const tocList = document.getElementById('toc-list');
