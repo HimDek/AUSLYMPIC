@@ -22,7 +22,7 @@
             {% for group in groups %}
             <li class="nav-item my-2">
                 <a id="click-group-{{ group.id }}" class="d-none" href="{% url 'home' %}#group-{{ group.id }}"></a>
-                <a class="nav-link active fs-5 text-uppercase" href="#" onclick="hideBars('click-group-{{ group.id }}');">
+                <a class="nav-link active fs-5 text-uppercase" href="" onclick="hideBars('click-group-{{ group.id }}');">
                     {{ group.sub }} {{ group.name }}
                 </a>
             </li>
