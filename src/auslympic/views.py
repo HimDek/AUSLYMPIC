@@ -33,7 +33,7 @@ class SportView(TemplateView):
         return super().get(request, pk)
 
     def post(self, request, pk, **kwargs):
-        if sport.registration_deadline >= timezone.datetime.now():
+        if sport.registration_deadline >= timezone.now():
             members = request.POST.getlist("members")
             post_data = request.POST.copy()
             post_data["members"] = json.dumps([s for s in members if s and s.strip()])
