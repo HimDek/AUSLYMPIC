@@ -33,20 +33,22 @@ class SportView(TemplateView):
         return super().get(request, pk)
 
     def post(self, request, pk, **kwargs):
-        members = request.POST.getlist("members")
-        post_data = request.POST.copy()
-        post_data["members"] = json.dumps([s for s in members if s and s.strip()])
+        if sport.registration_deadline >= timezone.datetime.now():
+            members = request.POST.getlist("members")
+            post_data = request.POST.copy()
+            post_data["members"] = json.dumps([s for s in members if s and s.strip()])
 
-        form = TeamForm(post_data)
-        sport = Sport.objects.get(pk=pk)
-        context = self.get_context_data(sport=sport)
-        if form.is_valid():
-            obj = form.save()
-            context["created"] = obj
-            return self.render_to_response(context)
-        else:
-            context["team_form"] = form
-            return self.render_to_response(context)
+            form = TeamForm(post_data)
+            sport = Sport.objects.get(pk=pk)
+            context = self.get_context_data(sport=sport)
+            if form.is_valid():
+                obj = form.save()
+                context["created"] = obj
+                return self.render_to_response(context)
+            else:
+                context["team_form"] = form
+                return self.render_to_response(context)
+        return self.get(request, pk)
 
     def get_context_data(self, **kwargs):
         sport = Sport.objects.get(pk=self.kwargs["pk"])
@@ -61,7 +63,7 @@ class SportView(TemplateView):
         context["sport"] = sport
         context["teams"] = teams
 
-        if sport.registration_deadline >= timezone.datetime.now().date():
+        if sport.registration_deadline >= timezone.datetime.now():
             context["team_form"] = TeamForm(initial={"sport": sport.id})
 
         return base_context(self.request, context)

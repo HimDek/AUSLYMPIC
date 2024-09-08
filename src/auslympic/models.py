@@ -1,4 +1,5 @@
 import os
+import datetime
 from django.db import models
 from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
@@ -170,7 +171,7 @@ class Sport(models.Model):
     fixtures = models.FileField(upload_to=sport_fixture_path, blank=True, null=True)
     rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
 
-    registration_deadline = models.DateField(blank=False, null=False, default=timezone.datetime(2024, 9, 16).date())
+    registration_deadline = models.DateTimeField(blank=False, null=False, default=timezone.datetime(2024, 9, 18, 8, 30, 0, 0, tzinfo=datetime.timezone.utc))
 
     @property
     def gold_winners(self):
