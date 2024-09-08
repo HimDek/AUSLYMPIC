@@ -1,5 +1,6 @@
 import json
 from django.utils import timezone
+from django.shortcuts import redirect, reverse
 from django.views.generic.base import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Min, Count, Q
@@ -33,18 +34,17 @@ class SportView(TemplateView):
         return super().get(request, pk)
 
     def post(self, request, pk, **kwargs):
+        sport = Sport.objects.get(pk=pk)
         if sport.registration_deadline >= timezone.now():
             members = request.POST.getlist("members")
             post_data = request.POST.copy()
             post_data["members"] = json.dumps([s for s in members if s and s.strip()])
 
             form = TeamForm(post_data)
-            sport = Sport.objects.get(pk=pk)
             context = self.get_context_data(sport=sport)
             if form.is_valid():
                 obj = form.save()
-                context["created"] = obj
-                return self.render_to_response(context)
+                return redirect(reverse("sport", args=[pk])+f"#team-{obj.id}")
             else:
                 context["team_form"] = form
                 return self.render_to_response(context)
