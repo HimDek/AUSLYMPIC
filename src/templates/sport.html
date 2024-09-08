@@ -215,24 +215,6 @@
         <h4 class="fw-bold my-4">Registration has closed on {{ sport.registration_deadline }}</h4>
         {% endif %}
 
-        {% if created %}
-        <h3 class="fw-bold mt-5 py-4">The following entry has been registered</h3>
-        <div class="col-10 col-md-8 col-lg-6">
-            <h3 class="display-5 fw-bold">{{ created.name }}</h3>
-            <h5 class="text-secondary-emphasis">{{ created.department }}</h5>
-            <p class="text-secondary mb-0">Entry ID: {{ created.id }}</p>
-            {% if created.sport.team_size_min > 1 %}
-            <ol class="mb-0">
-                {% for member in created.members %}
-                <li class="py-3 mb-0 h5">
-                    {{ member }}
-                </li>
-                {% endfor %}
-            </ol>
-            {% endif %}
-        </div>
-        {% endif %}
-
         {% if teams.all|length > 0 %}
         <h3 class="display-5 fw-bold mt-5 py-4">
             {% if teams.all.0.gold_winner and teams.all.1.silver_winner and teams.all.2.bronze_winner %}
