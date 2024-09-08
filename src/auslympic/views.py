@@ -7,20 +7,21 @@ from .models import Sport, Department, SportGroup, Notice
 from .forms import TeamForm
 
 
+def base_context(request, context):
+    context["show_participants"] = request.user.groups.filter(name="Coordinators").exists() or request.user.is_superuser
+    context["groups"] = (
+        SportGroup.objects.all()
+        .annotate(first_sport_id=Min("sports__id"))
+        .order_by("first_sport_id")
+    )
+    return context
+
 # Create your views here.
 class Home(TemplateView):
     template_name = "home.html"
 
     def get_context_data(self, **kwargs):
-
-        context = super().get_context_data(**kwargs)
-        context["groups"] = (
-            SportGroup.objects.all()
-            .annotate(first_sport_id=Min("sports__id"))
-            .order_by("first_sport_id")
-        )
-
-        return context
+        return base_context(self.request, super().get_context_data(**kwargs))
 
 
 class SportView(TemplateView):
@@ -57,18 +58,13 @@ class SportView(TemplateView):
             teams = teams.filter(Q(gold_winner=True) | Q(silver_winner=True) | Q(bronze_winner=True))
 
         context = super().get_context_data(**kwargs)
-        context["groups"] = (
-            SportGroup.objects.all()
-            .annotate(first_sport_id=Min("sports__id"))
-            .order_by("first_sport_id")
-        )
         context["sport"] = sport
         context["teams"] = teams
 
         if sport.registration_deadline >= timezone.datetime.now().date():
             context["team_form"] = TeamForm(initial={"sport": sport.id})
 
-        return context
+        return base_context(self.request, context)
 
 
 class LeaderBoard(TemplateView):
@@ -76,11 +72,6 @@ class LeaderBoard(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = (
-            SportGroup.objects.all()
-            .annotate(first_sport_id=Min("sports__id"))
-            .order_by("first_sport_id")
-        )
         context["departments"] = (
             Department.objects.annotate(
                 gold_winner_count=Count("teams", filter=Q(teams__gold_winner=True)),
@@ -100,7 +91,7 @@ class LeaderBoard(TemplateView):
             )
         )
 
-        return context
+        return base_context(self.request, context)
 
 
 class NoticeView(TemplateView):
@@ -108,14 +99,9 @@ class NoticeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = (
-            SportGroup.objects.all()
-            .annotate(first_sport_id=Min("sports__id"))
-            .order_by("first_sport_id")
-        )
         context["notices"] = Notice.objects.all().order_by("-modified", "-added")
 
-        return context
+        return base_context(self.request, context)
 
 
 class MerchandiseView(TemplateView):
@@ -123,13 +109,8 @@ class MerchandiseView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = (
-            SportGroup.objects.all()
-            .annotate(first_sport_id=Min("sports__id"))
-            .order_by("first_sport_id")
-        )
 
-        return context
+        return base_context(self.request, context)
 
 
 class TeamsView(TemplateView):
@@ -137,11 +118,6 @@ class TeamsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["groups"] = (
-            SportGroup.objects.all()
-            .annotate(first_sport_id=Min("sports__id"))
-            .order_by("first_sport_id")
-        )
         context["sports"] = Sport.objects.annotate(count_teams=Count("teams")).filter(count_teams__gte=1).order_by("id")
 
-        return context
+        return base_context(self.request, context)

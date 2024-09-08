@@ -23,6 +23,18 @@ class SportAdmin(admin.ModelAdmin):
     def custom_coordinators(self, obj):
         return ", ".join([f"{coordinator.first_name} {coordinator.last_name}" for coordinator in obj.coordinators.all()])
 
+    def has_change_permission(self, request, obj=None):
+        if request.user.is_superuser:
+            return True
+
+        if obj is None:
+            return super().has_change_permission(request, obj)
+
+        if request.user in obj.coordinators.all():
+            return True
+
+        return False
+
 
 class TeamAdmin(admin.ModelAdmin):
     form = TeamForm
