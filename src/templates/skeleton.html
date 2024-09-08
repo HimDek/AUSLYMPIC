@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %} AUSLYMPIC 2024</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'build/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-icons.min.css' %}">
+    <style>
+        .masked-background {
+            -webkit-mask-image: url('{% static "mask.svg" %}');
+            /* For WebKit-based browsers */
+            mask-image: url('{% static "mask.svg" %}');
+            /* Standard */
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: right center;
+            mask-position: right center;
+        }
+
+        .masked-btn {
+            -webkit-mask-image: url('{% static "mask-button.svg" %}');
+            /* For WebKit-based browsers */
+            mask-image: url('{% static "mask-button.svg" %}');
+            /* Standard */
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
+        }
+    </style>
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body data-bs-theme="dark" class="bg-body overflow-x-hidden text-uppercase">
+    
+    {% block content %}{% endblock %}
+
+    <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'jquery.min.js' %}"></script>
+</body>
+
+</html>

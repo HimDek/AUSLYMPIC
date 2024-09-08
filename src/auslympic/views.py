@@ -130,3 +130,18 @@ class MerchandiseView(TemplateView):
         )
 
         return context
+
+
+class TeamsView(TemplateView):
+    template_name = "teams.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["groups"] = (
+            SportGroup.objects.all()
+            .annotate(first_sport_id=Min("sports__id"))
+            .order_by("first_sport_id")
+        )
+        context["sports"] = Sport.objects.annotate(count_teams=Count("teams")).filter(count_teams__gte=1).order_by("id")
+
+        return context

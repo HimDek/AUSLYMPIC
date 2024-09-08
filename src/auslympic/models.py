@@ -236,6 +236,10 @@ class Team(models.Model):
                 raise ValidationError(f'Cannot have more than {self.sport.department_limit} teams for {self.sport} from {self.department}.')
         super().save(*args, **kwargs)
 
+    @property
+    def members_display(self):
+        return ", ".join(self.members)
+
     def __str__(self):
         return f"{self.name} {self.department}"
 
