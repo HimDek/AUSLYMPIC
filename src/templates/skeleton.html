@@ -8,7 +8,12 @@
     <title>{% block title %}{% endblock %} AUSLYMPIC 2024</title>
     <link rel="stylesheet" type="text/css" href="{% static 'build/style.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-icons.min.css' %}">
-    <link rel="shortcut icon" type="image/png" href="{% static 'logo-color.png' %}"/>
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <link rel="icon" href="{% static 'favicon-16x16.png' %}" sizes="16x16" type="image/png">
+    <link rel="icon" href="{% static 'favicon-32x32.png' %}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% static 'icon.svg' %}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
     <style>
         .masked-background {
             -webkit-mask-image: url('{% static "mask.svg" %}');
