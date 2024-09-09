@@ -278,7 +278,7 @@ class Notice(models.Model):
 
 
     class Meta:
-        ordering = "-modified", "-added"
+        ordering = ["-modified", "-added"]
 
 class SportGroup(models.Model):
     name = models.CharField(max_length=100)
@@ -290,3 +290,7 @@ class SportGroup(models.Model):
 
     def __str__(self):
         return self.name
+
+
+    class Meta:
+        ordering = ["id"]
