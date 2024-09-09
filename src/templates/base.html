@@ -24,7 +24,8 @@
             {% for group in groups %}
             <li class="nav-item my-2">
                 <a id="click-group-{{ group.id }}" class="d-none" href="{% url 'home' %}#group-{{ group.id }}"></a>
-                <span class="nav-link active fs-5 text-uppercase" style="cursor: pointer;" onclick="hideBars('click-group-{{ group.id }}');">
+                <span class="nav-link active fs-5 text-uppercase" style="cursor: pointer;"
+                    onclick="hideBars('click-group-{{ group.id }}');">
                     {{ group.sub }} {{ group.name }}
                 </span>
             </li>
@@ -93,13 +94,38 @@
 
 <footer class="position-relative z-1 px-4 px-sm-5 pt-5 bg-body">
     <div
-        class="py-5 row gap-4 flex-md-row-reverse justify-content-center justify-content-md-between align-items-center">
-        <div class="col-10 col-sm-8 col-md-4 col-lg-4 py-2 d-flex flex-column align-items-center">
-            <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
+        class="flex-sm-column-reverse flex-lg-row d-flex flex-wrap justify-content-center align-items-stretch my-5">
+        <div class="flex-sm-row-reverse col-12 col-lg-6 col-xl-7 d-flex justify-content-center align-items-stretch flex-wrap text-center text-sm-start">
+            <div class="col-10 col-sm-4 col-lg-5 p-3 py-5">
+                <ul class="nav h-100 flex-column justify-content-between">
+                    <h1 class="display-6 w-100">Links</h1>
+                    <li class="nav-item mb-2">
+                        <a href="{% url 'home' %}" class="nav-link p-0 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="{% url 'leaderboard' %}" class="nav-link p-0 text-body-secondary">Leaderboard</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="{% url 'winners' %}" class="nav-link p-0 text-body-secondary">WINNERS</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="{% url 'rules' %}" class="nav-link p-0 text-body-secondary">RULES & FIXTURES</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="{% url 'notices' %}" class="nav-link p-0 text-body-secondary">Notices</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="{% url 'merchandise' %}" class="nav-link p-0 text-body-secondary">Merchandise</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-7 p-3 py-5">
+                <img src="{% static 'logo.png' %}" style="max-width: 100%; max-height: 250px;" alt="logo" />
+            </div>
         </div>
-        <div class="col-10 col-md-7 col-lg-7 p-4 text-center text-md-start">
-            <h1 id="contact" class="display-6 pt-2 mt-3 w-100">Follow Us</h1>
-            <ul class="list-unstyled d-flex mt-2 mb-4 pb-3 justify-content-center justify-content-md-start">
+        <div class="col-12 col-lg-6 col-xl-5 px-3 py-5 text-center text-lg-start d-flex flex-column justify-content-between">
+            <h1 id="contact" class="display-6 w-100">Follow Us</h1>
+            <ul class="list-unstyled d-flex justify-content-center justify-content-lg-start">
                 <li class="mx-3 mx-md-0 me-md-4">
                     <a class="link-body-emphasis" target="blank"
                         href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
@@ -118,7 +144,7 @@
                     </a>
                 </li>
             </ul>
-            <figure class="my-3 py-2">
+            <figure>
                 <blockquote class="blockquote">
                     <p>Organized by Thakur Hrishiraj Singh</p>
                 </blockquote>
@@ -127,7 +153,7 @@
                         2024-25</cite>
                 </figcaption>
             </figure>
-            <div class="lead my-3 py-2">
+            <div class="lead mb-2">
                 Website Developed by
                 <a class="link-body-emphasis" target="blank" href="http://himdek.com">
                     <i>Himprakash Deka</i>
@@ -135,17 +161,6 @@
             </div>
         </div>
     </div>
-
-    <ul class="nav justify-content-center mb-3">
-        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="{% url 'leaderboard' %}" class="nav-link px-2 text-body-secondary">Leaderboard</a>
-        </li>
-        <li class="nav-item"><a href="{% url 'notices' %}" class="nav-link px-1 text-body-secondary">Notices</a>
-        </li>
-        <li class="nav-item"><a href="{% url 'merchandise' %}" class="nav-link px-2 text-body-secondary">Merchandise</a>
-        </li>
-    </ul>
-
     <div class="d-flex justify-content-center py-4 border-top">
         <small>© 2024 AUSLYMPIC, Assam University, Silchar. All rights reserved.</small>
     </div>
