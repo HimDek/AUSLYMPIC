@@ -5262,7 +5262,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 3,
                 4,
@@ -5282,7 +5282,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 3,
                 4,
@@ -5302,7 +5302,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 7,
                 6
@@ -5320,7 +5320,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 7,
                 6
@@ -5338,7 +5338,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 20,
                 21,
@@ -5357,7 +5357,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 20,
                 21,
@@ -5376,7 +5376,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 9,
                 24
@@ -5394,7 +5394,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 9,
                 24
@@ -5412,7 +5412,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
                 14,
@@ -5431,7 +5431,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
                 14,
@@ -5450,7 +5450,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 19
@@ -5468,7 +5468,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 19
@@ -5486,7 +5486,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 13
             ]
@@ -5503,7 +5503,7 @@
             "department_limit": 2,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 13
             ]
@@ -5520,7 +5520,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "sport_15_Mens_Arm_Wrestling_rulebook.pdf",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 11,
                 12,
@@ -5539,7 +5539,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "sport_16_Womens_Arm_Wrestling_rulebook.pdf",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 11,
                 12,
@@ -5558,7 +5558,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "sport_17_Mens_Powerlifting_rulebook.pdf",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 11,
                 12,
@@ -5577,7 +5577,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "sport_18_Womens_Powerlifting_rulebook.pdf",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 11,
                 12,
@@ -5596,7 +5596,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 5
             ]
@@ -5613,7 +5613,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 5
             ]
@@ -5630,7 +5630,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
             ]
@@ -5647,7 +5647,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
             ]
@@ -5664,7 +5664,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
             ]
@@ -5681,7 +5681,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
             ]
@@ -5698,7 +5698,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
             ]
@@ -5715,7 +5715,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
                 10,
@@ -5734,7 +5734,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
             ]
@@ -5751,7 +5751,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
             ]
@@ -5768,7 +5768,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
             ]
@@ -5785,7 +5785,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
             ]
@@ -5802,7 +5802,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
             ]
@@ -5819,7 +5819,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
             ]
@@ -5836,7 +5836,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
             ]
@@ -5853,7 +5853,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
             ]
@@ -5870,7 +5870,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
             ]
@@ -5887,7 +5887,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
             ]
@@ -5904,7 +5904,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 16
             ]
@@ -5921,7 +5921,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 16,
                 17,
@@ -5940,7 +5940,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 17,
                 18
@@ -5958,7 +5958,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 17,
                 18
@@ -5976,7 +5976,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 13
@@ -5994,7 +5994,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 13
@@ -6012,7 +6012,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 13
@@ -6030,7 +6030,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 13
@@ -6048,7 +6048,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 13
@@ -6066,7 +6066,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
                 13
@@ -6084,7 +6084,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6102,7 +6102,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6120,7 +6120,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6138,7 +6138,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6156,7 +6156,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6174,7 +6174,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6192,7 +6192,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
@@ -6210,7 +6210,7 @@
             "department_limit": null,
             "fixtures": "",
             "rulebook": "",
-            "registration_deadline": "2024-09-16",
+            "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
                 15
