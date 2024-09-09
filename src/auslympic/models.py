@@ -1,6 +1,7 @@
 import os
 import datetime
 from django.db import models
+from django.db.models import Q
 from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
@@ -156,6 +157,10 @@ class Department(models.Model):
         return self.get_name_display()
 
 
+    class Meta:
+        ordering = ['name']
+
+
 class Sport(models.Model):
     name = models.CharField(max_length=100, unique=True)
     image = models.ImageField(
@@ -172,6 +177,14 @@ class Sport(models.Model):
     rulebook = models.FileField(upload_to=sport_rulebook_path, blank=True, null=True)
 
     registration_deadline = models.DateTimeField(blank=False, null=False, default=timezone.datetime(2024, 9, 18, 8, 30, 0, 0, tzinfo=datetime.timezone.utc))
+
+    @property
+    def winners(self):
+        return Team.objects.filter(Q(sport=self) & Q(Q(gold_winner=True) | Q(silver_winner=True) | Q(bronze_winner=True)))
+
+    @property
+    def loosers(self):
+        return Team.objects.filter(Q(sport=self) & Q(gold_winner=False) & Q(silver_winner=False) & Q(bronze_winner=False))
 
     @property
     def gold_winners(self):
@@ -201,6 +214,10 @@ class Sport(models.Model):
         # Call clean method before saving the instance
         self.clean()
         super().save(*args, **kwargs)
+
+
+    class Meta:
+        ordering = ['id']
 
 
 class Team(models.Model):
@@ -245,6 +262,10 @@ class Team(models.Model):
         return f"{self.name} {self.department}"
 
 
+    class Meta:
+        ordering = ['-gold_winner', '-silver_winner', '-bronze_winner', 'id']
+
+
 class Notice(models.Model):
     title = models.CharField(max_length=100)
     text = models.TextField()
@@ -255,6 +276,9 @@ class Notice(models.Model):
     def __str__(self):
         return self.title
 
+
+    class Meta:
+        ordering = "-modified", "-added"
 
 class SportGroup(models.Model):
     name = models.CharField(max_length=100)

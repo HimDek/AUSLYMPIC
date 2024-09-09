@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}RULEBOOKS & FIXTURES |{% endblock %}
+
+{% block body %}
+<div class="vw-100 overflow-x-hidden bg-primary">
+    <div class="text-body-emphasis bg-primary-subtle masked-background" style="min-width: 1280px;">
+        <div class="vw-100 p-4 p-md-5">
+            <div
+                class="row gap-4 justify-content-center justify-content-sm-start align-items-center align-items-center">
+                <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+                    <img src="{% static 'logo.png' %}" class="w-100" alt="logo" />
+                    <ul class="list-unstyled d-flex mt-4">
+                        <li class="mx-3">
+                            <a class="link-body-emphasis" target="blank"
+                                href="https://chat.whatsapp.com/G0C3hCEk14p6AUVvz943OM">
+                                <i class="bi bi-whatsapp fs-2"></i>
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a class="link-body-emphasis" target="blank"
+                                href="https://www.instagram.com/auslympic2024?igsh=YzljYTk1ODg3Zg==">
+                                <i class="bi bi-instagram fs-2"></i>
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a class="link-body-emphasis" target="blank" href="mailto:help@auslympic.info">
+                                <i class="bi bi-envelope-at fs-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
+                    <h1 class="display-2 text-uppercase">RULEBOOKS & FIXTURES</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-body p-0 p-sm-3 p-md-5">
+    <div class="accordion w-100" id="accordion-dept">
+        {% for group in groups.all %}
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed p-md-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse-{{ group.id }}" aria-expanded="false"
+                    aria-controls="collapse-{{ group.id }}">
+                    <div class="d-flex">
+                        <div style="width: 3ch;">
+                            {{ group.id }}
+                        </div>
+                        <div>
+                            {{ group.sub }} {{ group.name }}
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-{{ group.id }}" class="accordion-collapse collapse" data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-0 g-0">
+                    <ul class="list-group list-group-flush">
+                        {% for sport in group.sports.all %}
+                        <li class="list-group-item d-flex flex-wrap gap-3 align-items-center justify-content-between p-3 g-0">
+                            <div class="col-12 col-sm-auto">
+                                {{ sport.name }}
+                            </div>
+                            <div>
+                                <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
+                                    {% if sport.rulebook %}
+                                    <a class="text-decoration-none" target="blank" href="{{ sport.rulebook.url }}">
+                                        <span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                            <i class="bi bi-card-list fs-6 m-1"></i>
+                                            Rulebook
+                                        </span>
+                                    </a>
+                                    {% endif %}
+                                    {% if sport.fixtures %}
+                                    <a class="text-decoration-none" target="blank" href="{{ sport.fixtures.url }}">
+                                        <span
+                                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                            <i class="bi bi-calendar-week fs-6 m-1"></i>
+                                            Fixtures
+                                        </span>
+                                    </a>
+                                    {% else %}
+                                    <span
+                                        class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                        <i class="bi bi-calendar-week fs-6 m-1"></i>
+                                        Fixtures Comming Soon
+                                    </span>
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

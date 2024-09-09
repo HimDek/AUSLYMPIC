@@ -53,15 +53,8 @@ class SportView(TemplateView):
     def get_context_data(self, **kwargs):
         sport = Sport.objects.get(pk=self.kwargs["pk"])
 
-        teams = sport.teams.all().order_by(
-            "-gold_winner", "-silver_winner", "-bronze_winner"
-        )
-        if teams.all().count() >= 3 and teams.all()[0].gold_winner and teams.all()[1].silver_winner and teams.all()[2].bronze_winner:
-            teams = teams.filter(Q(gold_winner=True) | Q(silver_winner=True) | Q(bronze_winner=True))
-
         context = super().get_context_data(**kwargs)
         context["sport"] = sport
-        context["teams"] = teams
 
         if sport.registration_deadline >= timezone.now():
             context["team_form"] = TeamForm(initial={"sport": sport.id})
@@ -101,7 +94,7 @@ class NoticeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["notices"] = Notice.objects.all().order_by("-modified", "-added")
+        context["notices"] = Notice.objects.all()
 
         return base_context(self.request, context)
 
@@ -120,6 +113,23 @@ class TeamsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["sports"] = Sport.objects.annotate(count_teams=Count("teams")).filter(count_teams__gte=1).order_by("id")
+        context["sports"] = Sport.objects.annotate(count_teams=Count("teams")).filter(count_teams__gte=1)
 
         return base_context(self.request, context)
+
+
+class Winners(TemplateView):
+    template_name = "winners.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["sports"] = Sport.objects.all()
+
+        return base_context(self.request, context)
+
+
+class Rules(TemplateView):
+    template_name = "rules.html"
+
+    def get_context_data(self, **kwargs):
+        return base_context(self.request, super().get_context_data(**kwargs))

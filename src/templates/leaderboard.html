@@ -41,7 +41,6 @@
     <div class="d-flex w-100 py-3 pe-0 ps-2 ps-md-3">
         <div class="col-8 d-flex align-items-center justify-content-start">
             <div style="width: 3ch;">
-                {{ forloop.counter }}
             </div>
             <div class="lead">
                 Department
@@ -77,7 +76,7 @@
                                     {{ department.get_name }}
                                 </div>
                                 <div>
-                                    <small class="text-body-secondary">Click to expand</small>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +100,7 @@
                 <div class="accordion-body p-3">
                     {% if not department.gold_winners.all|length and not department.silver_winners.all|length and not department.bronze_winners.all|length %}
                     <div class="ms-3 ms-md-4">
-                        Winners from {{ department.get_name_display }} will appear here.
+                        No Winners yet.
                     </div>
                     {% else %}
                     <ol class="list-group list-group-flush list-group-numbered">
@@ -110,7 +109,6 @@
                             <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
-                                    {{ team.department }}
                                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                         {% if team.gold_winner %}
                                         <span
@@ -141,7 +139,6 @@
                             <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
-                                    {{ team.department }}
                                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                         {% if team.gold_winner %}
                                         <span
@@ -172,7 +169,6 @@
                             <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
-                                    {{ team.department }}
                                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                         {% if team.gold_winner %}
                                         <span
@@ -205,6 +201,5 @@
         </div>
         {% endfor %}
     </div>
-
 </div>
 {% endblock %}
