@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<nav id="navbar" class="navbar navbar-expand-lg bg-body w-100 fixed-top" style="height: 6.5rem;">
+<nav id="navbar" class="navbar navbar-expand-xl bg-body w-100 fixed-top" style="height: 6.5rem;">
     <div class="container-fluid bg-body px-4">
         <a class="navbar-brand mx-3 fs-3" href="{% url 'home' %}">
             <img src="{% static 'logo.png' %}" style="height: 80px;" alt="logo" />
@@ -43,12 +43,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav m-3 w-100">
+            <ul class="navbar-nav mx-2 my-3 w-100">
                 <li class="nav-item mx-2">
-                    <a class="nav-link active fs-5 text-uppercase" aria-current="page" href="{% url 'home' %}">HOME</a>
+                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'home' %}">HOME</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link active fs-5 text-uppercase" href="{% url 'leaderboard' %}">LEADERBOARD</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'winners' %}">WINNERS</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active fs-5 text-uppercase" href="{% url 'rules' %}">RULES & FIXTURES</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link active fs-5 text-uppercase" href="{% url 'notices' %}">NOTICES</a>
@@ -56,7 +62,7 @@
                 <li class="nav-item mx-2 me-auto">
                     <a class="nav-link active fs-5 text-uppercase" href="{% url 'merchandise' %}">MERCHANDISE</a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item">
                     <a class="nav-link active fs-5 text-uppercase" data-bs-toggle="offcanvas" href="#offcanvasRight"
                         role="button" aria-controls="offcanvasRight">
                         SPORTS
