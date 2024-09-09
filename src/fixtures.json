@@ -191,7 +191,7 @@
             "object_id": "2",
             "object_repr": "Women's Cricket",
             "action_flag": 2,
-            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (3)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (4)\"}}, {\"changed\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (2)\", \"fields\": [\"User\"]}}]"
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (3)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (4)\"}},{\"changed\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (2)\", \"fields\": [\"User\"]}}]"
         }
     },
     {
@@ -1023,7 +1023,7 @@
             "object_id": "27",
             "object_repr": "Men's Solo Tabble Tennis",
             "action_flag": 1,
-            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (52)\"}}]"
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\",\"object\": \"Sport_coordinators object (52)\"}}]"
         }
     },
     {
@@ -1387,7 +1387,7 @@
             "object_id": "51",
             "object_repr": "Men's 200 meter Race",
             "action_flag": 1,
-            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (88)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (89)\"}}]"
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (88)\"}}, {\"added\": {\"name\": \"sport-user relationship\",\"object\": \"Sport_coordinators object (89)\"}}]"
         }
     },
     {
@@ -1606,7 +1606,7 @@
             "user": 1,
             "content_type": 12,
             "object_id": "12",
-            "object_repr": "SportGroup object (12)",
+            "object_repr": "SportGroupobject (12)",
             "action_flag": 1,
             "change_message": "[{\"added\": {}}]"
         }
@@ -1996,7 +1996,7 @@
             "user": 1,
             "content_type": 8,
             "object_id": "2",
-            "object_repr": "Women's Cricket",
+            "object_repr": "Women'sCricket",
             "action_flag": 2,
             "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
         }
@@ -2674,7 +2674,7 @@
             "object_id": "8",
             "object_repr": "Women's Basketball",
             "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+            "change_message": "[{\"changed\":{\"fields\": [\"Department limit\"]}}]"
         }
     },
     {
@@ -2713,7 +2713,7 @@
             "object_id": "11",
             "object_repr": "Men's Kabaddi",
             "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Department limit\"]}}]"
+            "change_message": "[{\"changed\": {\"fields\": [\"Departmentlimit\"]}}]"
         }
     },
     {
@@ -3218,7 +3218,7 @@
             "user": 1,
             "content_type": 8,
             "object_id": "25",
-            "object_repr": "Mixed Duo Carrom",
+            "object_repr": "MixedDuo Carrom",
             "action_flag": 2,
             "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
         }
@@ -5256,12 +5256,12 @@
         "pk": 1,
         "fields": {
             "name": "Men's Cricket",
-            "image": "sport_1_Cricket.jpeg",
+            "image": "sport_1_Mens_Cricket_image.webp",
             "team_size_min": 1,
             "team_size_max": 15,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_1_Mens_Cricket_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 3,
@@ -5276,12 +5276,12 @@
         "pk": 2,
         "fields": {
             "name": "Women's Cricket",
-            "image": "sport_2_Womens_Cricket.jpeg",
+            "image": "sport_2_Womens_Cricket_image.webp",
             "team_size_min": 1,
             "team_size_max": 15,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_2_Womens_Cricket_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 3,
@@ -5301,11 +5301,11 @@
             "team_size_max": 15,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_3_Mens_Football_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
-                7,
-                6
+                6,
+                7
             ]
         }
     },
@@ -5319,11 +5319,11 @@
             "team_size_max": 15,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_4_Womens_Football_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
-                7,
-                6
+                6,
+                7
             ]
         }
     },
@@ -5332,12 +5332,12 @@
         "pk": 5,
         "fields": {
             "name": "Men's Volleyball",
-            "image": "sport_5_Mens_Volleyball.jpeg",
+            "image": "sport_5_Mens_Volleyball_image.webp",
             "team_size_min": 1,
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_5_Mens_Volleyball_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 20,
@@ -5351,12 +5351,12 @@
         "pk": 6,
         "fields": {
             "name": "Women's Volleyball",
-            "image": "sport_6_Womens_Volleyball.jpeg",
+            "image": "sport_6_Womens_Volleyball_image.webp",
             "team_size_min": 1,
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_6_Womens_Volleyball_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 20,
@@ -5370,12 +5370,12 @@
         "pk": 7,
         "fields": {
             "name": "Men's Basketball",
-            "image": "sport_7_Mens_Basketball.jpeg",
+            "image": "sport_7_Mens_Basketball_image.webp",
             "team_size_min": 1,
             "team_size_max": 8,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_7_Mens_Basketball_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 9,
@@ -5388,12 +5388,12 @@
         "pk": 8,
         "fields": {
             "name": "Women's Basketball",
-            "image": "sport_8_Womens_Basketball.jpeg",
+            "image": "sport_8_Womens_Basketball_image.webp",
             "team_size_min": 1,
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_8_Womens_Basketball_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 9,
@@ -5406,12 +5406,12 @@
         "pk": 9,
         "fields": {
             "name": "Men's Kho Kho",
-            "image": "sport_9_Mens_Kho_Kho.jpeg",
+            "image": "sport_9_Mens_Kho_Kho_image.webp",
             "team_size_min": 1,
             "team_size_max": 15,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_9_Mens_Kho_Kho_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
@@ -5425,12 +5425,12 @@
         "pk": 10,
         "fields": {
             "name": "Women's Kho Kho",
-            "image": "sport_10_Womens_Kho_Kho.jpeg",
+            "image": "sport_10_Womens_Kho_Kho_image.webp",
             "team_size_min": 1,
             "team_size_max": 15,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_10_Womens_Kho_Kho_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
@@ -5449,7 +5449,7 @@
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_11_Mens_Kabaddi_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -5467,7 +5467,7 @@
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_12_Womens_Kabaddi_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -5480,12 +5480,12 @@
         "pk": 13,
         "fields": {
             "name": "Men's Tug of War",
-            "image": "sport_13_Mens_Tug_of_War.jpeg",
+            "image": "sport_13_Mens_Tug_of_War_image.webp",
             "team_size_min": 1,
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_13_Mens_Tug_of_War_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 13
@@ -5497,12 +5497,12 @@
         "pk": 14,
         "fields": {
             "name": "Women's Tug of War",
-            "image": "sport_14_Womens_Tug_of_War.jpeg",
+            "image": "sport_14_Womens_Tug_of_War_image.webp",
             "team_size_min": 1,
             "team_size_max": 10,
             "department_limit": 2,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_14_Womens_Tug_of_War_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 13
@@ -5514,7 +5514,7 @@
         "pk": 15,
         "fields": {
             "name": "Men's Arm Wrestling",
-            "image": "sport_15_Mens_Arm_Wrestling.jpeg",
+            "image": "sport_15_Mens_Arm_Wrestling_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
@@ -5533,7 +5533,7 @@
         "pk": 16,
         "fields": {
             "name": "Women's Arm Wrestling",
-            "image": "sport_16_Womens_Arm_Wrestling.jpeg",
+            "image": "sport_16_Womens_Arm_Wrestling_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
@@ -5552,7 +5552,7 @@
         "pk": 17,
         "fields": {
             "name": "Men's Powerlifting",
-            "image": "sport_17_Mens_Powerlifting.jpeg",
+            "image": "sport_17_Mens_Powerlifting_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
@@ -5571,7 +5571,7 @@
         "pk": 18,
         "fields": {
             "name": "Women's Powerlifting",
-            "image": "sport_18_Womens_Powerlifting.jpeg",
+            "image": "sport_18_Womens_Powerlifting_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
@@ -5590,12 +5590,12 @@
         "pk": 19,
         "fields": {
             "name": "Men's Long Jump",
-            "image": "sport_19_Mens_Long_Jump.jpeg",
+            "image": "sport_19_Mens_Long_Jump_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_19_Mens_Long_Jump_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 5
@@ -5607,12 +5607,12 @@
         "pk": 20,
         "fields": {
             "name": "Women's Long Jump",
-            "image": "sport_20_Womens_Long_Jump.jpeg",
+            "image": "sport_20_Womens_Long_Jump_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_20_Womens_Long_Jump_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 5
@@ -5629,7 +5629,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_21_Mens_Solo_Carrom_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
@@ -5646,7 +5646,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_22_Womens_Solo_Carrom_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
@@ -5663,7 +5663,7 @@
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_23_Mens_Duo_Carrom_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
@@ -5680,7 +5680,7 @@
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_24_Womens_Duo_Carrom_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
@@ -5697,7 +5697,7 @@
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_25_Mixed_Duo_Carrom_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 8
@@ -5714,7 +5714,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_26_Chess_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
@@ -5728,12 +5728,12 @@
         "pk": 27,
         "fields": {
             "name": "Men's Solo Table Tennis",
-            "image": "sport_27_Mens_Solo_Tabble_Tennis_image.webp",
+            "image": "sport_27_Mens_Solo_Table_Tennis_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_27_Mens_Solo_Table_Tennis_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
@@ -5745,12 +5745,12 @@
         "pk": 28,
         "fields": {
             "name": "Women's Solo Table Tennis",
-            "image": "sport_28_Womens_Solo_Tabble_Tennis_image.webp",
+            "image": "sport_28_Womens_Solo_Table_Tennis_image.webp",
             "team_size_min": 1,
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_28_Womens_Solo_Table_Tennis_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
@@ -5762,12 +5762,12 @@
         "pk": 29,
         "fields": {
             "name": "Men's Duo Table Tennis",
-            "image": "sport_29_Mens_Duo_Tabble_Tennis_image.webp",
+            "image": "sport_29_Mens_Duo_Table_Tennis_image.webp",
             "team_size_min": 2,
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_29_Mens_Duo_Table_Tennis_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
@@ -5779,12 +5779,12 @@
         "pk": 30,
         "fields": {
             "name": "Women's Duo Table Tennis",
-            "image": "sport_30_Womens_Duo_Tabble_Tennis_image.webp",
+            "image": "sport_30_Womens_Duo_Table_Tennis_image.webp",
             "team_size_min": 2,
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_30_Womens_Duo_Table_Tennis_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
@@ -5796,12 +5796,12 @@
         "pk": 31,
         "fields": {
             "name": "Mixed Duo Table Tennis",
-            "image": "sport_31_Mixed_Duo_Tabble_Tennis_image.webp",
+            "image": "sport_31_Mixed_Duo_Table_Tennis_image.webp",
             "team_size_min": 2,
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_31_Mixed_Duo_Table_Tennis_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 2
@@ -5818,7 +5818,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_32_Mens_Solo_Badminton_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
@@ -5835,7 +5835,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_33_Womens_Solo_Badminton_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
@@ -5852,7 +5852,7 @@
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_34_Mens_Duo_Badminton_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
@@ -5863,13 +5863,13 @@
         "model": "auslympic.sport",
         "pk": 35,
         "fields": {
-            "name": "Women's Duo Badminton",
+            "name": "Women'sDuo Badminton",
             "image": "sport_35_Womens_Duo_Badminton_image.webp",
             "team_size_min": 2,
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_35_Womens_Duo_Badminton_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
@@ -5886,7 +5886,7 @@
             "team_size_max": 2,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_36_Mixed_Duo_Badminton_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 23
@@ -5903,7 +5903,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_37_FIFA_2023_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 16
@@ -5920,7 +5920,7 @@
             "team_size_max": 6,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_38_Valorant_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 16,
@@ -5939,7 +5939,7 @@
             "team_size_max": 5,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_39_BGMI_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 17,
@@ -5957,7 +5957,7 @@
             "team_size_max": 6,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_40_Moba_Lengends_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 17,
@@ -5975,7 +5975,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_41_Mens_Discus_Throw_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -5993,7 +5993,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_42_Womens_Discus_Throw_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -6011,7 +6011,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_43_Mens_Javelin_Throw_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -6029,7 +6029,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_44_Womens_Javelin_Throw_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -6047,7 +6047,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_45_Mens_Shot_Put_Throw_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -6065,7 +6065,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_46_Womens_Shot_Put_Throw_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 12,
@@ -6083,7 +6083,7 @@
             "team_size_max": 5,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_47_Mens_Relay_Race_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6101,7 +6101,7 @@
             "team_size_max": 5,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_48_Womens_Relay_Race_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6119,7 +6119,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_49_Mens_100_meter_Race_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6137,7 +6137,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_50_Womens_100_meter_Race_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6155,7 +6155,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_51_Mens_200_meter_Race_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6173,7 +6173,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_52_Womens_200_meter_Race_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6191,7 +6191,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_53_Mens_High_Jump_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6209,7 +6209,7 @@
             "team_size_max": 1,
             "department_limit": null,
             "fixtures": "",
-            "rulebook": "",
+            "rulebook": "sport_54_Womens_High_Jump_rulebook.pdf",
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 14,
@@ -6248,8 +6248,8 @@
             "name": "Volleyball",
             "sub": "",
             "sports": [
-                6,
-                5
+                5,
+                6
             ]
         }
     },
@@ -6272,8 +6272,8 @@
             "name": "Kho Kho",
             "sub": "",
             "sports": [
-                10,
-                9
+                9,
+                10
             ]
         }
     },
@@ -6284,8 +6284,8 @@
             "name": "Kabaddi",
             "sub": "",
             "sports": [
-                12,
-                11
+                11,
+                12
             ]
         }
     },
@@ -6308,8 +6308,8 @@
             "name": "Arm Wrestling",
             "sub": "",
             "sports": [
-                16,
-                15
+                15,
+                16
             ]
         }
     },
@@ -6356,8 +6356,8 @@
             "name": "Carrom",
             "sub": "Solo",
             "sports": [
-                22,
-                21
+                21,
+                22
             ]
         }
     },
@@ -6369,8 +6369,8 @@
             "sub": "Duo",
             "sports": [
                 23,
-                25,
-                24
+                24,
+                25
             ]
         }
     },
@@ -6392,8 +6392,8 @@
             "name": "Table Tennis",
             "sub": "Solo",
             "sports": [
-                28,
-                27
+                27,
+                28
             ]
         }
     },
@@ -6404,9 +6404,9 @@
             "name": "Table Tennis",
             "sub": "Duo",
             "sports": [
-                31,
+                29,
                 30,
-                29
+                31
             ]
         }
     },
@@ -6417,8 +6417,8 @@
             "name": "Badminton",
             "sub": "Solo",
             "sports": [
-                33,
-                32
+                32,
+                33
             ]
         }
     },
@@ -6429,9 +6429,9 @@
             "name": "Badminton",
             "sub": "Duo",
             "sports": [
-                36,
+                34,
                 35,
-                34
+                36
             ]
         }
     },
@@ -6443,9 +6443,9 @@
             "sub": "",
             "sports": [
                 37,
-                40,
                 38,
-                39
+                39,
+                40
             ]
         }
     },
@@ -6456,8 +6456,8 @@
             "name": "Discus Throw",
             "sub": "",
             "sports": [
-                42,
-                41
+                41,
+                42
             ]
         }
     },
@@ -6468,8 +6468,8 @@
             "name": "Javelin Throw",
             "sub": "",
             "sports": [
-                44,
-                43
+                43,
+                44
             ]
         }
     },
@@ -6480,8 +6480,8 @@
             "name": "Shot Put Throw",
             "sub": "",
             "sports": [
-                46,
-                45
+                45,
+                46
             ]
         }
     },
@@ -6492,8 +6492,8 @@
             "name": "Relay Race",
             "sub": "",
             "sports": [
-                48,
-                47
+                47,
+                48
             ]
         }
     },
@@ -6504,8 +6504,8 @@
             "name": "100 meter Race",
             "sub": "",
             "sports": [
-                50,
-                49
+                49,
+                50
             ]
         }
     },
