@@ -37,3 +37,5 @@ node_modules/
 
 # Ignore build files
 build/
+static_root/
+media_root/
