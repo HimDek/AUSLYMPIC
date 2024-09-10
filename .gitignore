@@ -39,3 +39,5 @@ node_modules/
 build/
 static_root/
 media_root/
+
+*temp.*

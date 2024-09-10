@@ -1,8 +1,11 @@
 import json
 from django.utils import timezone
 from django.shortcuts import redirect, reverse
+from django.views import View
 from django.views.generic.base import TemplateView
-from django.core.exceptions import ObjectDoesNotExist
+from django.core.exceptions import ObjectDoesNotExist,PermissionDenied
+from django.core import management
+from django.http import JsonResponse
 from django.db.models import Min, Count, Q
 from .models import Sport, Department, SportGroup, Notice
 from .forms import TeamForm
@@ -133,3 +136,15 @@ class Rules(TemplateView):
 
     def get_context_data(self, **kwargs):
         return base_context(self.request, super().get_context_data(**kwargs))
+
+
+class DumpedData(View):
+    def get(self, request):
+        if not request.user.is_superuser:
+            raise PermissionDenied()
+
+        with open("dump_temp.json", "w") as f:
+            management.call_command("dumpdata", stdout=f)
+        
+        with open("dump_temp.json", "r") as f:
+            return JsonResponse(json.loads(f.read()), safe=False)

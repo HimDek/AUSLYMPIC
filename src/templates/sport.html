@@ -413,7 +413,7 @@
     if (members_str == "None")
         var members = [];
     else
-        var members = JSON.pase();
+        var members = JSON.parse(members_str.replace(/&quot;/g,'"'));
 
     var member_count = 0;
 
