@@ -3900,6 +3900,201 @@
         }
     },
     {
+        "model": "admin.logentry",
+        "pk": 301,
+        "fields": {
+            "action_time": "2024-09-10T01:52:21.521Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Anuradha Chakraborty Department of Microbiology",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 302,
+        "fields": {
+            "action_time": "2024-09-10T02:58:57.534Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "39",
+            "object_repr": "BGMI",
+            "action_flag": 2,
+            "change_message": "[{\"deleted\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (None)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 303,
+        "fields": {
+            "action_time": "2024-09-10T02:59:37.399Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "27",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 304,
+        "fields": {
+            "action_time": "2024-09-10T02:59:50.745Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "27",
+            "object_repr": "Chirag Sarda",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 305,
+        "fields": {
+            "action_time": "2024-09-10T03:00:17.577Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "28",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 306,
+        "fields": {
+            "action_time": "2024-09-10T03:00:37.324Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "28",
+            "object_repr": "Muzammil Hussain",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\",\"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 307,
+        "fields": {
+            "action_time": "2024-09-10T03:00:53.996Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "29",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 308,
+        "fields": {
+            "action_time": "2024-09-10T03:01:11.476Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "29",
+            "object_repr": "Aditya Kumar",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 309,
+        "fields": {
+            "action_time": "2024-09-10T03:01:34.805Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "39",
+            "object_repr": "BGMI",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinatorsobject (103)\"}}, {\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (104)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 310,
+        "fields": {
+            "action_time": "2024-09-10T03:01:57.605Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Men's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (105)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 311,
+        "fields": {
+            "action_time": "2024-09-10T03:02:03.776Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Women's Cricket",
+            "action_flag": 2,
+            "change_message": "[{\"added\":{\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (106)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 312,
+        "fields": {
+            "action_time": "2024-09-10T03:02:31.567Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "30",
+            "object_repr": " ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 313,
+        "fields": {
+            "action_time": "2024-09-10T03:02:45.458Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "30",
+            "object_repr": "Elvish ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 314,
+        "fields": {
+            "action_time": "2024-09-10T03:03:00.165Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Men's Football",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (107)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 315,
+        "fields": {
+            "action_time": "2024-09-10T03:03:10.190Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Women's Football",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"sport-user relationship\", \"object\": \"Sport_coordinators object (108)\"}}]"
+        }
+    },
+    {
         "model": "auth.permission",
         "pk": 1,
         "fields": {
@@ -4315,7 +4510,7 @@
         "pk": 1,
         "fields": {
             "password": "pbkdf2_sha256$870000$ZVjOTSq2letQWhNejvh82z$ND8R4UlOhUWOhvmBvgD1cXwRjTrKrlh/vB+Uta6hwmQ=",
-            "last_login": "2024-09-06T19:03:59.612Z",
+            "last_login": "2024-09-10T02:56:22.071Z",
             "is_superuser": true,
             "username": "8822884673",
             "first_name": "Himprakash",
@@ -4333,7 +4528,7 @@
         "pk": 2,
         "fields": {
             "password": "pbkdf2_sha256$870000$gCpO8ni0jxWyAiy2VqN6K8$Azllm6o6V5Y4K2gD59dpC2cGrPRMyIJsQiEnYljtb90=",
-            "last_login": "2024-09-05T03:14:29.399Z",
+            "last_login": "2024-09-09T13:22:34.150Z",
             "is_superuser": true,
             "username": "7002267087",
             "first_name": "Nayem",
@@ -4829,6 +5024,86 @@
         }
     },
     {
+        "model": "auth.user",
+        "pk": 27,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$XERupayJyNgOx5KPE9kIhj$U5YWgartDnfe+E1TcqcuuR5yYzEMEr/nUGGl1UovPm4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "6913033754",
+            "first_name": "Chirag",
+            "last_name": "Sarda",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-10T02:59:36Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 28,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$5ThBP1zHpUtHDHG9Kd5rgF$SgVgGnlobZPAvspGQlBwfKgQL0QfC3IiFa+VRjvItpI=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "7002379853",
+            "first_name": "Muzammil",
+            "last_name": "Hussain",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-10T03:00:17Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 29,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$cgV3CEefkvYVsWfCQFIo94$GPmdcc5O/D8SDma7UjqM27MmtAjFez6NpdaKRIdXdic=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "9140245438",
+            "first_name": "Aditya",
+            "last_name": "Kumar",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-10T03:00:53Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 30,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$IysTCXM4Y8NQ5F8q1xzMwQ$XILySvF41gfpJ93ByN67RUx+bGuiY5IBtca6PE5maNM=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "7637059758",
+            "first_name": "Elvish",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-10T03:02:31Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
         "model": "contenttypes.contenttype",
         "pk": 1,
         "fields": {
@@ -4922,6 +5197,22 @@
         "fields": {
             "app_label": "auslympic",
             "model": "sportgroup"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ahjidvahlwaagf4yonuaogcg9gpe30i5",
+        "fields": {
+            "session_data": ".eJxVjMsOgjAUBf-la9PQx0Vw6Z5vaO4LixqaUFgZ_11JWOj2zMx5mYTbmtNWdUmTmItx5vS7EfJD5x3IHedbsVzmdZnI7oo9aLVDEX1eD_fvIGPN33p0gbozUWDsIoCCZ0EVYmSPrQADcsvivCcg7T1EaUhjABTXN3E07w8crzkx:1snr3G:Qif6urAnulhNTgvjjCBKO2sc1tKD1hRbgTKa5aHZfeg",
+            "expire_date": "2024-09-24T02:56:22.073Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "aquq1orsy4egu02unqjy9ty5302q8ddc",
+        "fields": {
+            "session_data": ".eJxVjEsOwjAMRO-SNYrSj-2WJXvOUNmxQwsokfpZIe4OlbqA3Wjem3m5gbd1HLbF5mFSd3a1O_12wvFheQd653wrPpa8zpP4XfEHXfy1qD0vh_t3MPIy7userVcA-YbUdBQhVdR1AYVaohbrgMgKhIJmQVKKkYMoNKxUGZB7fwDgiDgj:1sneLi:v4lDa8PehlYFlMuELsOmu_gJbo7uWFwwqEtj6-IDOQs",
+            "expire_date": "2024-09-23T13:22:34.152Z"
         }
     },
     {
@@ -5267,7 +5558,8 @@
                 3,
                 4,
                 5,
-                22
+                22,
+                28
             ]
         }
     },
@@ -5287,7 +5579,8 @@
                 3,
                 4,
                 5,
-                22
+                22,
+                28
             ]
         }
     },
@@ -5305,7 +5598,8 @@
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
-                7
+                7,
+                30
             ]
         }
     },
@@ -5323,7 +5617,8 @@
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 6,
-                7
+                7,
+                30
             ]
         }
     },
@@ -5863,7 +6158,7 @@
         "model": "auslympic.sport",
         "pk": 35,
         "fields": {
-            "name": "Women'sDuo Badminton",
+            "name": "Women's Duo Badminton",
             "image": "sport_35_Womens_Duo_Badminton_image.webp",
             "team_size_min": 2,
             "team_size_max": 2,
@@ -5943,7 +6238,8 @@
             "registration_deadline": "2024-09-18T08:30:00Z",
             "coordinators": [
                 17,
-                18
+                27,
+                29
             ]
         }
     },
