@@ -116,7 +116,7 @@ class TeamsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["sports"] = Sport.objects.annotate(count_teams=Count("teams")).filter(count_teams__gte=1).order_by("id", "teams__depatment").distinct()
+        context["sports"] = Sport.objects.annotate(count_teams=Count("teams")).filter(count_teams__gte=1).order_by("id")
 
         return base_context(self.request, context)
 
