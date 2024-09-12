@@ -264,7 +264,7 @@ class Team(models.Model):
 
 
     class Meta:
-        ordering = ['-gold_winner', '-silver_winner', '-bronze_winner', 'id']
+        ordering = ['-gold_winner', '-silver_winner', '-bronze_winner', 'department', 'id']
 
 
 class Notice(models.Model):
