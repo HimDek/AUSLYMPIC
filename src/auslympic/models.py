@@ -114,7 +114,7 @@ class Department(models.Model):
                 "Department of Electronics & Communication Engineering",
             ),
             ("applied_science", "Department of Applied Science and Humanities"),
-            ("vocational_education", "Department of B.Voc"),
+            ("bachelor_vocational_education", "Department of B.Voc."),
         ],
         "Sushrutu School of Medical and Paramedical Sciences": [
             ("pharmaceutical_science", "Department of Pharmaceutical Science"),
