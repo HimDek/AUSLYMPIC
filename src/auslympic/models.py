@@ -130,7 +130,7 @@ class Department(models.Model):
             ("law", "Department of Law"),
         ],
         "Central Facilities": [
-            ("computer_centre", "Computer Centre"),
+            ("computer_centre", "PGDCA"),
             ("additional_courses", "Additional Courses"),
             ("central_library", "Central Library"),
         ],
