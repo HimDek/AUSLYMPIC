@@ -136,8 +136,8 @@ class Department(models.Model):
         ],
     }
 
-    name_old = models.CharField(max_length=100, choices=DEPARTMENT_OPTIONS, unique=True)
-    name = models.CharField(max_length=100, null=False, blank=False)
+    name = models.CharField(max_length=100, choices=DEPARTMENT_OPTIONS, unique=True)
+    name_new = models.CharField(max_length=100, null=False, blank=False)
 
     @property
     def get_name(self):
