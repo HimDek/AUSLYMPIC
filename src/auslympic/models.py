@@ -141,7 +141,7 @@ class Department(models.Model):
 
     @property
     def get_name(self):
-        return self.get_name_new_display().replace("Department of", "")
+        return self.name.replace("Department of", "")
 
     @property
     def gold_winners(self):
@@ -156,7 +156,7 @@ class Department(models.Model):
         return Team.objects.filter(department=self, bronze_winner=True)
 
     def __str__(self):
-        return self.get_name_display()
+        return self.name
 
 
     class Meta:
