@@ -141,7 +141,7 @@ class Department(models.Model):
 
     @property
     def get_name(self):
-        return self.get_name_display().replace("Department of", "")
+        return self.get_name_new_display().replace("Department of", "")
 
     @property
     def gold_winners(self):
