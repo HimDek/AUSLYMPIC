@@ -54,24 +54,22 @@
                             {{ notice.title }}
                         </h4>
                         <small>
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item">
-                                    Posted {{ notice.added|naturaltime }}
-                                </li>
-                                <li class="list-inline-item">
-                                    Updated {{ notice.modified|naturaltime }}
-                                </li>
+                            {% if notice.modified > notice.added %}
+                            {{ notice.modified|naturaltime }}
+                            {% else %}
+                            {{ notice.added|naturaltime }}
+                            {% endif %}
                         </small>
                     </div>
                 </button>
             </h2>
             <div id="collapse-{{ notice.id }}" class="accordion-collapse collapse" data-bs-parent="#accordion-dept">
                 <div class="accordion-body">
-                    <p>
+                    <p class="mb-0">
                         {{ notice.text }}
                     </p>
                     {% if notice.file %}
-                    <a class="text-decoration-none d-flex" target="blank" href="{{ notice.file.url }}">
+                    <a class="text-decoration-none d-flex mt-2" target="blank" href="{{ notice.file.url }}">
                         <span
                             class="badge d-flex align-items-center p-1 pe-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
                             <i class="bi bi-paperclip fs-6 m-1"></i>
