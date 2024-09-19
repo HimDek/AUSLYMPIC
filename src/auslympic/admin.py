@@ -48,6 +48,7 @@ class TeamAdmin(admin.ModelAdmin):
         "silver_winner",
         "bronze_winner",
     ]
+    list_display_links = ("name",)
     list_filter = ("sport", "department")
     search_fields = ("name", "members")
     ordering = ("-gold_winner", "-silver_winner", "-bronze_winner")
@@ -57,6 +58,14 @@ class TeamAdmin(admin.ModelAdmin):
         return ", ".join(obj.members)
 
     display_members.short_description = "Members"
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        
+        if obj:
+            obj.members = self.display_members(obj)
+        
+        return form
 
     def get_queryset(self, request):
         queryset = super().get_queryset(request)

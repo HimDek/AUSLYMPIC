@@ -60,7 +60,7 @@ class TeamForm(forms.ModelForm):
         empty_label="Select",
     )
     members = forms.CharField(
-        widget=forms.TextInput(attrs={"class": "form-control rounded-0", "Placeholder": "Member"}),
+        widget=forms.Textarea(attrs={"class": "form-control rounded-0", "Placeholder": "Member"}),
         help_text="Full name of the Team Members.",
         label="Members",
         required=False,

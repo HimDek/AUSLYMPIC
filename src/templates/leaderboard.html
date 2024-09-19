@@ -109,24 +109,27 @@
                             <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
+                                    <small class="text-body-secondary">
+                                        {{ team.sport }} {{ team.winning_sub_category }}
+                                    </small>
                                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                         {% if team.gold_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Gold at {{ team.sport }}</small>
+                                            <small>Gold</small>
                                         </span>
                                         {% elif team.silver_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Silver at {{ team.sport }}</small>
+                                            <small>Silver</small>
                                         </span>
                                         {% elif team.bronze_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Bronze at {{ team.sport }}</small>
+                                            <small>Bronze</small>
                                         </span>
                                         {% endif %}
                                     </span>
@@ -139,24 +142,27 @@
                             <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
+                                    <small class="text-body-secondary">
+                                        {{ team.sport }} {{ team.winning_sub_category }}
+                                    </small>
                                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                         {% if team.gold_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Gold at {{ team.sport }}</small>
+                                            <small>Gold</small>
                                         </span>
                                         {% elif team.silver_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Silver at {{ team.sport }}</small>
+                                            <small>Silver</small>
                                         </span>
                                         {% elif team.bronze_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Bronze at {{ team.sport }}</small>
+                                            <small>Bronze</small>
                                         </span>
                                         {% endif %}
                                     </span>
@@ -169,24 +175,27 @@
                             <a href="{% url 'sport' team.sport.id %}" class="text-decoration-none link-body-emphasis">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">{{ team.name }}</div>
+                                    <small class="text-body-secondary">
+                                        {{ team.sport }} {{ team.winning_sub_category }}
+                                    </small>
                                     <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
                                         {% if team.gold_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Gold at {{ team.sport }}</small>
+                                            <small>Gold</small>
                                         </span>
                                         {% elif team.silver_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Silver at {{ team.sport }}</small>
+                                            <small>Silver</small>
                                         </span>
                                         {% elif team.bronze_winner %}
                                         <span
                                             class="badge mt-2 d-flex align-items-center p-0 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
                                             <i class="bi bi-award fs-6 m-1"></i>
-                                            <small>Bronze at {{ team.sport }}</small>
+                                            <small>Bronze</small>
                                         </span>
                                         {% endif %}
                                     </span>

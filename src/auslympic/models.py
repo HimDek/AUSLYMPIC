@@ -138,6 +138,7 @@ class Team(models.Model):
     gold_winner = models.BooleanField(default=False)
     silver_winner = models.BooleanField(default=False)
     bronze_winner = models.BooleanField(default=False)
+    winning_sub_category = models.CharField(max_length=31, blank=True, null=False, default="")
 
     # class Meta:
     #     constraints = [
@@ -164,7 +165,7 @@ class Team(models.Model):
 
 
     class Meta:
-        ordering = ['-gold_winner', '-silver_winner', '-bronze_winner', 'department', 'id']
+        ordering = ['-gold_winner', '-silver_winner', '-bronze_winner', 'winning_sub_category', 'department', 'id']
 
 
 class Notice(models.Model):
