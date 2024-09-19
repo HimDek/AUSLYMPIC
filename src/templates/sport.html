@@ -216,7 +216,7 @@
         {% endif %}
 
         {% if sport.teams.all|length %}
-        <h3 class="display-5 fw-bold mt-5 py-4">
+        <h3 id="teams" class="display-5 fw-bold mt-5 py-4">
             {% if sport.gold_winners|length and sport.silver_winners|length and sport.bronze_winners|length %}
             Winners
             {% else %}
