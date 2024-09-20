@@ -54,16 +54,15 @@ class TeamAdmin(admin.ModelAdmin):
     ordering = ("-gold_winner", "-silver_winner", "-bronze_winner")
 
     def display_members(self, obj):
-        # Nicely format members list in the admin display
-        return ", ".join(obj.members)
+        return obj.members_display
 
     display_members.short_description = "Members"
 
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)
         
-        if obj:
-            obj.members = self.display_members(obj)
+        if obj and isinstance(obj.members, list):
+            obj.members = obj.members_display
         
         return form
 
