@@ -63,7 +63,9 @@
                         {% for sport in group.sports.all %}
                         <li class="list-group-item d-flex flex-wrap gap-3 align-items-center justify-content-between p-3 g-0">
                             <div class="col-12 col-sm-auto">
-                                {{ sport.name }}
+                                <a class="link-body-emphasis text-decoration-none" href="{% url 'sport' sport.id %}">
+                                    {{ sport.name }}
+                                </a>
                             </div>
                             <div>
                                 <span class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
