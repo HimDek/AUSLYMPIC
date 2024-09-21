@@ -212,7 +212,7 @@
             {% endif %}
         </form>
         {% else %}
-        <h4 class="fw-bold my-4">Registration has closed on {{ sport.registration_deadline }}</h4>
+        <h4 class="fw-bold my-4">Registration was closed on {{ sport.registration_deadline }}</h4>
         {% endif %}
 
         {% if sport.teams.all|length %}
