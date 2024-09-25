@@ -31,7 +31,7 @@ class SportAdmin(admin.ModelAdmin):
             return super().has_change_permission(request, obj)
 
         if request.user in obj.coordinators.all():
-            return True
+            return super().has_change_permission(request, obj)
 
         return False
 
@@ -80,7 +80,7 @@ class TeamAdmin(admin.ModelAdmin):
             return super().has_change_permission(request, obj)
 
         if request.user in obj.sport.coordinators.all():
-            return True
+            return super().has_change_permission(request, obj)
 
         return False
 
@@ -89,10 +89,10 @@ class TeamAdmin(admin.ModelAdmin):
             return True
 
         if obj is None:
-            return super().has_change_permission(request, obj)
+            return super().has_delete_permission(request, obj)
 
         if request.user in obj.sport.coordinators.all():
-            return True
+            return super().has_delete_permission(request, obj)
 
         return False
 
